@@ -37,3 +37,26 @@ def get_fcs_filename(plate):
         raise IOError('More than one file found: plate '+plate+
                       ' found: '+', '.join(fns))
     return fns[0]
+
+
+def get_index_sort_filenames(mouse, tissue):
+    '''Get FCS filenames from one sort'''
+    fdn = cytometry_data_folder+mouse+'/'+tissue+'/'
+    fns = glob.glob(fdn+'*_Index.csv')
+    # FIXME: we should SORT the files!
+    return fns
+
+
+def get_index_sort_filename(plate):
+    '''Get FCS filename from one specific plate
+
+    NOTE: sometimes sorts get adjusted in the middle of a plate, so we CAN have
+    more than one file per plate here
+    '''
+    fdn = cytometry_data_folder
+    fns = glob.glob(fdn+'**/*'+plate+'*_Index.csv', recursive=True)
+    if len(fns) == 0:
+        raise IOError('File not found: plate '+plate)
+    elif len(fns) > 1:
+        return fns
+    return fns[0]

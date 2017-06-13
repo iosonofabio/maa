@@ -75,10 +75,45 @@ class FacsSort:
         '''Get FACS channels'''
         return self.get_fcs_metadata()['_channels_']
 
+    def _parse_index_sort(self):
+        from .filenames import get_index_sort_filename
+        if not hasattr(self, 'fn_index_sort'):
+            self.fn_index_sort = get_index_sort_filename(self.plate)
+        if isinstance(self.fn_index_sort, str):
+            tmp = pd.read_csv(self.fn_index_sort, sep=',')
+        else:
+            tmp = [pd.read_csv(fn, sep=',') for fn in self.fn_index_sort]
+            tmp = pd.concat(tmp)
+            # Check that all wells are unique (no double sorts!)
+            if len(tmp.index) != len(np.unique(tmp.index)):
+                raise ValueError('Plate '+self.plate+
+                                 ', some wells are repeated in the index sort!')
+
+        # BSC and compensated colors require renaming
+        cols = tmp.columns.tolist()
+        cols_new = []
+        for c in cols:
+            if c.startswith('BSC'):
+                cnew = 'SSC'+c[3:]
+            elif c.endswith('-Compensated'):
+                cnew = c[:-len('-Compensated')]
+            else:
+                cnew = c
+            cols_new.append(cnew)
+        tmp = tmp.rename(columns=dict(zip(cols, cols_new))).set_index('Index')
+        self._index_sort_data = tmp
+
+    def get_index_sort_data(self):
+        '''Get FCS data from this plate'''
+        if not hasattr(self, '_index_sort_data'):
+            self._parse_index_sort()
+        return self._index_sort_data.copy()
+
     def plot_fcs_data(
             self,
             axes=(('FSC-A', 'SSC-A'),),
             scales=(('linear', 'linear'),),
+            include_index_sort=False,
             ):
         '''Scatter plot the FCS data'''
         import matplotlib.pyplot as plt
@@ -129,9 +164,16 @@ class FacsSort:
             axs = axs.ravel()
 
         data = self.get_fcs_data()
+        if include_index_sort:
+            data_is = self.get_index_sort_data()
+
         for (ax, (xaxis, yaxis), (xscale, yscale)) in zip(axs, axes, scales):
             ax.scatter(data[xaxis], data[yaxis],
-                       s=30, color='b', alpha=0.4)
+                       s=10, color='b', alpha=0.4)
+
+            if include_index_sort:
+                ax.scatter(data_is[xaxis], data_is[yaxis],
+                           s=50, color='k', alpha=0.7, zorder=5)
 
             if xscale == 'log':
                 ax.set_xlim(xmin=1e-1)

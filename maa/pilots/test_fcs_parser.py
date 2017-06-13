@@ -28,20 +28,23 @@ if __name__ == '__main__':
     #import fcsparser
     #metadata, data = fcsparser.parse(fn, meta_data_only=False, reformat_meta=True)
 
-    #s = FacsSort('MAA000032')
-    #data = s.get_fcs_data()
-    #s.plot_fcs_data(
-    #        axes=(
-    #            ('FSC-A', 'SSC-A'),
-    #            ('FSC-H', 'FSC-W'),
-    #            ('PI-A', 'FSC-A')),
-    #        scales=(
-    #            ('linear', 'linear'),
-    #            ('linear', 'linear'),
-    #            ('log', 'linear')),
-    #        )
+    s = FacsSort('MAA000032')
+    data = s.get_fcs_data()
+    s.plot_fcs_data(
+            axes=(
+                ('FSC-A', 'SSC-A'),
+                ('FSC-H', 'FSC-W'),
+                ('PI-A', 'FSC-A')),
+            scales=(
+                ('linear', 'linear'),
+                ('linear', 'linear'),
+                ('log', 'linear')),
+            include_index_sort=True,
+            )
 
-    #plt.ion()
-    #plt.show()
+    plt.ion()
+    plt.show()
 
-    s = FacsSample(mouse, tissue)
+    #s = FacsSample(mouse, tissue)
+    #so = s.sorts[0]
+
