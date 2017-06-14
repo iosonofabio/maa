@@ -50,8 +50,8 @@ class FacsSort:
         return 'FACS sort of plate '+self.plate
 
     def _parse_fcs(self):
-        from .filenames import get_fcs_filename
         import fcsparser
+        from .filenames import get_fcs_filename
         if not hasattr(self, 'fn'):
             self.fn = get_fcs_filename(self.plate)
         self._fcs_metadata, self._fcs_data = fcsparser.parse(
@@ -76,13 +76,36 @@ class FacsSort:
         return self.get_fcs_metadata()['_channels_']
 
     def _parse_index_sort(self):
+        import fcsparser
         from .filenames import get_index_sort_filename
         if not hasattr(self, 'fn_index_sort'):
             self.fn_index_sort = get_index_sort_filename(self.plate)
+
+        is_fcs = False
         if isinstance(self.fn_index_sort, str):
-            tmp = pd.read_csv(self.fn_index_sort, sep=',')
+            if self.fn_index_sort.endswith('.fcs'):
+                is_fcs = True
+                tmp_meta, tmp = fcsparser.parse(
+                        self.fn_index_sort,
+                        meta_data_only=False,
+                        reformat_meta=True)
+                tmp_meta = [tmp_meta]
+            else:
+                tmp = pd.read_csv(self.fn_index_sort, sep=',')
         else:
-            tmp = [pd.read_csv(fn, sep=',') for fn in self.fn_index_sort]
+            tmp = []
+            tmp_meta = []
+            for fn in self.fn_index_sort:
+                if fn.endswith('.fcs'):
+                    is_fcs = True
+                    tmpp_meta, tmpp = fcsparser.parse(
+                            fn,
+                            meta_data_only=False,
+                            reformat_meta=True)
+                    tmp_meta.append(tmpp_meta)
+                else:
+                    tmpp = pd.read_csv(fn, sep=',')
+                tmp.append(tmpp)
             tmp = pd.concat(tmp)
             # Check that all wells are unique (no double sorts!)
             if len(tmp.index) != len(np.unique(tmp.index)):
@@ -100,7 +123,26 @@ class FacsSort:
             else:
                 cnew = c
             cols_new.append(cnew)
-        tmp = tmp.rename(columns=dict(zip(cols, cols_new))).set_index('Index')
+        tmp = tmp.rename(columns=dict(zip(cols, cols_new)))
+
+        # Figure in what wells the cells got sorted (the Aria's FCS is a mess)
+        if is_fcs:
+            tmp['Index'] = 'A0'
+            for tm in tmp_meta:
+                i = 1
+                slstring = ''
+                while 'INDEX SORTING LOCATIONS_'+str(i) in tm:
+                    slstring += tm['INDEX SORTING LOCATIONS_'+str(i)]
+                    i += 1
+
+                itot = 0
+                for sl in slstring.rstrip(';').split(';'):
+                    row, col = tuple(map(int, sl.split(',')))
+                    a24 = chr(65 + row)+str(col+1)
+                    tmp.loc[itot, 'Index'] = a24
+                    itot += 1
+
+        tmp = tmp.set_index('Index')
         self._index_sort_data = tmp
 
     def get_index_sort_data(self):
@@ -114,6 +156,7 @@ class FacsSort:
             axes=(('FSC-A', 'SSC-A'),),
             scales=(('linear', 'linear'),),
             include_index_sort=False,
+            kde_plot=False,
             ):
         '''Scatter plot the FCS data'''
         import matplotlib.pyplot as plt
@@ -170,6 +213,20 @@ class FacsSort:
         for (ax, (xaxis, yaxis), (xscale, yscale)) in zip(axs, axes, scales):
             ax.scatter(data[xaxis], data[yaxis],
                        s=10, color='b', alpha=0.4)
+
+            if kde_plot:
+                ind = np.random.randint(0, data.shape[0], size=10000)
+                dplot = data.iloc[ind]
+                sns.kdeplot(
+                        dplot.loc[:, xaxis],
+                        dplot.loc[:, yaxis],
+                        shade=False,
+                        shade_lowest=False,
+                        zorder=4,
+                        cmap="Purples_d",
+                        lw=3,
+                        ax=ax,
+                        )
 
             if include_index_sort:
                 ax.scatter(data_is[xaxis], data_is[yaxis],
