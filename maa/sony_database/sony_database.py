@@ -1,8 +1,8 @@
 # vim: fdm=indent
 '''
 author:     Fabio Zanini
-date:       17/06/17
-content:    Try to reverse engineer the Sony expdat format.
+date:       25/06/17
+content:    Classes and functions to support SONY's SH800 expdat format.
 '''
 # Modules
 import os
@@ -23,35 +23,38 @@ class SonyExpdat:
         self.mice = mice
         self.cytometer = cytometer
 
+    def __repr__(self):
+        return self.__class__.__name__+'(mice='+self.mice+', cytometer='+self.cytometer+')'
+
     def get_filename(self):
         import glob
         fdn_expdat = '../data/cytometer files/'
         return glob.glob(fdn_expdat+'*'+self.mice+'/'+'*'+self.mice+'*'+self.cytometer+'.expdat')[0]
 
-    def get_full_metadata(self):
+    def get_metadata(self):
         with zipfile.ZipFile(self.get_filename(), 'r') as zf:
             self._zf = zf
 
             # Let's get the experiments first (top down)
-            exps = self.get_metadata(
+            exps = self.get_raw_metadata(
                     'Experiments/*.ex',
                     fields=('Id', 'Name', 'Investigator', 'CreateDate'))
 
             # Then we get the sample groups
-            sample_groups = self.get_metadata(
+            sample_groups = self.get_raw_metadata(
                     'SampleGroups/*.sg',
                     fields=('Id', 'Name', 'CreateDate', 'Experiment_Id'))
 
             # Then we get the tubes
-            tubes = self.get_metadata(
+            tubes = self.get_raw_metadata(
                     'Tubes/*.t',
                     fields=('Id', 'Name', 'CreateDate', 'SampleGroup_Id'))
 
 
             # Then, we get the data sources that could have the plate barcode
-            data_sources = self.get_metadata(
+            data_sources = self.get_raw_metadata(
                     'DataSources/*.ds',
-                    fields=('Id', 'Name', 'CreateDate', 'SortResult_Id', 'Tube_Id'))
+                    fields=('Id', 'Name', 'CreateDate', 'SortResult_Id', 'SortSetting_Id', 'Tube_Id'))
 
             del self._zf
 
@@ -84,15 +87,9 @@ class SonyExpdat:
             if exname.startswith('MAA '):
                 exname = exname[4:]
 
-            # Find plate barcode and type
+            # Find plate barcode
             platename = data_source['Name'].replace(' ', '').rstrip('\\')
-            if 'MAA' in platename:
-                platetype = 'Biorad HSP3841'
-            elif platename.startswith('D0'):
-                platetype = 'Biorad HSP3905'
-            else:
-                platetype = ''
-                #raise ValueError('Plate type not found for plate: '+str(data_source))
+            platetype = ''
 
             # Find tissue name
             if 'granulocyte' in exname.lower():
@@ -127,29 +124,41 @@ class SonyExpdat:
                     subtissue = 'NA'
 
             # Find out mouse name
-            exname_mice = re.findall('\d+_\d+_[MF]', exname)
-            tubename_mice = re.findall('\d+_\d+_[MF]', data_source['Tube_Name'])
-            if len(exname_mice) == 1:
-                mouse_name = exname_mice[0]
-            elif len(tubename_mice) == 1:
+            exname_mice = re.findall('\d+_\d+_[MF](?:_P\d)?', exname)
+            tubename_mice = re.findall('\d+_\d+_[MF](?:_P\d)?', data_source['Tube_Name'])
+            if len(tubename_mice) == 1:
                 mouse_name = tubename_mice[0]
-            elif 'Test' in data_source['Tube_Name']:
+            elif len(exname_mice) == 1:
+                mouse_name = exname_mice[0]
+            elif ('Test' in data_source['Tube_Name']) or ('trash' in data_source['Tube_Name']):
                 mouse_name = 'None_0'
             else:
                 raise ValueError('Mouse name not found for this plate: '+str(data_source))
+
+            # The ExpId has to deal with the 2 mice/day policy shift
+            mouse_n = int(mouse_name.split('_')[1])
+            if mouse_n <= 5:
+                exp_id = 'exp'+str(1 + mouse_n)
+            else:
+                exp_id = 'exp'+str(7 + (mouse_n - 6) // 2)
+                # Mice after 5 are parabiosis, but I sometimes forgot the pair
+                if '_P' not in mouse_name:
+                    mouse_name += '_P'+str(1 + (mouse_n - 12) // 2)
 
             data_sources.at[ix, 'PlateBarcode'] = platename
             data_sources.at[ix, 'Mouse'] = mouse_name
             data_sources.at[ix, 'Tissue'] = tissue
             data_sources.at[ix, 'Subtissue'] = subtissue
             data_sources.at[ix, 'PlateType'] = platetype
-            data_sources.at[ix, 'ExpId'] = 'exp'+str(1+int(mouse_name.split('_')[1]))
+            data_sources.at[ix, 'ExpId'] = exp_id
             #data_sources.at[ix, 'BarcodeFull'] = platename+' '+mouse_name+' '+tissue+' '+subtissue
 
         # These are fixed at Clark
-        # FIXME
-        data_sources['Nozzle'] = '100'
-        data_sources['CytometerLocation'] = self.cytometer
+        if self.cytometer == 'Clark':
+            data_sources['Nozzle'] = '100'
+            data_sources['CytometerLocation'] = self.cytometer
+        else:
+            raise ValueError('Cytometer is not Clark, nozzle size??')
 
         # Filter out test sorts (not actual plates)
         data_sources = data_sources.loc[data_sources['Mouse'] != 'None_0']
@@ -173,7 +182,7 @@ class SonyExpdat:
 
         return d
 
-    def get_metadata(self, pattern, fields, concatenate=True):
+    def get_raw_metadata(self, pattern, fields, concatenate=True):
         '''Get metadata'''
         fmt = pattern.split('.')[-1]
 
@@ -190,62 +199,47 @@ class SonyExpdat:
                         sep='\t',
                         header=None,
                         usecols=col_dict.keys())
-                table = (table.rename(columns=col_dict)
-                              .set_index('Id')
-                              .sort_values('CreateDate'))
+                table = table.rename(columns=col_dict).set_index('Id')
+
+                if 'CreateDate' in table.columns:
+                    table.sort_values('CreateDate', inplace=True)
                 metadata.append(table)
         if concatenate:
             metadata = pd.concat(metadata)
         return metadata
 
-    @staticmethod
-    def convert_data_for_google_sheet(data):
-        cols = ['Plate.barcode', 'dNTP.batch', 'oligodT.order.no', 'plate.type',
-                'preparation.site', 'date.prepared', 'data.sorted',
-                'tissue', 'subtissue', 'Mouse ID (age_#_sex)',
-                'FACS.selection', 'nozzle.size', 'FACS.instument',
-                'Experiment ID']
+    def get_index_metadata(self):
+        with zipfile.ZipFile(self.get_filename(), 'r') as zf:
+            self._zf = zf
 
-        data = data.copy()
+            # Let's get the experiments first (top down)
+            sort_settings = self.get_raw_metadata(
+                    'SortSettings/*.ss',
+                    fields=('Id', 'Index', 'SortType', 'Tube_Id'))
 
-        data['dNTP.batch'] = ''
-        data['FACS.selection'] = ''
-        data['preparation.site'] = 'Biohub'
-        data['date.prepared'] = ''
-        data['oligodT.order.no'] = ''
-        data.rename(columns={
-            'PlateBarcode': 'Plate.barcode',
-            'PlateType': 'plate.type',
-            'CreateDate': 'data.sorted',
-            'Tissue': 'tissue',
-            'Subtissue': 'subtissue',
-            'Mouse': 'Mouse ID (age_#_sex)',
-            'Nozzle': 'nozzle.size',
-            'CytometerLocation': 'FACS.instument',
-            'ExpId': 'Experiment ID',
-            }, inplace=True)
-        data.set_index('Plate.barcode', inplace=True, drop=False)
-        data.sort_index(inplace=True)
+            # Then we get the sample groups
+            well_sort_settings = self.get_raw_metadata(
+                    'WellSortSettings/*.wss',
+                    fields=('Id', 'Row', 'Column', 'SortGate', 'SortSetting_Id'))
 
-        # Reformat dates (clearly)
-        for ix, datum in data.iterrows():
-            data.at[ix, 'data.sorted'] = datum['data.sorted'].split()[0].replace('-', '')[2:]
-
-        return data[cols]
+            del self._zf
 
 
-# Script
-if __name__ == '__main__':
+        well_sort_settings['Well'] = well_sort_settings.apply(lambda x: chr(65 + x['Row'])+str(x['Column']+1), axis=1)
 
+        # Keep only wells that have a clean record of metadata
+        meta = self.get_metadata()
+        meta['DataSource_Id'] = meta.index
+        meta['SortSetting_Index'] = sort_settings.loc[meta['SortSetting_Id'].values, 'Index'].values
+        meta['SortType'] = sort_settings.loc[meta['SortSetting_Id'].values, 'SortType'].values
 
-    mice_pairs = ('1_6_M 1_7_M', '3_8_M 3_9_M', '3_10_M 3_11_M')
-    data = []
-    for mice in mice_pairs:
-        e = SonyExpdat(mice)
-        e.get_filename()
-        datum = e.get_full_metadata()
-        data.append(datum)
-    data = pd.concat(data)
-    data_gs = e.convert_data_for_google_sheet(data)
+        well_sort_settings = well_sort_settings.loc[well_sort_settings['SortSetting_Id'].isin(meta['SortSetting_Id'])]
 
-    data_gs.to_csv('../data/tmp/week2clark.tsv', sep='\t', header=False, index=False)
+        meta.set_index('SortSetting_Id', inplace=True, drop=False)
+        for col in ('Mouse', 'Tissue', 'Subtissue', 'PlateBarcode',
+                    'ExpId', 'Nozzle', 'CytometerLocation', 'Tube_Name',
+                    'SortType'):
+            well_sort_settings[col] = well_sort_settings.apply(
+                    lambda x: meta.at[x['SortSetting_Id'], col], axis=1)
+
+        return well_sort_settings
