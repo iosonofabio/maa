@@ -1,0 +1,166 @@
+ƒ	dNTP.batch	oligodT.order.no	plate.type	preparation.site	date.prepared	data.sorted	tissue	subtissue	Mouse ID (age_#_sex)	FACS.selection	nozzle.size	FACS.instument	EXP	Plate number	Stack Number			
+MAA100002	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	?	?	?	?	?	?	?	1	96W-9			
+MAA100021	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	?	?	?	?	?	?	?	?	?	96W-6			
+MAA100030	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170605	Liver	hepatocytes	?	?	?	?			96W-10			
+MAA100029	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170614	Heart	cardiomyocytes	1_6_M and 1_7_M	NA	NA	NA		1	96W-6			
+MAA100151						170728	Liver	Hepatocytes	1_62_M				exp 34	1	96W-10			
+MAA100152						170728	Liver	Hepatocytes	1_62_M				exp 34	2	96W-10			
+MAA100151-B						170728	Heart	LA, LV, RA, RV	1_62_M/1_63_M				exp 34	1	96W-10			
+MAA100153						170728	Liver	Hepatocytes	1_63_M				exp 34	1	96W-10			
+MAA100154						170728	Liver	Hepatocytes	1_63_M				exp 34	2	96W-10			
+MAA100113-B					170710	170710	Liver	Hepatocytes	12_ 40_F				exp 23	1	96W-3			
+MAA100114					170710	170710	Liver	Hepatocytes	12_ 40_F				exp 23	2	96W-3			
+MAA100105					170710	170711	Liver	Hepatocytes	12_ 42_M				exp 24	1	96W-4			
+MAA100106					170710	170711	Liver	Hepatocytes	12_ 42_M				exp 24	2	96W-4			
+MAA100090				Stanford	170705	170705	Liver	Hepatocytes	12_34_F	viable	130	SONY SIM1		1	96W-6			
+MAA100091				Stanford	170705	170705	Liver	Hepatocytes	12_34_F	viable	130	SONY SIM1		2	96W-6			
+MAA100098					170706	170706	Liver	Hepatocytes	12_36_M	viable	130	SONY SIM1		1	96W-2			
+MAA100099					170706	170706	Liver	Hepatocytes	12_36_M	viable	130	SONY SIM1		2	96W-2			
+MAA100094						170706	Heart	cardiomycytes	12_36_M/12_37_M	viable	NA	SIM1		1	96W-4			
+MAA100095						170706	Heart	LA & RA	12_36_M/12_37_M	viable	130	SIM1		1	96W-4			
+MAA100063						170621	Heart	LV & RV	16 & 17	viable	130	SIM1		1	96W-8			
+MAA100064						1700621	Heart	LA & RA	16 & 17	viable	130	SIM1		1	96W-7			
+MAA100061						170617	Heart	LA & RA	18 & 19	viable	130	SIM1		1	96W-7			
+MAA100062						170622	Heart	LA & RA	18 & 19	viable	130	SIM1		1	96W-8			
+MAA100107					170710	170712	Liver	Hepatocytes	18_44_M				exp 25	1	96W-4			
+MAA100111					170710	170712	Liver	Hepatocytes	18_44_M				exp 25	2	96W-4			
+MAA100108					170710	170713	Liver	Hepatocytes	18_46_F				exp 26	1	96W-2			
+MAA100109					170710	170713	Liver	Hepatocytes	18_46_F				exp 26	2	96W-2			
+MAA100110					170710	170713	Heart	cardiomycytes	18_46_F/18_47_F				exp 26	1	96W-3			
+MAA100125						170717	Heart	LA & RA	18_50_F/18_51_F				exp 28	1	96W-1			
+MAA100126						170717	Heart	cardiomycytes	18_50_F/18_51_F				exp 28	1	96W-3			
+MAA100127						170717	Liver	Hepatocytes	18_51_F				exp 28	2	96W-3			
+MAA100128						170717	Liver	Hepatocytes	18_51_F				exp 28	1	96W-3			
+MAA100131						170718	Heart	cardiomycytes	18_52_M/18_53_M				exp 29	1	96W-2			
+MAA100132						170718	Heart	LA & RA	18_52_M/18_53_M				exp 29	1	96W-2			
+MAA100129						170718	Liver	Hepatocytes	18_53_M				exp 29	1	96W-2			
+MAA100130						170718	Liver	Hepatocytes	18_53_M				exp 29	2	96W-2			
+MAA100057						170620	Heart	cardiomycytes	19_14_M_P2	viable	NA	SIM1		1	96W-8			
+MAA100053						170620	Liver	Hepatocytes	19_15_M_P2	viable	130	SIM1		2	96W-7			
+MAA100056						170620	Liver	Hepatocytes	19_15_M_P2	viable	130	SIM1		1	96W-7			
+MAA100058						170620	Heart	cardiomycytes	19_15_M_P2	viable	NA	SIM1			96W-7			
+MAA100059						170620	Liver	Hepatocytes	19_15_M_P2	viable	130	SIM1		3	96W-7			
+MAA100067						170622	Liver	Hepatocytes	19_19_M_P4	viable	130	SIM1		1	96W-8			
+MAA100066						170622	Liver	Hepatocytes	19_19_M_P4	viable	130	SIM1		2	96W-8			
+MAA100077						170626	Heart	LA & RA	19_22_M_P6	viable	NA	SIM1		1	96W-9			
+MAA100078						170626	Heart		19_23_M_P6	viable	NA	SIM1		2	96W-8			
+MAA100082						170727	Heart	LA & RA	19_24_M_P7/19_25_M_P7	viable	130	SIM1		1	96W-9			
+MAA100083						170627	Heart	cardiomycytes	19_24_M_P7/19_25_M_P7	viable	NA			1	96W-9			
+MAA100079						170627	Liver	Hepatocytes	19_25_M_P7	viable	130	SiM1		1	96W-8			
+MAA100081						170627	Liver	Hepatocytes	19_25_M_P7	viable	130	SiM1		2	96W-9			
+MAA100086						170629	Liver	Hepatocytes	19_28_M_P9	viable	130	SONY SIM1		2	96W-6			
+MAA100088						170629	Liver	Hepatocytes	19_28_M_P9	viable	130	SONY SIM1		1	96W-6			
+MAA100080						170629	Heart	Cardiomycytes	19_28_M_P9/19_29_M	viable	NA			1	96W-5			
+MAA100087						170629	Heart	LV&RV	19_28_M_P9/19_29_M	viable	130	SIM1		1	96W-5			
+MAA100090-B						170630	Liver	Hepatocytes	19_33_M_P11					1	96W-10			
+MAA100121						170714	Liver	Hepatocytes	21_48_F				exp 27	1	96W-3			
+MAA100122						170714	Liver	Hepatocytes	21_48_F				exp 27	2	96W-3			
+MAA100123						170714	Heart	cardiomycytes	21_48_F/21_49_F				exp 27	1	96W-3			
+MAA100124						170714	Heart	LA & RA	21_48_F/21_49_F				exp 27	1	96W-3			
+MAA100113					170710	170719	Liver	Hepatocytes	21_54_F				exp 30	1	96W-2			
+MAA100134						170719	Liver	Hepatocytes	21_54_F				exp 30	2	96W-2			
+MAA100135						170719	Heart	cardiomycytes	21_54_F/21_55_F				exp 30	1	96W-2			
+MAA100136						170719	Heart	LA & RA	21_54_F/21_55_F				exp 30	1	96W-2			
+MAA100143						170721	Liver	Hepatocytes	24_58_M				exp 32	1	96W-1			
+MAA100144						170721	Liver	Hepatocytes	24_58_M				exp 32	2	96W-1			
+MAA100145						170721	Liver	Hepatocytes	24_58_M				exp 32	3	96W-1			
+MAA100147						170721	Heart	cardiomycytes	24_58_M/24_59_M				exp 32	1	96W-1			
+MAA00148						170721	Heart	LA & RA	24_58_M/24_59_M				exp 32	1	96W-2			
+MAA100146						170721	Liver	Hepatocytes	24_59_M				exp 32	1	96W-1			
+MAA00149						170721	Liver	Hepatocytes	24_59_M				exp 32	2	96W-1			
+MAA100085						170628	Heart	cardiomycytes	26 & 27	viable	NA				96W-7			
+MAA100094-B						170628	Heart	LA & RA	26 &27	viable	130	SIM1	?	1	96W-6			
+MAA100037						170616	Heart	cardiomycytes	3_10_M/3_11_M	viable	NA	SIM1		1	96W-6			
+MAA100038						170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		1	96W-4			
+MAA100039						170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		2	96W-4			
+MAA100040						170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		3	96W-4			
+MAA100137						170720	Liver	Hepatocytes	3_56_F				exp 31	1	96W-1			
+MAA100138						170720	Liver	Hepatocytes	3_56_F				exp 31	2	96W-1			
+MAA100143						170720	Heart	cardiomycytes	3_56_F/3_57_F				exp 31	1	96W-1			
+MAA100142						170720	Heart	LA & RA	3_56_F/3_57_F				exp 31	1	96W-1			
+MAA100139						170720	Liver	Hepatocytes	3_57_F				exp 31	1	96W-1			
+MAA100140						170720	Liver	Hepatocytes	3_57_F				exp 31	2	96W-1			
+MAA100041			Biorad HSP9641 96	STN_CZ bio	170614	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		3	96W-3			
+MAA100042			Biorad HSP9641 96	STN_CZ bio	170614	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		1	96W-3			
+MAA100043			Biorad HSP9641 96	STN_CZ bio	170614	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		2	96W-3			
+MAA100036						170615	Heart	cardiomycytes	3_9_M/3_10_M	viable	NA	SIM1		1	96W-4			
+MAA100016	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	Liver	hepatocytes	30_1_M	viable	130	Sony Clark		1	96W-9			
+MAA100017	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	Liver	hepatocytes	30_1_M	viable	130	Sony Clark		1	96W-9			
+MAA100018	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	Liver	hepatocytes	30_1_M	viable	130	Sony Clark		1	96W-9			
+MAA100019	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	Liver	hepatocytes	30_1_M	viable	130	Sony Clark		1	96W-9			2
+MAA100020	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170522	Liver	hepatocytes	30_1_M	viable	130	Sony Clark		1	96W-9			
+MAA100003	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170523	Liver	hepatocytes	30_2_M	viable	130	SIM1		1	96W-5			1
+MAA100004	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170523	Liver	hepatocytes	30_2_M	viable	130	SIM1		1	96W-5	double? 96W-6		
+MAA100005	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170523	Liver	hepatocytes	30_2_M	viable	130	SIM1		1	96W-5			
+MAA100006	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170523	Heart	cardiomyocytes	30_2_M	NA	NA	NA		1	96W-5			
+MAA100007	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170523	Liver	hepatocytes	30_2_M	viable	130	SIM1		1	96W-6			
+MAA100008	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170524	Liver	hepatocytes	30_3_M	viable	130	SIM1			96W-9	Need to add the Heartplates here		
+MAA100009	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170524	Liver	hepatocytes	30_3_M	viable	130	SIM1		1	96W-9			
+MAA100010	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170524	Liver	hepatocytes	30_3_M	viable	130	SIM1		1	96W-10			
+MAA100011	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170524	Liver	hepatocytes	30_3_M	viable	130	SIM1		1	96W-5			
+MAA100012	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170524	Heart	cardiomyocytes	30_3_M	NA	NA	NA		1	96W-5			
+MAA100022	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170525	Liver	hepatocytes	30_4_M	viable	130	SIM1		1	96W-5			
+MAA100023	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170525	Liver	hepatocytes	30_4_M	viable	130	SIM1		1	96W-5			
+MAA100024	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170525	Liver	hepatocytes	30_4_M	viable	130	SIM1						
+MAA100025	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170525	Liver	hepatocytes	30_4_M	viable	130	SIM1		1	96W-4			
+MAA100013	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170526	Liver	hepatocytes	30_5_M	viable	130	SIM1		1	96W-7			
+MAA100014	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170526	Liver	hepatocytes	30_5_M	viable	130	SIM1		2	96W-7			
+MAA100026	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170526	Liver	hepatocytes	30_5_M	viable	130	SIM1		1	96W-8			
+MAA100031	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525	170526	Liver	hepatocytes	30_5_M	viable	130	SIM1			96W-7			
+MAA100093						170630	Heart	LA & RA	32 & 33					1	96W-10			
+MAA100092-B						170705	Heart	cardiomycytes	34 & 35	VIABLE	NA	SIM1		1	96W-6			
+MAA100093						170705	Heart	LA & RA	34 & 35	VIABLE	130	SIM1		1	96W-6			
+MAA100096						170707	Heart	cardiomycytes	38 & 39 ?	viable	NA	SIM1		1	96W-4			
+MAA100097						170707	Heart	LA & RA	38 & 39 ?	viable	130	SIM1		1	96W-4			
+MAA100035						170619	Heart	cardiomycytes	4_12_M_P1 and 4_13_M_P1	viable	NA	SIM1		1	96W-8			
+MAA100052						170619	Liver	Hepatocytes	4_13_M_P1	viable	130	Sony sim1		1	96W-5			
+MAA100054						170619	Liver	Hepatocytes	4_13_M_P1	viable	130	Sony sim1		2	96W-5			
+MAA100055						170619	Liver	Hepatocytes	4_13_M_P1	viable	130	Sony sim1		3	96W-5			
+MAA100069						170622	Liver	Hepatocytes	4_18_M_P4	viable	130	SIM1		1	96W-7			
+MAA100068						170622	Liver	Hepatocytes	4_18_M_P4	viable	130	SIM1		2	96W-7			
+MAA100060						170623	Liver	Hepatocytes	4_20_M_P5	viable	130	SIM1		1	96W-8			
+MAA100075						170623	Heart	LA & RA	4_20&21_M_P5	viable	130	SIM1		1	96W-8			
+MAA100076						170623	Heart	LV&RV	4_20&21_M_P5	viable	130	SIM1		1	96W-8			
+MAA100065						170623	Liver	Hepatocytes	4_21_M_P5	viable	130	SIM1		1	96W-8			
+MAA100089					170630	170630	Liver	Hepatocytes	4_32_M_P1	VIABLE	130	SONY SIM1		2	96W-10			
+MAA100092					170630	170630	Liver	Hepatocytes	4_32_M_P1	VIABLE	130	SONY SIM1		3	96W-9			
+MAA100091(*)					170630	170630	Liver	Hepatocytes	4_32_M_P11	viable	130	SONY SIM1		1	96W-10			
+MAA100149						170725	Heart	cardiomycytes	60 & 61					1	96W-6			
+MAA100150						120725	Heart	cardiomycytes	60 & 61					1	96W-10			
+MAA100001	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514													
+MAA100015	490668	12236139	Biorad HSP9641 96	STN_CZ bio	170514	170526	Heart								96W-7			
+MAA100027	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525													
+MAA100028	256428	220460078	Biorad HSP9641 96	STN_CZ bio	170525													
+MAA100032																		
+MAA100033																		
+MAA100034																		
+MAA100044																		
+MAA100045																		
+MAA100046																		
+MAA100047																		
+MAA100048																		
+MAA100049																		
+MAA100050																		
+MAA100051																		
+MAA100067																		
+MAA100068																		
+MAA100069																		
+MAA100070																		
+MAA100071																		
+MAA100072																		
+MAA100073																		
+MAA100074																		
+MAA100084																		
+MAA100100																		
+MAA100101																		
+MAA100102																		
+MAA100103																		
+MAA100104																		
+MAA100112					170710													
+MAA100115																		
+MAA100116																		
+MAA100117																		
+																		
+																		
+																		
+MAA100133																		

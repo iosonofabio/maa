@@ -1,0 +1,219 @@
+# Config file for the FACS/RNA-Seq comparison of the Mouse Cell Atlas 3 month
+channels_to_genes:
+  CD45: Ptprc
+  CD31: Pecam1
+tissues:
+  aorta:
+    dead stain: 'Sytox: Pacific Blue-A'
+    legend: {fontsize: 8}
+    plots:
+    - {x: 'Epcam: FITC-A', y: 'CD31: APC-A'}
+    - {x: 'CD45: PE-Cy7-A', y: 'CD31: APC-A'}
+    - {x: 'Epcam: FITC-A', y: FSC-A}
+    xlim:
+      'CD45: PE-Cy7-A': [1, 1000000.0]
+  bladder:
+    annotation glob: Bladder
+    antibodies: {APC-A: '???: APC-A', Brilliant Violet 421-A: 'dead: Brilliant Violet
+        421-A', FITC-A: '???: FITC-A'}
+    dead stain: Brilliant Violet 421-A
+    legend: {ncol: 2}
+    plots:
+    - {x: FITC-A, y: APC-A}
+  brain_microglia:
+    annotation glob: brainMicroglia
+    dead stain: 'Live/dead: PI-A'
+    plots:
+    - {x: 'CD11b: Brilliant Violet 421-A', y: 'CD45: PE-Cy7-A'}
+    xlim:
+      'CD11b: Brilliant Violet 421-A': [10.0, 100000.0]
+    ylim:
+      'CD45: PE-Cy7-A': [10.0, 100000.0]
+  brain_neuron:
+    annotation glob: BrainNeuron
+    dead stain: 'Lineage: Brilliant Violet 421-A'
+    plots:
+    - {x: 'Neurons: APC-Cy7-A', y: 'Glial: PE-A'}
+    xlim:
+      'Neurons: APC-Cy7-A': [1.0, 1000000.0]
+    ylim:
+      'Glial: PE-A': [1.0, 1000000.0]
+  colon:
+    dead stain: 'CD45-DAPI: Pacific Blue-A'
+    plots:
+    - {x: 'CD44: APC-A', y: 'CD66a: PE-A'}
+    - {x: 'CD44: APC-A', y: ''}
+    xlim:
+      'CD44: APC-A': [200.0, 50000.0]
+    ylim:
+      'CD66a: PE-A': [700.0, 500000.0]
+  diaphragm:
+    antibodies: {APC-A: 'CD45: APC-A', FITC-A: 'CD31: FITC-A', PE-Cy7-A: 'VCAM: PE-Cy7-A',
+      Pacific Blue-A: 'SCA-1: Pacific Blue-A'}
+    dead stain: null
+    legend: {fontsize: 8, ncol: 2}
+    sorter: ARIA
+    xlim:
+      FSC-A: [100.0, 270000.0]
+    ylim:
+      SSC-A: [3000.0, 300000.0]
+  fat:
+    antibodies: {APC-A: 'SCA-1: APC-A', FITC-A: 'CD31: FITC-A', PE-Cy7-A: 'CD45: PE-Cy7-A',
+      Pacific Blue-A: 'dead: Pacific Blue-A'}
+    dead stain: Pacific Blue-A
+    legend: {fontsize: 8, ncol: 2}
+    plots:
+    - {x: FITC-A, y: PE-Cy7-A}
+    - {x: APC-A, y: FSC-A}
+  heart:
+    antibodies: {PI-A: 'dead: PI-A'}
+    dead stain: PI-A
+    legend: {fontsize: 8, ncol: 2}
+    xlim:
+      FSC-A: [1, 800000.0]
+    ylim:
+      SSC-A: [5000.0, 1000000.0]
+  kidney:
+    dead stain: 'dead: PI-A'
+    legend: {fontsize: 8, ncol: 2}
+  liver:
+    antibodies: {PI-A: 'dead: PI-A'}
+    dead stain: PI-A
+    plots:
+    - {x: Hoechst 33342-A, y: PI-A}
+    xlim:
+      Hoechst 33342-A: [10.0, 1000000.0]
+    ylim:
+      PI-A: [1.0, 100000.0]
+  lung_endomucin:
+    annotation glob: lung
+    dead stain: 'dead: Sytox blue-A'
+    facs_glob: lung_endomucin
+    plots:
+    - {x: FSC-A, y: 'CD45: PE-A'}
+    - {x: 'endomucin: FITC-A', y: 'CD31: APC-A'}
+    xlim:
+      FSC-A: [1, 400000.0]
+  lung_epcam:
+    annotation glob: lung
+    dead stain: 'dead: sytox blue-A'
+    facs_glob: lung_epcam
+    legend: {fontsize: 8, ncol: 2}
+    plots:
+    - {x: 'CD31: FITC-A', y: FSC-A}
+    - {x: 'Mesenchimal: APC-A', y: 'EPCAM: APC-Cy7-A'}
+    xlim:
+      FSC-A: [1, 400000.0]
+      'Mesenchimal: APC-A': [10, 100000.0]
+    ylim:
+      'EPCAM: APC-Cy7-A': [10, 100000.0]
+  mammary:
+    antibodies: {APC-A: 'CD49f: APC-A', DAPI-A: CD31/CD45/Ter119 DAPI-A, PE-Cy7-A: 'CD24:
+        PE-Cy7-A'}
+    dead stain: DAPI-A
+    plots:
+    - {x: APC-A, y: PE-Cy7-A}
+    xlim:
+      APC-A: [100.0, 1000000.0]
+    ylim:
+      PE-Cy7-A: [10.0, 1000000.0]
+  marrow_B:
+    annotation glob: marrow
+    dead stain: 'live/dead: Brilliant Violet 421-A'
+    facs_glob: marrow_Bcell
+    legend: {fontsize: 8}
+    plots:
+    - {x: FSC-A, y: 'Ter119: PE-Cy5-A'}
+    - {x: 'IgM: PE-Cy7-A', y: 'B220: FITC-A'}
+    xlim:
+      'IgM: PE-Cy7-A': [10.0, 100000.0]
+    ylim:
+      'B220: FITC-A': [10.0, 100000.0]
+  marrow_G:
+    annotation glob: marrow
+    dead stain: 'live/dead: Brilliant Violet 421-A'
+    facs_glob: marrow_Gcell
+    legend: {fontsize: 7}
+    plots:
+    - {x: FSC-A, y: 'Ter119: PE-Cy5-A'}
+    - {x: 'Mac1: FITC-A', y: 'Gr1: PE-Cy7-A'}
+    xlim:
+      'Mac1: FITC-A': [10.0, 100000.0]
+    ylim:
+      'Gr1: PE-Cy7-A': [10.0, 1000000.0]
+  marrow_KLS:
+    annotation glob: marrow
+    dead stain: 'live/dead: Brilliant Violet 421-A'
+    facs_glob: marrow_KLS
+    legend: {fontsize: 8, ncol: 2}
+    plots:
+    - {x: FSC-A, y: 'Lineage: FITC-A'}
+    - {x: 'Sca-1: PE-Cy7-A', y: 'c-Kit: APC-A'}
+    xlim:
+      FSC-A: [1, 1000000.0]
+      'Sca-1: PE-Cy7-A': [10.0, 1000000.0]
+    ylim:
+      'c-Kit: APC-A': [10.0, 100000.0]
+  marrow_T:
+    annotation glob: marrow
+    dead stain: 'dead: Sytox Blue-A'
+    facs_glob: marrow_Tcell
+    legend: {fontsize: 5}
+    plots:
+    - {x: 'CD90: FITC-A', y: 'Ter119: PE-Cy5-A'}
+    - {x: 'CD90: FITC-A', y: 'CD2: PE-Cy7-A'}
+    xlim:
+      'CD90: FITC-A': [10.0, 300000.0]
+  muscle:
+    antibodies: {APC-A: 'CD31: APC-A', FITC-A: 'CD45: FITC-A', PE-Cy7-A: 'CD106: PE-Cy7-A',
+      Pacific Blue-A: 'Ly-6A/E: Pacific Blue-A'}
+    dead stain: null
+    legend: {fontsize: 8, ncol: 2}
+    sorter: ARIA
+    xlim:
+      FSC-A: [100.0, 267000.0]
+    ylim:
+      SSC-A: [3000.0, 300000.0]
+  pancreas:
+    dead stain: 'dead: APC-Cy7-A'
+    legend: {fontsize: 8}
+  skin:
+    antibodies: {APC-A: 'CD34: Alexa647-A', FITC-A: 'a6 Integrin: FITC-A', Pacific Blue-A: 'dead:
+        Pacific Blue-A'}
+    dead stain: Pacific Blue-A
+    plots:
+    - {x: FITC-A, y: APC-A}
+    ylim:
+      APC-A: [10.0, 7000.0]
+  spleen:
+    annotation glob: Spleen
+    antibodies: {PI-A: 'dead: PI-A'}
+    dead stain: PI-A
+    legend: {fontsize: 8, ncol: 2}
+    xlim:
+      FSC-A: [1, 950000.0]
+    ylim:
+      SSC-A: [5000.0, 1000000.0]
+  thymus:
+    dead stain: 'Lineage: Pacific Blue-A'
+    legend: {fontsize: 8}
+    plots:
+    - {x: 'Cd45: PE-Cy7-A', y: 'Cd2/Cd3: APC-A'}
+    xlim:
+      'Cd45: PE-Cy7-A': [100.0, 10000.0]
+      FSC-A: [1, 600000.0]
+    ylim:
+      'Cd2/Cd3: APC-A': [100.0, 30000.0]
+      SSC-A: [3000.0, 200000.0]
+  tongue:
+    antibodies: {APC-A: '???: APC-A', Brilliant Violet 421-A: 'dead: Brilliant Violet
+        421-A', FITC-A: '???: FITC-A'}
+    dead stain: Brilliant Violet 421-A
+    legend: {fontsize: 8, ncol: 2}
+    plots:
+    - {x: FITC-A, y: APC-A}
+    xlim:
+      FITC-A: [300.0, 100000.0]
+    ylim:
+      APC-A: [100.0, 100000.0]
+  trachea: {dead stain: 'dead: Sytox blue-A'}

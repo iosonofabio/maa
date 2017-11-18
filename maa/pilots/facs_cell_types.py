@@ -9,8 +9,10 @@ content:    Try to see where in the sorting plots are successful and failed
 import os
 import sys
 import argparse
+import yaml
 import numpy as np
 import pandas as pd
+from scipy.stats import spearmanr
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -23,344 +25,77 @@ from singlet.samplesheet import SampleSheet
 
 
 # Globals
-config = {
-    'colon': {
-        'dead stain': 'CD45-DAPI: Pacific Blue-A',
-        'plots': [{
-            'x': 'CD44: APC-A',
-            'y': 'CD66a: PE-A',
-            }, {
-            'x': 'CD44: APC-A',
-            'y': '',
-            }],
-        'xlim': {'CD44: APC-A': (2e2, 5e4)},
-        'ylim': {'CD66a: PE-A': (7e2, 5e5)},
-        },
-    'trachea': {
-        'dead stain': 'dead: Sytox blue-A',
-        },
-    'pancreas': {
-        'dead stain': 'dead: APC-Cy7-A',
-        'legend': {
-            'fontsize': 8,
-            },
-        },
-    'heart': {
-        'dead stain': 'PI-A',
-        'antibodies': {
-            'PI-A': 'dead: PI-A',
-            },
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        'xlim': {'FSC-A': (1, 8e5)},
-        'ylim': {'SSC-A': (5e3, 1e6)},
-        },
-    'aorta': {
-        'dead stain': 'Sytox: Pacific Blue-A',
-        'legend': {
-            'fontsize': 8,
-            },
-        'plots': [{
-            'x': 'Epcam: FITC-A',
-            'y': 'CD31: APC-A',
-            }, {
-            'x': 'CD45: PE-Cy7-A',
-            'y': 'CD31: APC-A',
-            }, {
-            'x': 'Epcam: FITC-A',
-            'y': 'FSC-A',
-            }],
-        'xlim': {'CD45: PE-Cy7-A': (1, 1e6)},
-        },
-    'spleen': {
-        'annotation glob': 'Spleen',
-        'dead stain': 'PI-A',
-        'antibodies': {
-            'PI-A': 'dead: PI-A',
-            },
-        'xlim': {'FSC-A': (1, 9.5e5)},
-        'ylim': {'SSC-A': (5e3, 1e6)},
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        },
-    'tongue': {
-        'dead stain': 'Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'FITC-A',
-            'y': 'APC-A',
-            }],
-        'antibodies': {
-            'Brilliant Violet 421-A': 'dead: Brilliant Violet 421-A',
-            # FIXME: ask them this thing!
-            'FITC-A': '???: FITC-A',
-            'APC-A': '???: APC-A',
-            },
-        'xlim': {'FITC-A': (3e2, 1e5)},
-        'ylim': {'APC-A': (1e2, 1e5)},
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        },
-    'bladder': {
-        'annotation glob': 'Bladder',
-        'dead stain': 'Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'FITC-A',
-            'y': 'APC-A',
-            }],
-        'antibodies': {
-            'Brilliant Violet 421-A': 'dead: Brilliant Violet 421-A',
-            # FIXME: ask them this thing!
-            'FITC-A': '???: FITC-A',
-            'APC-A': '???: APC-A',
-            },
-        'legend': {
-            'ncol': 2,
-            },
-        },
-    'brain_neuron': {
-        'annotation glob': 'BrainNeuron',
-        'dead stain': 'Lineage: Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'Neurons: APC-Cy7-A',
-            'y': 'Glial: PE-A',
-            }],
-        'xlim': {'Neurons: APC-Cy7-A': (1e0, 1e6)},
-        'ylim': {'Glial: PE-A': (1e0, 1e6)},
-        },
-    'brain_microglia': {
-        'annotation glob': 'brainMicroglia',
-        'dead stain': 'Live/dead: PI-A',
-        'plots': [{
-            'x': 'CD11b: Brilliant Violet 421-A',
-            'y': 'CD45: PE-Cy7-A',
-            }],
-        'ylim': {'CD45: PE-Cy7-A': (1e1, 1e5)},
-        'xlim': {'CD11b: Brilliant Violet 421-A': (1e1, 1e5)},
-        },
-    'kidney': {
-        'dead stain': 'dead: PI-A',
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        },
-    'skin': {
-        'dead stain': 'Pacific Blue-A',
-        'plots': [{
-            'x': 'FITC-A',
-            'y': 'APC-A',
-            }],
-        'antibodies': {
-            'Pacific Blue-A': 'dead: Pacific Blue-A',
-            'FITC-A': 'a6 Integrin: FITC-A',
-            'APC-A': 'CD34: Alexa647-A',
-            },
-        'ylim': {'APC-A': (1e1, 7e3)},
-        },
-    'fat': {
-        'dead stain': 'Pacific Blue-A',
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        'plots': [{
-            'x': 'FITC-A',
-            'y': 'PE-Cy7-A',
-            }, {
-            'x': 'APC-A',
-            'y': 'FSC-A',
-            }],
-        'antibodies': {
-            'Pacific Blue-A': 'dead: Pacific Blue-A',
-            'FITC-A': 'CD31: FITC-A',
-            'APC-A': 'SCA-1: APC-A',
-            'PE-Cy7-A': 'CD45: PE-Cy7-A',
-            },
-        },
-    # Muscle is all ARIA sorting at the VA
-    'diaphragm': {
-        'sorter': 'ARIA',
-        'dead stain': None,  # ??
-        'antibodies': {
-            'Pacific Blue-A': 'SCA-1: Pacific Blue-A',
-            'FITC-A': 'CD31: FITC-A',
-            'APC-A': 'CD45: APC-A',
-            'PE-Cy7-A': 'VCAM: PE-Cy7-A',
-            },
-        'xlim': {'FSC-A': (1e2, 2.7e5)},
-        'ylim': {'SSC-A': (3e3, 3e5)},
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        },
-    'muscle': {
-        'sorter': 'ARIA',
-        'dead stain': None,  # ??
-        'antibodies': {
-            'Pacific Blue-A': 'Ly-6A/E: Pacific Blue-A',
-            'FITC-A': 'CD45: FITC-A',
-            'APC-A': 'CD31: APC-A',
-            'PE-Cy7-A': 'CD106: PE-Cy7-A',
-            },
-        'xlim': {'FSC-A': (1e2, 2.67e5)},
-        'ylim': {'SSC-A': (3e3, 3e5)},
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        },
-    'mammary': {
-        'dead stain': 'DAPI-A',
-        'plots': [{
-            'x': 'APC-A',
-            'y': 'PE-Cy7-A',
-            }],
-        'antibodies': {
-            'DAPI-A': 'CD31/CD45/Ter119 DAPI-A',
-            'APC-A': 'CD49f: APC-A',
-            'PE-Cy7-A': 'CD24: PE-Cy7-A',
-            },
-        'xlim': {'APC-A': (1e2, 1e6)},
-        'ylim': {'PE-Cy7-A': (1e1, 1e6)},
-        },
-    'liver': {
-        'dead stain': 'PI-A',
-        'plots': [{
-            'x': 'Hoechst 33342-A',
-            'y': 'PI-A',
-            }],
-        'antibodies': {
-            'PI-A': 'dead: PI-A',
-            },
-        'xlim': {'Hoechst 33342-A': (1e1, 1e6)},
-        'ylim': {'PI-A': (1e0, 1e5)},
-        },
-    'lung_endomucin': {
-        'annotation glob': 'lung',
-        'facs_glob': 'lung_endomucin',
-        'dead stain': 'dead: Sytox blue-A',
-        'plots': [{
-            'x': 'FSC-A',
-            'y': 'CD45: PE-A',
-            }, {
-            'x': 'endomucin: FITC-A',
-            'y': 'CD31: APC-A',
-            }],
-        'xlim': {'FSC-A': (1, 4e5)},
-        },
-    'lung_epcam': {
-        'annotation glob': 'lung',
-        'facs_glob': 'lung_epcam',
-        'dead stain': 'dead: sytox blue-A',
-        'plots': [{
-            'x': 'CD31: FITC-A',
-            'y': 'FSC-A',
-            }, {
-            'x': 'Mesenchimal: APC-A',
-            'y': 'EPCAM: APC-Cy7-A',
-            }],
-        'xlim': {
-            'FSC-A': (1, 4e5),
-            'Mesenchimal: APC-A': (10, 1e5),
-            },
-        'ylim': {'EPCAM: APC-Cy7-A': (10, 1e5)},
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            }
-        },
-    'marrow_KLS': {
-        'annotation glob': 'marrow',
-        'facs_glob': 'marrow_KLS',
-        'dead stain': 'live/dead: Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'FSC-A',
-            'y': 'Lineage: FITC-A',
-            }, {
-            'x': 'Sca-1: PE-Cy7-A',
-            'y': 'c-Kit: APC-A',
-            }],
-        'legend': {
-            'ncol': 2,
-            'fontsize': 8,
-            },
-        'xlim': {
-            'Sca-1: PE-Cy7-A': (1e1, 1e6),
-            'FSC-A': (1, 1e6),
-            },
-        'ylim': {'c-Kit: APC-A': (1e1, 1e5)},
-        },
-    'marrow_T': {
-        'annotation glob': 'marrow',
-        'facs_glob': 'marrow_Tcell',
-        'dead stain': 'dead: Sytox Blue-A',
-        'plots': [{
-            'x': 'CD90: FITC-A',
-            'y': 'Ter119: PE-Cy5-A',
-            }, {
-            'x': 'CD90: FITC-A',
-            'y': 'CD2: PE-Cy7-A',
-            }],
-        'xlim': {'CD90: FITC-A': (1e1, 3e5)},
-        'legend': {'fontsize': 5},
-        },
-    'marrow_B': {
-        'annotation glob': 'marrow',
-        'facs_glob': 'marrow_Bcell',
-        'dead stain': 'live/dead: Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'FSC-A',
-            'y': 'Ter119: PE-Cy5-A',
-            }, {
-            'x': 'IgM: PE-Cy7-A',
-            'y': 'B220: FITC-A',
-            }],
-        'xlim': {'IgM: PE-Cy7-A': (1e1, 1e5)},
-        'ylim': {'B220: FITC-A': (1e1, 1e5)},
-        'legend': {'fontsize': 8},
-        },
-    'marrow_G': {
-        'annotation glob': 'marrow',
-        'facs_glob': 'marrow_Gcell',
-        'dead stain': 'live/dead: Brilliant Violet 421-A',
-        'plots': [{
-            'x': 'FSC-A',
-            'y': 'Ter119: PE-Cy5-A',
-            }, {
-            'x': 'Mac1: FITC-A',
-            'y': 'Gr1: PE-Cy7-A',
-            }],
-        'xlim': {'Mac1: FITC-A': (1e1, 1e5)},
-        'ylim': {'Gr1: PE-Cy7-A': (1e1, 1e6)},
-        'legend': {'fontsize': 7},
-        },
-    'thymus': {
-        'dead stain': 'Lineage: Pacific Blue-A',
-        'plots': [{
-            'x': 'Cd45: PE-Cy7-A',
-            'y': 'Cd2/Cd3: APC-A',
-            }],
-        'xlim': {
-            'FSC-A': (1, 6e5),
-            'Cd45: PE-Cy7-A': (1e2, 1e4)
-            },
-        'ylim': {
-            'SSC-A': (3e3, 2e5),
-            'Cd2/Cd3: APC-A': (1e2, 3e4),
-            },
-        'legend': {'fontsize': 8},
-        },
-    }
+with open('facs_config.yml', 'r') as f:
+    config = yaml.load(f)
+    channels_to_genes = config['channels_to_genes']
+    config = config['tissues']
 
 
 # Functions
+def parse_plate_metadata():
+    import glob
+
+    # Cache for faster access
+    fn_cache = '../../data/plate_metadata/cache.tsv'
+    if os.path.isfile(fn_cache):
+        return pd.read_csv(fn_cache, sep='\t', index_col=0)
+
+    fn_384 = glob.glob('../../data/plate_metadata/*384*.tsv')[0]
+    md_384 = pd.read_csv(fn_384, sep='\t', index_col=0)
+    md_384.index.name = 'name'
+    md_384.rename(columns={
+        'Experiment ID ': 'Experiment ID',
+        },
+        inplace=True)
+    md_384['n.wells'] = 384
+
+    fn_96 = glob.glob('../../data/plate_metadata/*96*.tsv')[0]
+    md_96 = pd.read_csv(fn_96, sep='\t', index_col=0)
+    md_96.index.name = 'name'
+    md_96.rename(columns={
+        'Mouse ID (age_#_sex)': 'mouse.id',
+        'data.sorted': 'date.sorted',
+        'EXP': 'Experiment ID',
+        },
+        inplace=True)
+    md_96['n.wells'] = 96
+
+    columns = [
+            'date.sorted',
+            'tissue',
+            'subtissue',
+            'mouse.id',
+            'FACS.selection',
+            'nozzle.size',
+            'FACS.instument',
+            'Experiment ID',
+            'n.wells']
+
+    md = pd.concat([md_384[columns], md_96[columns]], axis=0)
+
+    # Select only age 3
+    age = []
+    for _, x in md.iterrows():
+        mid = x['mouse.id']
+        if (not mid) or (str(mid).lower() == 'nan') or (mid.strip(' ?') == ''):
+            age.append(-1)
+        #NOTE: some diaphragm nonsense
+        elif mid.startswith('HY_IP'):
+            age.append(-1)
+        # Some heart plates have more than one mouse (??)
+        elif '&' in mid:
+            age.append(-1)
+        else:
+            age.append(int(mid.split('_')[0]))
+    md['mouse.age'] = age
+    md = md.loc[md['mouse.age'] == 3]
+
+    # Write cache
+    md.to_csv(fn_cache, index=True, sep='\t')
+
+    return md
+
+
 def parse_facs_plate(tissue, plate):
     sorter = config[tissue].get('sorter', 'Sony')
     glb = config[tissue].get('facs_glob', '*')
@@ -617,6 +352,9 @@ if __name__ == '__main__':
     if (len(args.tissues) == 1) and (args.tissues[0] == 'all'):
         args.tissues = tuple(config.keys())
 
+    plate_meta = parse_plate_metadata()
+    sys.exit()
+
     markers = {}
     for tissue in args.tissues:
         print(tissue)
@@ -704,6 +442,28 @@ if __name__ == '__main__':
                 if 'plots' in config[tissue]:
                     nplots += len(config[tissue]['plots'])
 
+                    if args.with_comparison:
+                        ch_comp = []
+                        ab_comp = []
+                        gene_comp = []
+                        for pl in config[tissue]['plots']:
+                            for chname in (pl['x'], pl['y']):
+                                # Annotated axes
+                                if ':' in chname:
+                                    # Multiple antibodies in the same channel are useless
+                                    if '/' in chname:
+                                        continue
+                                    # Keep consistent case for antibodies
+                                    abname = chname.split(':')[0].upper()
+                                    gname = channels_to_genes.get(abname, abname)
+                                    if gname not in ds.counts.index:
+                                        continue
+                                    ch_comp.append(chname)
+                                    ab_comp.append(abname)
+                                    gene_comp.append(gname)
+                        print(ab_comp)
+                        nplots += len(ab_comp)
+
                 if nplots == 2:
                     fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(11, 4))
                 elif nplots == 3:
@@ -711,8 +471,11 @@ if __name__ == '__main__':
                 elif nplots == 4:
                     fig, axs = plt.subplots(nrows=2, ncols=2, figsize=(15, 9))
                     axs = axs.ravel()
-                else:
+                elif nplots <= 6:
                     fig, axs = plt.subplots(nrows=2, ncols=3, figsize=(17, 9))
+                    axs = axs.ravel()
+                else:
+                    fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(17, 12))
                     axs = axs.ravel()
 
                 ax = axs[0]
@@ -878,6 +641,35 @@ if __name__ == '__main__':
                                 ax.set_xlabel(config[tissue]['antibodies'][posx])
                             if posy in config[tissue]['antibodies']:
                                 ax.set_ylabel(config[tissue]['antibodies'][posy])
+
+                if args.with_comparison:
+                    for ipl, (chname, abname, gname) in enumerate(zip(ch_comp, ab_comp, gene_comp)):
+                        ind = np.intersect1d(
+                                facs_datum['index_data'].index,
+                                ds.counts.columns,
+                                )
+                        x = facs_datum['index_data'].loc[ind, chname]
+                        y = ds.counts.loc[gname, ind] + ds.counts.pseudocount
+                        rho = spearmanr(x, y)[0]
+                        if ('xlim' in config[tissue]) and (chname in config[tissue]['xlim']):
+                            xlim = config[tissue]['xlim'][chname]
+                        else:
+                            xlim = (1e1, 1e6)
+                        ax = axs[ipl + int(has_dead) + 2 + len(config[tissue]['plots'])]
+                        ax.scatter(
+                                x, y,
+                                s=20,
+                                color='steelblue',
+                                label='$\\rho = {:.2f}$'.format(rho),
+                                )
+                        ax.legend(loc='best', fontsize='8')
+                        ax.set_xlabel(abname+', FACS stain')
+                        ax.set_ylabel(gname+', transcript level')
+                        ax.grid(True)
+                        ax.set_xlim(*xlim)
+                        ax.set_ylim(ds.counts.pseudocount * 0.9, 2e5)
+                        ax.set_xscale('log')
+                        ax.set_yscale('log')
 
                 fig.suptitle(plate+', {:}'.format(tissue))
                 plt.tight_layout(rect=(0, 0, 1, 0.96))
