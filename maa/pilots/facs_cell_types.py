@@ -38,7 +38,10 @@ def parse_plate_metadata():
     # Cache for faster access
     fn_cache = '../../data/plate_metadata/cache.tsv'
     if os.path.isfile(fn_cache):
-        return pd.read_csv(fn_cache, sep='\t', index_col=0)
+        return pd.read_csv(
+                fn_cache,
+                sep='\t',
+                index_col=0)
 
     fn_384 = glob.glob('../../data/plate_metadata/*384*.tsv')[0]
     md_384 = pd.read_csv(fn_384, sep='\t', index_col=0)
@@ -72,6 +75,19 @@ def parse_plate_metadata():
             'n.wells']
 
     md = pd.concat([md_384[columns], md_96[columns]], axis=0)
+
+    # Kill non-plates
+    md = md.reset_index().dropna().set_index('name')
+
+    # Normalize subtissue
+    sts = []
+    for _, x in md.iterrows():
+        st = x['subtissue']
+        if (not st) or (str(st).lower() == 'nan') or (st.strip(' ?') == ''):
+            sts.append('')
+        else:
+            sts.append(st.strip(' ').lower())
+    md['subtissue'] = sts
 
     # Select only age 3
     age = []
@@ -671,7 +687,12 @@ if __name__ == '__main__':
                         ax.set_xscale('log')
                         ax.set_yscale('log')
 
-                fig.suptitle(plate+', {:}'.format(tissue))
+                subtissue = plate_meta.loc[plate, 'subtissue']
+                if subtissue:
+                    title = '{:}, {:}, {:}'.format(plate, tissue, subtissue)
+                else:
+                    title = '{:}, {:}'.format(plate, tissue)
+                fig.suptitle(title)
                 plt.tight_layout(rect=(0, 0, 1, 0.96))
 
                 if args.save:
