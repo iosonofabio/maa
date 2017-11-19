@@ -1,7 +1,26 @@
 # Config file for the FACS/RNA-Seq comparison of the Mouse Cell Atlas 3 month
 channels_to_genes:
-  CD45: Ptprc
+  CD11b: Itgam
+  CD24: Cd24a
   CD31: Pecam1
+  CD34: Cd34
+  CD44: Cd44
+  CD45: Ptprc
+  CD49f: Itga6
+  CD66a: Ceacam1
+  CD90: Thy1
+  CD106: Vcam1
+  a6Integrin: Itga6
+  SCA-1: Ly6a
+  Sca-1: Ly6a
+  VCAM: Vcam1
+  Ter119: Ly76
+  B220: Ptprc
+  IgM: Ighm
+  Mac1: Itgam
+  Gr1: Gsr
+  c-Kit: Kit
+  EPCAM: Epcam
 tissues:
   aorta:
     dead stain: 'Sytox: Pacific Blue-A'
@@ -42,7 +61,6 @@ tissues:
     dead stain: 'CD45-DAPI: Pacific Blue-A'
     plots:
     - {x: 'CD44: APC-A', y: 'CD66a: PE-A'}
-    - {x: 'CD44: APC-A', y: ''}
     xlim:
       'CD44: APC-A': [200.0, 50000.0]
     ylim:
@@ -57,6 +75,9 @@ tissues:
       FSC-A: [100.0, 270000.0]
     ylim:
       SSC-A: [3000.0, 300000.0]
+    plots:
+    - {x: APC-A, y: FITC-A}
+    - {x: PE-Cy7-A, y: Pacific Blue-A}
   fat:
     antibodies: {APC-A: 'SCA-1: APC-A', FITC-A: 'CD31: FITC-A', PE-Cy7-A: 'CD45: PE-Cy7-A',
       Pacific Blue-A: 'dead: Pacific Blue-A'}
@@ -108,7 +129,7 @@ tissues:
     ylim:
       'EPCAM: APC-Cy7-A': [10, 100000.0]
   mammary:
-    antibodies: {APC-A: 'CD49f: APC-A', DAPI-A: CD31/CD45/Ter119 DAPI-A, PE-Cy7-A: 'CD24:
+    antibodies: {APC-A: 'CD49f: APC-A', DAPI-A: 'CD31/CD45/Ter119: DAPI-A', PE-Cy7-A: 'CD24:
         PE-Cy7-A'}
     dead stain: DAPI-A
     plots:
@@ -165,8 +186,12 @@ tissues:
     xlim:
       'CD90: FITC-A': [10.0, 300000.0]
   muscle:
-    antibodies: {APC-A: 'CD31: APC-A', FITC-A: 'CD45: FITC-A', PE-Cy7-A: 'CD106: PE-Cy7-A',
-      Pacific Blue-A: 'Ly-6A/E: Pacific Blue-A'}
+   # NOTE: I swapped CD31/CD45 from the original methods paragraph, it made no sense
+    antibodies: {APC-A: 'CD45: APC-A', FITC-A: 'CD31: FITC-A', PE-Cy7-A: 'CD106: PE-Cy7-A',
+      Pacific Blue-A: 'SCA-1: Pacific Blue-A'}
+    plots:
+    - {x: APC-A, y: FITC-A}
+    - {x: PE-Cy7-A, y: Pacific Blue-A}
     dead stain: null
     legend: {fontsize: 8, ncol: 2}
     sorter: ARIA
@@ -178,7 +203,7 @@ tissues:
     dead stain: 'dead: APC-Cy7-A'
     legend: {fontsize: 8}
   skin:
-    antibodies: {APC-A: 'CD34: Alexa647-A', FITC-A: 'a6 Integrin: FITC-A', Pacific Blue-A: 'dead:
+    antibodies: {APC-A: 'CD34: Alexa647-A', FITC-A: 'a6Integrin: FITC-A', Pacific Blue-A: 'dead:
         Pacific Blue-A'}
     dead stain: Pacific Blue-A
     plots:

@@ -1,15 +1,145 @@
 name	date.sorted	tissue	subtissue	mouse.id	FACS.selection	nozzle.size	FACS.instument	Experiment ID	n.wells	mouse.age
+D042044	170615.0	Marrow	b-cells	3_9_M	Multiple	100.0	Sony Clark		384	3
+D042045	170615.0	Marrow	b-cells	3_9_M	Multiple	100.0	Sony Clark		384	3
+D042103	170616.0	Muscle	forelimb and hindlimb	3_11_M					384	3
+D042104	170616.0	Muscle	forelimb and hindlimb	3_11_M					384	3
+D042105	170616.0	Muscle	diaphragm	3_11_M					384	3
+D042106	170616.0	Muscle	diaphragm	3_11_M					384	3
+D042107	170615.0	Marrow	granulocytes	3_8_M	Multiple	100.0	Sony Clark		384	3
+D042178	170615.0			3_9_M					384	3
+D042179	170616.0	Muscle	diaphragm	3_10_M					384	3
+D042180	170616.0	Muscle	diaphragm	3_10_M					384	3
+D042181	170615.0			3_8_M					384	3
+D042182	170615.0	Muscle	forelimb and hindlimb	3_8_M					384	3
+D042184	170615.0	Muscle	forelimb and hindlimb	3_8_M					384	3
+D042185	170615.0	Muscle	forelimb and hindlimb	3_9_M					384	3
+D042186	170615.0	Muscle	forelimb and hindlimb	3_8_M					384	3
+D042187	170615.0	Muscle	forelimb and hindlimb	3_8_M					384	3
+D042188	170616.0	Muscle	forelimb and hindlimb	3_11_M					384	3
+D042190	170615.0	Marrow	t-cells	3_9_M	Multiple	100.0	Sony Clark		384	3
+D042191	170615.0			3_9_M					384	3
+D042192	170615.0			3_8_M					384	3
+D042458	170618.0			3_9_M					384	3
+D042459	170615.0			3_8_M					384	3
+D042461	170615.0			3_8_M					384	3
+D042463	170615.0	Muscle	forelimb and hindlimb	3_9_M					384	3
+D042464	170615.0	Muscle	forelimb and hindlimb	3_9_M					384	3
+D042465	170615.0	Muscle	forelimb and hindlimb	3_9_M					384	3
+D042466	170616.0	Muscle	diaphragm	3_10_M					384	3
+D042467	170615.0	Marrow	t-cells	3_9_M	Multiple	100.0	Sony Clark		384	3
+D042468	170616.0	Muscle	forelimb and hindlimb	3_10_M					384	3
+D042469	170616.0	Muscle	forelimb and hindlimb	3_10_M					384	3
+D042470	170616.0	Muscle	forelimb and hindlimb	3_11_M					384	3
+D042474	170615.0	Trachea		3_8_M					384	3
+D042475	170615.0	Trachea		3_9_M					384	3
+D042476	170616.0	Muscle	diaphragm	3_11_M					384	3
+D042477	170616.0	Muscle	diaphragm	3_10_M					384	3
+D041894	170615.0	Tongue		3_9_M	Multiple	100.0	Aria	exp8	384	3
+D041904	170616.0	Tongue		3_10_M		100.0	Sony, Beckman		384	3
+D041911	170615.0	Tongue		3_8_M	Multiple	100.0	Aria	exp8	384	3
+D041912	170615.0	Marrow	granulocytes	3_8_M					384	3
+D041914	170615.0	Bladder		3_8_M	Multiple	100.0	Aria	exp8	384	3
+D042193	170615.0	Marrow	t-cells	3_8_M					384	3
+D042252	170615.0	Marrow	t-cells	3_8_M					384	3
+D042253	170615.0	Bladder		3_9_M	Multiple	100.0	Aria	exp8	384	3
+D042479	170615.0	Marrow	b-cells	3_8_M					384	3
+D042480	170615.0	Marrow	b-cells	3_8_M					384	3
+MAA000369	170615.0	Lung		3_9_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000370	170615.0	Lung		3_9_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000371	170615.0	Lung		3_9_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000377	170615.0	Liver		3_9_M	Viable	100.0	Sony SIM1	exp8	384	3
+MAA000385	170616.0	Fat	scat	3_10_M					384	3
+MAA000386	170616.0	Fat	scat	3_11_M					384	3
+MAA000387	170616.0	Fat	scat	3_11_M					384	3
+MAA000388	170616.0	Fat	gat	3_11_M					384	3
+MAA000397	170615.0	Liver		3_9_M	Viable	100.0	Sony SIM1	exp8	384	3
+MAA000398	170615.0	Heart	la	3_9_M	Viable	130.0			384	3
 MAA000399	170615.0	Heart	rv	3_9_M	Viable	130.0	Sony SIM1	exp8	384	3
+MAA000400	170615.0	Heart	la	3_8_M					384	3
+MAA000409	170616.0	Marrow	granulocytes	3_10_M					384	3
+MAA000410	170616.0	Marrow	granulocytes	3_10_M					384	3
+MAA000425	170616.0	Brain	cerebellum	3_11_M					384	3
+MAA000426	170616.0	Fat	scat	3_10_M					384	3
+MAA000427	170616.0	Skin	anagen	3_11_M					384	3
+MAA000428	170616.0	Marrow	b-cells	3_11_M					384	3
+MAA000429	170616.0	Marrow	b-cells	3_11_M					384	3
+MAA000430	170616.0	Marrow	granulocytes	3_11_M					384	3
+MAA000432	170616.0	Skin		3_11_M					384	3
+MAA000433	170616.0	Skin	anagen	3_11_M					384	3
+MAA000434	170616.0	Skin	anagen	3_10_M					384	3
+MAA000435	170616.0	Skin	anagen	3_10_M					384	3
+MAA000436	170616.0	Fat	bat	3_11_M					384	3
+MAA000437	170616.0	Marrow	granulocytes	3_11_M					384	3
+MAA000438	170616.0	Fat	gat	3_11_M					384	3
+MAA000439	170616.0	Fat	gat	3_10_M					384	3
+MAA000440	170616.0	Fat	gat	3_10_M					384	3
+MAA000441	170616.0	Fat	bat	3_10_M					384	3
+MAA000442	170616.0	Fat	bat	3_11_M					384	3
+MAA000443	170616.0	Fat	bat	3_10_M					384	3
 MAA000452	170615.0	Heart	rv	3_8_M	Viable	130.0	Sony SIM1	exp8	384	3
+MAA000461	170616.0	Bladder		3_11_M		100.0	Sony, Beckman		384	3
+MAA000487	170616.0	Bladder		3_10_M		100.0	Sony, Beckman		384	3
+MAA000488	170616.0	Tongue		3_11_M		100.0	Sony, Beckman		384	3
+MAA000493	170616.0	Tongue		3_11_M		100.0	Sony, Beckman		384	3
+MAA000494	170616.0	Tongue		3_10_M		100.0	Sony, Beckman		384	3
+MAA000495	170616.0	Trachea		3_11_M					384	3
+MAA000496	170616.0	Trachea		3_10_M					384	3
 MAA000506	170615.0	Fat	scat	3_8_M	Multiple	100.0	Sony SIM1	exp8	384	3
+MAA000508	170615.0	Spleen		3_9_M					384	3
+MAA000509	170615.0	Spleen		3_9_M					384	3
 MAA000510	170615.0	Fat	scat	3_8_M	Multiple	100.0	Sony SIM1	exp8	384	3
 MAA000511	170615.0	Skin	anagen	3_9_M	Multiple	100.0	Sony SIM1	exp8	384	3
+MAA000523	170615.0	Lung		3_8_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000524	170615.0	Lung		3_8_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000525	170615.0	Lung		3_8_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000526	170615.0	Lung		3_9_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000530	170615.0	Lung		3_8_M	Multiple	100.0	Aria Beckman	exp8	384	3
+MAA000538	170615.0	Brain	cerebellum	3_8_M	Neurons	130.0			384	3
+MAA000539	170615.0	Fat	mat	3_8_M					384	3
+MAA000540	170615.0	Kidney		3_8_M					384	3
+MAA000541	170615.0	Brain	striatum	3_9_M	Neurons				384	3
+MAA000542	170615.0	Kidney		3_8_M					384	3
+MAA000543	170615.0	Kidney		3_8_M					384	3
+MAA000544	170615.0	Kidney		3_9_M					384	3
+MAA000922	170615.0	Kidney		3_8_M					384	3
+MAA000546	170615.0	Kidney		3_9_M					384	3
+MAA000547	170615.0	Kidney		3_9_M					384	3
+MAA000548	170615.0	Skin		3_9_M	Multiple	100.0	Sony SIM1	exp8	384	3
 MAA000549	170615.0	Skin	anagen	3_8_M	Multiple	100.0	Sony SIM1	exp8	384	3
+MAA000550	170616.0	Brain	hippocampus	3_10_M	Neurons				384	3
 MAA000551	170615.0	Skin	anagen	3_8_M	Multiple	100.0	Sony SIM1	exp8	384	3
+MAA000552	170615.0	Spleen		3_8_M					384	3
+MAA000553	170616.0	Brain	hippocampus	3_10_M					384	3
+MAA000554	170615.0	Fat	gat	3_8_M					384	3
+MAA000555	170615.0	Fat	gat	3_8_M					384	3
+MAA000556	170615.0	Fat	bat	3_9_M					384	3
+MAA000557	170615.0	Spleen		3_8_M					384	3
+MAA000558	170615.0	Spleen		3_8_M					384	3
+MAA000559	170615.0	Spleen		3_8_M					384	3
+MAA000560	170616.0	Brain	cortex	3_10_M	Neurons				384	3
+MAA000561	170616.0	Brain	cortex	3_10_M	Neurons				384	3
+MAA000562	170615.0	Thymus		3_8_M					384	3
+MAA000563	170616.0	Brain	hippocampus	3_10_M	Neurons				384	3
+MAA000564	170616.0	Brain	striatum	3_10_M	Neurons				384	3
+MAA000565	170616.0	Brain	cerebellum	3_11_M	Microglia				384	3
+MAA000566	170615.0	Thymus		3_8_M					384	3
+MAA000567	170615.0	Thymus		3_8_M					384	3
+MAA000569	170615.0	Thymus		3_9_M					384	3
 MAA000570	170615.0	Brain	cerebellum	3_8_M	Microglia	100.0	Sony SIM1	exp8	384	3
 MAA000571	170615.0	Brain	cerebellum	3_9_M	Microglia	100.0	Sony SIM1	exp8	384	3
 MAA000572	170615.0	Brain	cortex	3_8_M	Microglia	100.0	Sony SIM1	exp8	384	3
 MAA000573	170615.0	Brain	cortex	3_9_M	Microglia	100.0	Sony SIM1	exp8	384	3
+MAA000574	170615.0	Pancreas	exocrine	3_8_M					384	3
+MAA000575	170615.0	Pancreas	endocrine	3_8_M					384	3
+MAA000576	170615.0	Pancreas	endocrine	3_8_M					384	3
+MAA000577	170615.0	Pancreas	endocrine	3_8_M					384	3
+MAA000578	170616.0	Brain	cerebellum	3_10_M	Neurons				384	3
+MAA000579	170616.0	Brain	cortex	3_11_M	Neurons				384	3
+MAA000580	170616.0	Brain	cortex	3_11_M	Neurons				384	3
+MAA000581	170616.0	Brain	cerebellum	3_10_M	Neurons				384	3
+MAA000582	170615.0	Colon	distal	3_8_M					384	3
+MAA000583	170615.0	Colon	distal	3_9_M					384	3
+MAA000584	170615.0	Colon	distal	3_9_M					384	3
 MAA000586	170615.0	Heart	ra	3_8_M	Viable	130.0	Sony SIM1	exp8	384	3
 MAA000587	170615.0	Heart	lv	3_8_M	Viable	130.0	Sony SIM1	exp8	384	3
 MAA000589	170615.0	Heart	lv	3_9_M	Viable	130.0	Sony SIM1	exp8	384	3
@@ -19,25 +149,215 @@ MAA000592	170615.0	Brain	hippocampus	3_9_M	Microglia	100.0	Sony SIM1	exp8	384	3
 MAA000593	170615.0	Brain	striatum	3_8_M	Microglia	100.0	Sony SIM1	exp8	384	3
 MAA000594	170615.0	Heart	aorta	3_8_M	Multiple	130.0	Sony SIM1	exp8	384	3
 MAA000595	170615.0	Heart	aorta	3_9_M	Multiple	130.0	Sony SIM1	exp8	384	3
+MAA000596	170615.0	Marrow	kls	3_9_M					384	3
 MAA000597	170615.0	Skin	anagen	3_9_M	Multiple	100.0	Sony SIM1	exp8	384	3
+MAA000598	170615.0	Marrow	kls	3_8_M					384	3
+MAA000599	170615.0	Fat	bat	3_8_M					384	3
+MAA000600	170615.0	Marrow	kls	3_8_M					384	3
+MAA000601	170615.0	Marrow	kls	3_9_M					384	3
+MAA000602	170616.0	Brain	hippocampus	3_11_M	Microglia				384	3
+MAA000603	170616.0	Brain	hippocampus	3_10_M	Microglia				384	3
+MAA000604	170616.0	Brain	cortex	3_10_M	Microglia				384	3
+MAA000605	170616.0	Brain	cerebellum	3_10_M	Microglia				384	3
+MAA000606	170615.0	Thymus		3_9_M					384	3
+MAA000607	170615.0	Thymus		3_9_M					384	3
+MAA000608	170615.0	Thymus		3_9_M					384	3
+MAA000609	170615.0	Thymus		3_8_M					384	3
+MAA000610	170615.0	Colon	proximal	3_8_M					384	3
+MAA000611	170615.0	Colon	proximal	3_8_M					384	3
+MAA000612	170615.0	Colon	proximal	3_9_M					384	3
+MAA000613	170615.0	Colon	proximal	3_9_M					384	3
+MAA000614	170616.0	Skin		3_10_M					384	3
+MAA000615	170616.0	Brain	striatum	3_10_M	Neurons				384	3
+MAA000616	170616.0	Brain	striatum	3_11_M	Microglia				384	3
+MAA000617	170616.0	Brain	striatum	3_10_M	Microglia				384	3
+MAA000638	170615.0	Brain	cerebellum	3_9_M	Neurons				384	3
+MAA000639	170615.0	Marrow	granulocytes	3_9_M					384	3
+MAA000640	170615.0	Marrow	granulocytes	3_9_M					384	3
+MAA000641	170615.0	Brain	cerebellum	3_9_M	Multiple	100.0	Sony SIM1		384	3
+MAA000652	170616.0	Marrow	b-cells	3_10_M					384	3
+MAA000653	170616.0	Marrow	b-cells	3_10_M					384	3
+MAA000655	170616.0	Marrow	t-cells	3_11_M					384	3
+MAA000656	170616.0	Marrow	t-cells	3_11_M					384	3
+MAA000752	170616.0	Kidney		3_10_M		100.0	Sony, Beckman		384	3
+MAA000753	170616.0	Bladder		3_10_M		100.0	Sony, Beckman		384	3
+MAA000754	170616.0	Bladder		3_11_M		100.0	Sony, Beckman		384	3
+MAA000755	170616.0	Kidney		3_10_M		100.0	Sony, Beckman		384	3
+MAA000775	170616.0	Spleen		3_11_M		100.0	Sony, Beckman		384	3
+MAA000776	170616.0	Spleen		3_10_M		100.0	Sony, Beckman		384	3
+MAA000778	170616.0	Spleen		3_10_M		100.0	Sony, Beckman		384	3
+MAA000779	170616.0	Spleen		3_11_M		100.0	Sony, Beckman		384	3
+MAA000787	170616.0	Spleen		3_11_M		100.0	Sony, Beckman		384	3
+MAA000795	170616.0	Kidney		3_11_M		100.0	Sony, Beckman		384	3
+MAA000799	170616.0	Kidney		3_10_M		100.0	Sony, Beckman		384	3
+MAA000801	170616.0	Kidney		3_11_M		100.0	Sony, Beckman		384	3
+MAA000804	170616.0	Kidney		3_11_M		100.0	Sony, Beckman		384	3
+MAA000807	170616.0	Spleen		3_10_M		100.0	Sony, Beckman		384	3
+MAA000836	170616.0	Lung		3_11_M					384	3
+MAA000839	170616.0	Lung		3_11_M					384	3
+MAA000841	170616.0	Marrow	kls	3_11_M					384	3
+MAA000842	170616.0	Lung		3_11_M					384	3
+MAA000843	170616.0	Lung		3_11_M					384	3
+MAA000844	170616.0	Marrow	t-cells	3_10_M					384	3
+MAA000845	170616.0	Marrow	t-cells	3_10_M					384	3
+MAA000846	170616.0	Marrow	kls	3_11_M					384	3
+MAA000848	170616.0	Marrow	kls	3_10_M					384	3
+MAA000850	170616.0	Colon	proximal	3_11_M					384	3
+MAA000857	170616.0	Marrow	kls	3_10_M					384	3
+MAA000869	170616.0	Colon	distal	3_11_M					384	3
+MAA000870	170616.0	Colon	distal	3_10_M					384	3
+MAA000871	170616.0	Colon	proximal	3_11_M					384	3
+MAA000872	170616.0	Colon	distal	3_10_M					384	3
+MAA000873	170616.0	Fat	mat	3_10_M					384	3
+MAA000875	170616.0	Fat	mat	3_11_M					384	3
+MAA000876	170616.0	Thymus		3_10_M					384	3
+MAA000877	170616.0	Fat	mat	3_11_M					384	3
+MAA000878	170616.0	Thymus		3_11_M					384	3
+MAA000879	170616.0	Thymus		3_11_M					384	3
+MAA000880	170616.0	Thymus		3_11_M					384	3
+MAA000881	170616.0	Pancreas	endocrine	3_10_M					384	3
+MAA000882	170616.0	Pancreas	endocrine	3_10_M					384	3
+MAA000884	170616.0	Pancreas	endocrine	3_10_M					384	3
+MAA000885	170616.0	Thymus		3_10_M					384	3
+MAA000886	170616.0	Thymus		3_11_M					384	3
+MAA000887	170616.0	Thymus		3_10_M					384	3
+MAA000888	170616.0	Thymus		3_10_M					384	3
+MAA000889	170616.0	Lung		3_10_M					384	3
+MAA000890	170616.0	Lung		3_10_M					384	3
+MAA000891	170616.0	Lung		3_10_M					384	3
+MAA000893	170616.0	Lung		3_10_M					384	3
+MAA000897	170616.0	Skin		3_10_M					384	3
+MAA000898	170616.0	Heart	rv	3_11_M					384	3
+MAA000899	170616.0	Heart	ra	3_10_M					384	3
+MAA000900	170616.0	Skin		3_11_M					384	3
+MAA000901	170616.0	Heart	rv	3_10_M					384	3
+MAA000902	170616.0	Brain	striatum	3_11_M	Neurons				384	3
+MAA000903	170616.0	Heart	ra	3_11_M					384	3
+MAA000904	170616.0	Liver	other	3_11_M					384	3
+MAA000905	170616.0	Brain	cortex	3_11_M					384	3
+MAA000906	170616.0	Heart	aorta	3_11_M					384	3
+MAA000907	170616.0	Liver	other	3_11_M					384	3
+MAA000908	170616.0	Heart	aorta	3_10_M					384	3
+MAA000909	170616.0	Colon	proximal	3_10_M					384	3
+MAA000910	170616.0	Pancreas	exocrine	3_10_M					384	3
+MAA000911	170616.0	Colon	distal	3_11_M					384	3
+MAA000912	170616.0	Colon	proximal	3_10_M					384	3
+MAA000913	170615.0	Fat	gat	3_9_M					384	3
+MAA000914	170615.0	Fat	mat	3_9_M					384	3
+MAA000915	170615.0	Fat	gat	3_9_M					384	3
+MAA000916	170615.0	Fat	mat	3_9_M					384	3
+MAA000917	170616.0	Heart	lv	3_11_M					384	3
+MAA000918	170616.0	Heart	lv	3_10_M					384	3
+MAA000919	170616.0	Heart	la	3_10_M					384	3
+MAA000920	170616.0	Heart	la	3_11_M					384	3
+MAA000922	170615.0	Kidney		3_9_M		100.0	Sony SIM1		384	3
+MAA000923	170615.0	Brain	hippocampus	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000924	170615.0	Brain	cerebellum	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000925	170615.0	Brain	striatum	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000926	170615.0	Brain	cortex	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000927	170615.0	Skin		3_9_M		100.0	Sony SIM1		384	3
+MAA000928	170615.0	Brain	cerebellum	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000929	170615.0	Skin		3_9_M		100.0	Sony SIM1		384	3
+MAA000930	170615.0	Brain	cortex	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000931	170615.0	Skin		3_8_M		100.0	Sony SIM1		384	3
+MAA000932	170616.0	Brain	hippocampus	3_11_M	Neurons	130.0	Sony SIM1		384	3
+MAA000933	170615.0	Fat	bat	3_8_M		100.0	Sony SIM1		384	3
+MAA000934	170615.0	Fat	scat	3_9_M		100.0	Sony SIM1		384	3
+MAA000935	170615.0	Brain	hippocampus	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000936	170615.0	Heart	ra	3_9_M		130.0	Sony SIM1		384	3
+MAA000937	170615.0	Colon	distal	3_8_M		100.0	Sony SIM1		384	3
+MAA000938	170615.0	Skin		3_8_M		100.0	Sony SIM1		384	3
+MAA000939	170615.0	Fat	bat	3_9_M		100.0	Sony SIM1		384	3
+MAA000940	170615.0	Brain	striatum	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000941	170615.0	Brain	hippocampus	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000942	170615.0	Brain	striatum	3_8_M	Neurons	130.0	Sony SIM1		384	3
+MAA000943	170615.0	Spleen		3_9_M		100.0	Sony SIM1		384	3
+MAA000944	170615.0	Brain	cortex	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000945	170615.0	Skin		3_8_M		100.0	Sony SIM1		384	3
+MAA000946	170615.0	Spleen		3_9_M		100.0	Sony SIM1		384	3
+MAA000947	170615.0	Brain	hippocampus	3_9_M	Neurons	130.0	Sony SIM1		384	3
+MAA000424	170616.0	Brain	cerebellum	3_11_M	Neurons				384	3
+MAA000532	170615.0	Fat	scat	3_9_M					384	3
+MAA000531	170615.0	Fat	mat	3_8_M					384	3
+D045138	170707.0	Marrow	granulocytes	3_39_F		100.0	Clark	exp22	384	3
+D045139	170707.0	Marrow	granulocytes	3_39_F		100.0	Clark	exp22	384	3
+D045140	170707.0	Marrow	granulocytes	3_38_F		100.0	Clark	exp22	384	3
+D045264	170707.0	Marrow	granulocytes	3_38_F		100.0	Clark	exp22	384	3
+MAA001368	170630.0	Lung		3_32_M_P11					384	3
+MAA001369	170630.0	Lung		3_32_M_P11					384	3
 MAA001452	170707.0	Muscle	diaphragm	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
 MAA001453	170707.0	Muscle	diaphragm	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
 MAA001454	170707.0	Muscle	diaphragm	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
+MAA001455	170707.0	Muscle	diaphragm	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA		384	3
 MAA001535	170720.0	Lung	epcam	3_56_F	Multiple	100.0	Aria	exp 31	384	3
+MAA001539	170720.0	Colon	distal	3_56_F		100.0	Clark	exp 31	384	3
+MAA001540	170720.0	Colon	distal	3_56_F		100.0	Clark	exp 31	384	3
+MAA001541	170720.0	Colon	distal	3_57_F		100.0	Clark	exp 31	384	3
+MAA001542	170720.0	Colon	distal	3_57_F		100.0	Clark	exp 31	384	3
 MAA001551	170720.0	Lung	endomucin	3_56_F	Multiple	100.0	Aria	exp 31	384	3
 MAA001552	170720.0	Lung	endomucin	3_57_F	Multiple	100.0	Aria	exp 31	384	3
 MAA001553	170720.0	Lung	epcam	3_56_F	Multiple	100.0	Aria	exp 31	384	3
 MAA001554	170720.0	Lung	epcam	3_56_F	Multiple	100.0	Aria	exp 31	384	3
+MAA001615	170720.0	Marrow	kls	3_57_F		100.0	Clark	exp 31	384	3
+MAA001616	170720.0	Marrow	kls	3_57_F		100.0	Clark	exp 31	384	3
+MAA001618	170720.0	Marrow	kls	3_56_F		100.0	Clark	exp 31	384	3
+MAA001619	170720.0	Trachea		3_57_F		100.0	Clark	exp 31	384	3
+MAA001620	170720.0	Trachea		3_57_F		100.0	Clark	exp 31	384	3
+MAA001621	170720.0	Trachea		3_57_F		100.0	Clark	exp 31	384	3
+MAA001622	170720.0	Trachea		3_56_F		100.0	Clark	exp 31	384	3
+MAA001623	170720.0	Marrow	t cells	3_57_F		100.0	Clark	exp 31	384	3
+MAA001624	170720.0	Marrow	t cells	3_57_F		100.0	Clark	exp 31	384	3
+MAA001625	170720.0	Marrow	t cells	3_56_F		100.0	Clark	exp 31	384	3
+MAA001626	170720.0	Marrow	t cells	3_56_F		100.0	Clark	exp 31	384	3
+MAA001627	170720.0	Marrow	kls	3_56_F		100.0	Clark	exp 31	384	3
 MAA001628	170720.0	Lung	epcam	3_57_F	multiple	100.0	Aria	exp 31	384	3
 MAA001629	170720.0	Lung	epcam	3_57_F	multiple	100.0	Aria	exp 31	384	3
 MAA001630	170720.0	Lung	epcam	3_57_F	multiple	100.0	Aria	exp 31	384	3
+MAA001631	170720.0	Colon	proximal	3_57_F		100.0	Clark	exp 31	384	3
+MAA001632	170720.0	Colon	proximal	3_56_F		100.0	Clark	exp 31	384	3
+MAA001633	170720.0	Colon	proximal	3_57_F		100.0	Clark	exp 31	384	3
+MAA001634	170720.0	Colon	proximal	3_56_F		100.0	Clark	exp 31	384	3
+MAA001841	170707.0	Marrow	kls	3_39_F		100.0	Clark	exp22	384	3
+MAA001842	170707.0	Marrow	t cells	3_38_F		100.0	Clark	exp22	384	3
+MAA001843	170707.0	Marrow	kls	3_38_F		100.0	Clark	exp22	384	3
+MAA001844	170707.0	Marrow	kls	3_38_F		100.0	Clark	exp22	384	3
 MAA001845	170707.0	Brain	cerebellum	3_39_F	Meurons	130.0	Sony SIM1	exp22	384	3
+MAA001846	170707.0	Skin		3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
 MAA001847	170707.0	Lung	epcam	3_39_F	Multiple	100.0	Aria	exp22	384	3
+MAA001848	170707.0	Skin		3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
 MAA001853	170707.0	Brain	cerebellum	3_38_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001854	170707.0	Brain	cerebellum	3_38_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001855	170707.0	Brain	cortex	3_39_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001856	170707.0	Brain	cerebellum	3_39_F	Neurons	130.0	Sony SIM1	exp22	384	3
+MAA001857	170707.0	Pancreas	pancreas endocrine	3_38_F		100.0	Clark	exp22	384	3
+MAA001858	170707.0	Trachea		3_39_F		100.0	Clark	exp22	384	3
+MAA001859	170707.0	Pancreas	pancreas endocrine	3_38_F		100.0	Clark	exp22	384	3
+MAA001860	170707.0	Pancreas	pancreas endocrine	3_38_F		100.0	Clark	exp22	384	3
+MAA001861	170707.0	Pancreas	exocrine	3_39_F		100.0	Clark	exp22	384	3
+MAA001862	170707.0	Pancreas	endocrine	3_39_F		100.0	Clark	exp22	384	3
+MAA001863	170707.0	Pancreas	endocrine	3_39_F		100.0	Clark	exp22	384	3
+MAA001864	170707.0	Pancreas	endocrine	3_39_F		100.0	Clark	exp22	384	3
+MAA001865	170707.0	Trachea		3_38_F		100.0	Clark	exp22	384	3
+MAA001866	170707.0	Trachea		3_38_F		100.0	Clark	exp22	384	3
+MAA001867	170707.0	Trachea		3_39_F		100.0	Clark	exp22	384	3
+MAA001868	170707.0	Pancreas	pancreas exocrine	3_38_F		100.0	Clark	exp22	384	3
+MAA001869	170707.0	Colon	proximal	3_38_F		100.0	Clark	exp22	384	3
+MAA001870	170707.0	Colon	proximal	3_38_F		100.0	Clark	exp22	384	3
 MAA001871	170707.0	Brain	cerebellum	3_39_F	Microglia	100.0	Sony SIM1	exp22	384	3
+MAA001872	170707.0	Colon	proximal	3_39_F		100.0	Clark	exp22	384	3
+MAA001873	170707.0	Colon	distal	3_38_F		100.0	Clark	exp22	384	3
+MAA001874	170707.0	Colon	distal	3_38_F		100.0	Clark	exp22	384	3
+MAA001875	170707.0	Colon	distal	3_39_F		100.0	Clark	exp22	384	3
+MAA001876	170707.0	Colon	distal	3_39_F		100.0	Clark	exp22	384	3
+MAA001877	170707.0	Marrow	b-cells	3_39_F		100.0	Clark	exp22	384	3
+MAA001881	170707.0	Marrow	t cells	3_39_F		100.0	Clark	exp22	384	3
+MAA001882	170707.0	Marrow	b-cells	3_38_F		100.0	Clark	exp22	384	3
+MAA001883	170707.0	Marrow	b-cells	3_39_F		100.0	Clark	exp22	384	3
+MAA001884	170707.0	Marrow	b-cells	3_38_F		100.0	Clark	exp22	384	3
+MAA001885	170707.0	Marrow	t cells	3_38_F		100.0	Clark	exp22	384	3
+MAA001886	170707.0	Marrow	t cells	3_38_F		100.0	Clark	exp22	384	3
+MAA001887	170707.0	Marrow	kls	3_39_F		100.0	Clark	exp22	384	3
+MAA001888	170707.0	Marrow	t cells	3_39_F		100.0	Clark	exp22	384	3
 MAA001889	170707.0	Lung	epcam	3_38_F	Multiple	100.0	Aria	exp22	384	3
 MAA001890	170707.0	Lung	epcam	3_38_F	Multiple	100.0	Aria	exp22	384	3
 MAA001891	170707.0	Lung	epcam	3_38_F	Multiple	100.0	Aria	exp22	384	3
@@ -47,11 +367,30 @@ MAA001894	170707.0	Brain	cortex	3_39_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001895	170707.0	Brain	cortex	3_38_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001896	170707.0	Brain	cortex	3_38_F	Neurons	130.0	Sony SIM1	exp22	384	3
 MAA001897	170707.0	Brain	striatum	3_39_F	Neurons	130.0	Sony SIM1	exp22	384	3
+B000601	170720.0	Kidney		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000602	170720.0	Kidney		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000603	170720.0	Kidney		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000604	170720.0	Kidney		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000606	170720.0	Spleen		3_56_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000607	170720.0	Spleen		3_56_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000608	170720.0	Spleen		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000609	170720.0	Spleen		3_57_F	PI -	100.0	Sony, Beckman	exp 31	384	3
+B000610	170720.0	Bladder		3_56_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000611	170720.0	Bladder		3_56_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000612	170720.0	Bladder		3_57_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000613	170720.0	Bladder		3_57_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000614	170720.0	Tongue		3_56_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000615	170720.0	Tongue		3_56_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000616	170720.0	Tongue		3_57_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
+B000617	170720.0	Tongue		3_57_F	Multiple	100.0	Sony, Beckman	exp 31	384	3
 B000621	170720.0	Brain	hippocampus	3_56_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B000622	170720.0	Brain	hippocampus	3_56_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B000623	170720.0	Liver	liver non-hepatocytes/small cells	3_56_F	Viable	100.0	SONY, SIM1	exp 31	384	3
 B000624	170720.0	Brain	hippocampus	3_57_F	Neurons	130.0	SONY SIM1	exp 31	384	3
+B000633	170720.0	Heart	rv	3_56_F		130.0	SONY SIM1	exp 31	384	3
+B000634	170720.0	Heart	la	3_56_F		130.0	SONY SIM1	exp 31	384	3
 B000635	170720.0	Brain	cortex	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
+B000636	170720.0	Heart	lv	3_56_F		130.0	SONY SIM1	exp 31	384	3
 D043520	170707.0	Fat	mat	3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
 D043521	170707.0	Fat	gat	3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
 D043522	170707.0	Lung	endomucin	3_39_F	Multiple	100.0	Aria	exp22	384	3
@@ -68,6 +407,7 @@ D045066	170707.0	Fat	mat	3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
 D045067	170707.0	Fat	gat	3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
 B000825	170707.0	Brain	striatum	3_38_F	Microglia	100.0	Sony SIM1	exp22	384	3
 B000826	170707.0	Brain	cortex	3_39_F	Microglia	100.0	Sony SIM1	exp22	384	3
+B000827	170707.0	Thymus	flowthrough	3_38_F		100.0	Sony SIM1	exp22	384	3
 B002010	170707.0	Heart	ra	3_39_F	Viable	130.0	Sony, Biohub	exp21	384	3
 B002011	170707.0	Heart	ra	3_38_F	Viable	130.0	Sony, Biohub	exp21	384	3
 B002421	170707.0	Heart	lv	3_39_F	Viable	130.0	Sony, Biohub	exp21	384	3
@@ -78,6 +418,12 @@ B002428	170707.0	Heart	la	3_38_F	Viable	130.0	Sony, Biohub	exp21	384	3
 B002429	170707.0	Heart	lv	3_38_F	Viable	130.0	Sony, Biohub	exp21	384	3
 B002430	170707.0	Heart	aorta	3_38_F	Multiple	130.0	Sony, Biohub	exp21	384	3
 B002431	170707.0	Heart	aorta	3_39_F	Multiple	130.0	Sony, Biohub	exp21	384	3
+B002432	170707.0	Mammary Gland		3_38_F	Multiple	100.0	Sony, Biohub	exp21	384	3
+B002433	170707.0	Mammary Gland		3_38_F	Multiple	100.0	Sony, Biohub	exp21	384	3
+B002435	170707.0	Mammary Gland		3_39_F	Multiple	100.0	Sony, Biohub	exp21	384	3
+B002436	170707.0	Mammary Gland		3_39_F	Multiple	100.0	Sony, Biohub	exp21	384	3
+B002437	170707.0	Mammary Gland		3_39_F	Multiple	100.0	Sony, Biohub	exp21	384	3
+B002438	170707.0	Mammary Gland		3_38_F	Multiple	100.0	Sony, Biohub	exp21	384	3
 B003274	170707.0	Brain	striatum	3_38_F	Nuerons	130.0	Sony SIM1	exp22	384	3
 B003275	170707.0	Brain	hippocampus	3_38_F	Nuerons	130.0	Sony SIM1	exp22	384	3
 B003276	170707.0	Brain	hippocampus	3_39_F	Nuerons	130.0	Sony SIM1	exp22	384	3
@@ -85,28 +431,57 @@ B003277	170707.0	Brain	hippocampus	3_39_F	Nuerons	130.0	Sony SIM1	exp22	384	3
 B003278	170707.0	Brain	cortex	3_38_F	Microglia	100.0	Sony SIM1	exp22	384	3
 B003279	170707.0	Brain	cerebellum	3_38_F	Microglia	100.0	Sony SIM1	exp22	384	3
 B003281	170707.0	Brain	hippocampus	3_39_F	Microglia	100.0	Sony SIM1	exp22	384	3
+B003282	170707.0	Thymus	flowthrough	3_39_F		100.0	Sony SIM1	exp22	384	3
+B003283	170707.0	Skin		3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
+B003284	170707.0	Thymus	epithelium	3_39_F		100.0	Sony SIM1	exp22	384	3
+B003285	170707.0	Thymus	epithelium	3_38_F		100.0	Sony SIM1	exp22	384	3
 B003290	170707.0	Brain	striatum	3_38_F	Nuerons	130.0	Sony SIM1	exp22	384	3
+B003291	170707.0	Thymus	flowthrough	3_39_F		100.0	Sony SIM1	exp22	384	3
 B003292	170707.0	Brain	striatum	3_39_F	Microglia	100.0	Sony SIM1	exp22	384	3
 B003293	170707.0	Fat	scat	3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
+B003298	170707.0	Thymus	flowthrough	3_38_F		100.0	Sony SIM1	exp22	384	3
+B000126	170707.0	Skin		3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
 B000127	170707.0	Fat	scat	3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
+B000971	170707.0	Spleen		3_39_F	PI -	100.0	Sony, Beckman	exp22	384	3
 B001203	170707.0	Fat	bat	3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
+B001215	170707.0	Skin		3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
 B001216	170707.0	Fat	bat	3_38_F	Multiple	100.0	Sony SIM1	exp22	384	3
 B001688	170707.0	Brain	hippocampus	3_38_F	Neurons	130.0	Sony SIM1	exp22	384	3
 B001689	170707.0	Brain	hippocampus	3_38_F	Microglia	100.0	Sony SIM1	exp22	384	3
 B001715	170707.0	Brain	cerebellum	3_39_F	Microglia	100.0	Sony SIM1	exp22	384	3
+B001717	170707.0	Kidney		3_38_F	PI -	100.0	Sony, Beckman	exp22	384	3
+B001722	170707.0	Kidney		3_38_F	PI -	100.0	Sony, Beckman	exp22	384	3
+B001750	170707.0	Spleen		3_38_F	PI -	100.0	Sony, Beckman	exp22	384	3
+B001782	170707.0	Spleen		3_38_F	PI -	100.0	Sony, Beckman	exp22	384	3
+B001784	170707.0	Spleen		3_39_F	PI -	100.0	Sony, Beckman	exp22	384	3
 B002615	170707.0	Muscle	diaphragm	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
 B002616	170707.0	Muscle	diaphragm	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
 B002617	170707.0	Muscle	diaphragm	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
 B002707	170707.0	Fat	bat	3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
+B002720	170707.0	Skin		3_39_F	Multiple	100.0	Sony SIM1	exp22	384	3
 B002762	170707.0	Muscle	diaphragm	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp21	384	3
+B002764	170707.0	Bladder		3_38_F	Multiple	100.0	Sony, Beckman	exp22	384	3
 B002765	170707.0	Muscle	forelimb and hindlimb	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
 B002766	170707.0	Muscle	forelimb and hindlimb	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
 B002767	170707.0	Muscle	forelimb and hindlimb	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
 B002768	170707.0	Muscle	forelimb and hindlimb	3_38_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
 B002769	170707.0	Muscle	forelimb and hindlimb	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
+B002770	170707.0	Bladder		3_38_F	Multiple	100.0	Sony, Beckman	exp22	384	3
+B002771	170707.0	Bladder		3_39_F	Multiple	100.0	Sony, Beckman	exp22	384	3
+B002772	170707.0	Bladder		3_39_F	Multiple	100.0	Sony, Beckman	exp22	384	3
 B002773	170707.0	Muscle	forelimb and hindlimb	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
+B002774	170707.0	Kidney		3_39_F	PI -	100.0	Sony, Beckman	exp22	384	3
+B002775	170707.0	Kidney		3_39_F	PI -	100.0	Sony, Beckman	exp22	384	3
 B002776	170707.0	Muscle	forelimb and hindlimb	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
+B002777	170707.0	Tongue		3_39_F	Multiple	100.0	Sony, Beckman	exp22	384	3
+B002778	170707.0	Tongue		3_39_F	Multiple	100.0	Sony, Beckman	exp22	384	3
+B002779	170707.0	Tongue		3_38_F	Multiple	100.0	Sony, Beckman	exp22	384	3
+B002780	170707.0	Tongue		3_38_F	Multiple	100.0	Sony, Beckman	exp22	384	3
 B002781	170707.0	Muscle	forelimb and hindlimb	3_39_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp22	384	3
+D042471	170616.0	Muscle	diaphragm	3_11_M					384	3
+D042472	170616.0	Muscle	forelimb and hindlimb	3_10_M					384	3
+D042473	170616.0	Muscle	forelimb and hindlimb	3_10_M					384	3
+D042175				3_9_M					384	3
 B002233	170720.0	Muscle	muscle forelimb and hindlimb	3_56_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
 B002235	170720.0	Muscle	muscle diaphragm	3_56_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
 B002237	170720.0	Muscle	muscle diaphragm	3_57_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
@@ -121,21 +496,34 @@ B002533	170720.0	Muscle	muscle diaphragm	3_57_F	CD31+, CD45+, CD31-CD45-Sca1+, C
 B002534	170720.0	Muscle	muscle diaphragm	3_57_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
 B002535	170720.0	Muscle	muscle diaphragm	3_57_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
 B002537	170720.0	Muscle	muscle diaphragm	3_57_F	CD31+, CD45+, CD31-CD45-Sca1+, CD31-CD45-Sca1-VCAM1+	70.0	Aria 3, VA	exp 31	384	3
+B000166	170720.0	Mammary Gland	mammary gland	3_56_F				exp 31	384	3
+B000167	170720.0	Mammary Gland	mammary gland	3_56_F				exp 31	384	3
+B000168	170720.0	Mammary Gland	mammary gland	3_57_F				exp 31	384	3
+B000178	170720.0	Thymus	thymus epithelium	3_57_F		100.0	SONY SIM1	exp 31	384	3
 B000179	170720.0	Brain	cerebellum	3_56_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
 B000180	170720.0	Brain	cerebellum	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
 B000394	170720.0	Liver	liver non-hepatocytes/small cells	3_56_F	Viable	100.0	SONY, SIM1	exp 31	384	3
 B000395	170720.0	Liver	liver non-hepatocytes/small cells	3_57_F	viable	100.0	SONY, SIM1	exp 31	384	3
+B000396	170720.0	Thymus	thymus flowthrough	3_57_F		100.0	SONY SIM1	exp 31	384	3
 B000397	170720.0	Brain	cortex	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
 B000399	170720.0	Liver	liver non-hepatocytes/small cells	3_57_F	viable	100.0	SONY, SIM1	exp 31	384	3
+B000400	170720.0	Thymus	thymus flowthrough	3_56_F		100.0	SONY SIM1	exp 31	384	3
 B000401	170720.0	Brain	cortex	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
 B000403	170720.0	Brain	cerebellum	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
 B000404	170720.0	Brain	cerebellum	3_56_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
+B000409	170720.0	Heart	ra	3_57_F		130.0	SONY SIM1	exp 31	384	3
 B000410	170720.0	Brain	cortex	3_57_F	Neurons	130.0	SIM1 SONY	exp 31	384	3
+B000412	170720.0	Heart	ra	3_56_F		130.0	SONY SIM1	exp 31	384	3
 B003718	170720.0	Brain	hippocampus	3_57_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B003720	170720.0	Liver	liver non-hepatocytes/small cells	3_56_F	Viable	100.0	SONY, SIM1	exp 31	384	3
 B003726	170720.0	Liver	liver non-hepatocytes/small cells	3_57_F	viable	100.0	SONY, SIM1	exp 31	384	3
 B003728	170720.0	Brain	striatum	3_56_F	Neurons	130.0	SONY SIM1	exp 31	384	3
+B003732	170720.0	Thymus	thymus flowthrough	3_57_F		100.0	SONY SIM1	exp 31	384	3
+B003733	170720.0	Heart	lv	3_57_F		130.0	SONY SIM1	exp 31	384	3
+B003735	170720.0	Thymus	thymus epithelium	3_56_F		100.0	SONY SIM1	exp 31	384	3
+B003736	170720.0	Heart	rv	3_57_F		130.0	SONY SIM1	exp 31	384	3
 B003737	170720.0	Liver	liver non-hepatocytes/small cells	3_56_F	Viable	100.0	SONY, SIM1	exp 31	384	3
+B003740	170720.0	Heart	la	3_57_F		130.0	SONY SIM1	exp 31	384	3
 B001170	170720.0	Brain	cerebellum	3_57_F	Microglia	100.0	SONY SIM1	exp 31	384	3
 B001171	170720.0	Brain	striatum	3_57_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B001172	170720.0	Brain	striatum	3_57_F	Microglia	100.0	SONY SIM1	exp 31	384	3
@@ -146,13 +534,27 @@ B001177	170720.0	Brain	striatum	3_56_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B001178	170720.0	Brain	striatum	3_57_F	Neurons	130.0	SONY SIM1	exp 31	384	3
 B001179	170720.0	Liver	liver non-hepatocytes/small cells	3_57_F	viable	100.0	SONY, SIM1	exp 31	384	3
 B001180	170720.0	Brain	hippocampus	3_57_F	Microglia	100.0	SONY SIM1	exp 31	384	3
+B001189	170720.0	Thymus	thymus flowthrough	3_56_F		100.0	SONY SIM1	exp 31	384	3
 B001960	170720.0	Fat	bat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002307	170720.0	Fat	scat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002308	170720.0	Fat	mat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002309	170720.0	Mammary Gland	mammary gland	3_57_F				exp 31	384	3
 B002310	170720.0	Fat	bat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002311	170720.0	Skin		3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002312	170720.0	Mammary Gland	mammary gland	3_57_F				exp 31	384	3
 B002313	170720.0	Fat	mat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002314	170720.0	Fat	mat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002315	170720.0	Fat	mat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002316	170720.0	Skin	skin anagen	3_57_F				exp 31	384	3
+B002318	170720.0	Marrow	granulocytes	3_56_F		100.0	Clark	exp 31	384	3
+B002319	170720.0	Marrow	b-cells	3_57_F		100.0	Clark	exp 31	384	3
+B002321	170720.0	Marrow	b-cells	3_56_F		100.0	Clark	exp 31	384	3
+B002322	170720.0	Marrow	b-cells	3_56_F		100.0	Clark	exp 31	384	3
+B002323	170720.0	Marrow	granulocytes	3_57_F		100.0	Clark	exp 31	384	3
+B002324	170720.0	Marrow	granulocytes	3_57_F		100.0	Clark	exp 31	384	3
+B002325	170720.0	Marrow	b-cells	3_57_F		100.0	Clark	exp 31	384	3
+B002326	170720.0	Marrow	granulocytes	3_56_F		100.0	Clark	exp 31	384	3
+B002331	170720.0	Skin		3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002391	170720.0	Fat	bat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002895	170720.0	Fat	scat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002901	170720.0	Fat	gat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
@@ -161,7 +563,26 @@ B002903	170720.0	Fat	gat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002904	170720.0	Fat	scat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002908	170720.0	Heart	aorta	3_57_F	Multiple	130.0	SONY SIM1	exp 31	384	3
 B002909	170720.0	Heart	aorta	3_56_F	Multiple	130.0	SONY SIM1	exp 31	384	3
+B002910	170720.0	Mammary Gland	mammary gland	3_56_F				exp 31	384	3
+B002937	170720.0	Skin		3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002938	170720.0	Skin		3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002952	170720.0	Fat	bat	3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B002953	170720.0	Skin		3_57_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002954	170720.0	Fat	scat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B002955	170720.0	Fat	gat	3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
+B003218	170720.0	Skin		3_56_F	Multiple	100.0	SONY SIM1	exp 31	384	3
 B003457	170720.0	Brain	hippocampus	3_57_F	Microglia	100.0	SONY SIM1	exp 31	384	3
+MAA100037	170616	Heart	cardiomycytes	3_10_M/3_11_M	viable		SIM1		96	3
+MAA100038	170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		96	3
+MAA100039	170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		96	3
+MAA100040	170716	Liver	hepatocytes	3_11_M	viable	130	SIM1		96	3
+MAA100137	170720	Liver	hepatocytes	3_56_F				exp 31	96	3
+MAA100138	170720	Liver	hepatocytes	3_56_F				exp 31	96	3
+MAA100143	170720	Heart	cardiomycytes	3_56_F/3_57_F				exp 31	96	3
+MAA100142	170720	Heart	la & ra	3_56_F/3_57_F				exp 31	96	3
+MAA100139	170720	Liver	hepatocytes	3_57_F				exp 31	96	3
+MAA100140	170720	Liver	hepatocytes	3_57_F				exp 31	96	3
+MAA100041	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		96	3
+MAA100042	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		96	3
+MAA100043	170615	Liver	hepatocytes	3_9_M	viable	130	SIM1		96	3
+MAA100036	170615	Heart	cardiomycytes	3_9_M/3_10_M	viable		SIM1		96	3

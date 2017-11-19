@@ -77,7 +77,7 @@ def parse_plate_metadata():
     md = pd.concat([md_384[columns], md_96[columns]], axis=0)
 
     # Kill non-plates
-    md = md.reset_index().dropna().set_index('name')
+    md = md.reset_index().dropna(subset=['name']).set_index('name')
 
     # Normalize subtissue
     sts = []
@@ -263,8 +263,6 @@ def parse_annotations(tissue):
 
     out = pd.read_csv(fn, sep=',', index_col=0)
 
-    #import ipdb; ipdb.set_trace()
-
     # Rename columns
     # Sometimes there is no subannotation
     out.rename(columns={
@@ -289,8 +287,10 @@ def parse_annotations(tissue):
     out.loc[out['cell_type_call'] == 'Immunue cells', 'cell_type_call'] = 'Immune cells'
 
     # NOTE: brain plate 937 is probably a misannotation for brain plate 585
-    out.index = [i if 'MAA000937' not in i else i.split('.')[0]+'.'+'MAA000585'
-            for i in out.index]
+    if 'brain' in tissue:
+        out.index = [i if 'MAA000937' not in i else i.split('.')[0]+'.'+'MAA000585'
+                for i in out.index]
+
     out['plate'] = [i.split('.')[1] for i in out.index]
 
     out.index.name = 'id'
@@ -369,7 +369,6 @@ if __name__ == '__main__':
         args.tissues = tuple(config.keys())
 
     plate_meta = parse_plate_metadata()
-    sys.exit()
 
     markers = {}
     for tissue in args.tissues:
@@ -459,20 +458,32 @@ if __name__ == '__main__':
                     nplots += len(config[tissue]['plots'])
 
                     if args.with_comparison:
+                        print('Checking stains for comparison')
                         ch_comp = []
                         ab_comp = []
                         gene_comp = []
                         for pl in config[tissue]['plots']:
                             for chname in (pl['x'], pl['y']):
+                                if ('antibodies' in config[tissue]) and (chname in config[tissue]['antibodies']):
+                                    chfull = config[tissue]['antibodies'][chname]
+                                else:
+                                    chfull = chname
+
+                                print('Checking {:}'.format(chfull))
+
                                 # Annotated axes
-                                if ':' in chname:
+                                if ':' in chfull:
                                     # Multiple antibodies in the same channel are useless
-                                    if '/' in chname:
+                                    if '/' in chfull:
                                         continue
                                     # Keep consistent case for antibodies
-                                    abname = chname.split(':')[0].upper()
+                                    abname = chfull.split(':')[0]
+                                    if abname.startswith('Cd'):
+                                        abname = 'CD'+abname[2:]
                                     gname = channels_to_genes.get(abname, abname)
                                     if gname not in ds.counts.index:
+                                        continue
+                                    if gname in gene_comp:
                                         continue
                                     ch_comp.append(chname)
                                     ab_comp.append(abname)
@@ -490,8 +501,11 @@ if __name__ == '__main__':
                 elif nplots <= 6:
                     fig, axs = plt.subplots(nrows=2, ncols=3, figsize=(17, 9))
                     axs = axs.ravel()
-                else:
+                elif nplots <= 9:
                     fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(17, 12))
+                    axs = axs.ravel()
+                else:
+                    fig, axs = plt.subplots(nrows=3, ncols=4, figsize=(19, 12))
                     axs = axs.ravel()
 
                 ax = axs[0]
@@ -666,19 +680,31 @@ if __name__ == '__main__':
                                 )
                         x = facs_datum['index_data'].loc[ind, chname]
                         y = ds.counts.loc[gname, ind] + ds.counts.pseudocount
+                        ctype = facs_datum['index_data'].loc[ind, 'cell type call']
+                        df = pd.concat([x, y, ctype], axis=1)
                         rho = spearmanr(x, y)[0]
                         if ('xlim' in config[tissue]) and (chname in config[tissue]['xlim']):
                             xlim = config[tissue]['xlim'][chname]
+                        elif ('ylim' in config[tissue]) and (chname in config[tissue]['ylim']):
+                            xlim = config[tissue]['ylim'][chname]
                         else:
                             xlim = (1e1, 1e6)
                         ax = axs[ipl + int(has_dead) + 2 + len(config[tissue]['plots'])]
-                        ax.scatter(
-                                x, y,
-                                s=20,
-                                color='steelblue',
-                                label='$\\rho = {:.2f}$'.format(rho),
-                                )
-                        ax.legend(loc='best', fontsize='8')
+                        for qual, datum in df.groupby('cell type call'):
+                            datum.plot(
+                                    kind='scatter',
+                                    x=chname,
+                                    y=gname,
+                                    s=20,
+                                    color=colors[groupby][qual],
+                                    ax=ax,
+                                    )
+                        ax.text(0.02, 0.92,
+                                '$\\rho = {:.2f}$'.format(rho),
+                                ha='left',
+                                va='top',
+                                transform=ax.transAxes)
+                        #ax.legend(loc='best', fontsize='8')
                         ax.set_xlabel(abname+', FACS stain')
                         ax.set_ylabel(gname+', transcript level')
                         ax.grid(True)
