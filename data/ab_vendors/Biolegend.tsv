@@ -1,0 +1,441 @@
+Specificity	Clone	GeneName	Purified	Purified (MaxPar® Ready)	LEAF™	Ultra-LEAF™	GoInVivo™	APC	APC/Cy7	APC/Fire™ 750	Alexa Fluor® 488	Alexa Fluor® 594	Alexa Fluor® 647	Alexa Fluor® 700	Biotin	Brilliant Violet 421™	Brilliant Violet 510™	Brilliant Violet 570™	Brilliant Violet 605™	Brilliant Violet 650™	Brilliant Violet 711™	Brilliant Violet 785™	FITC	PE	PE/Cy5	PE/Cy7	PE/Dazzle™ 594	Pacific Blue™	PerCP	PerCP/Cy5.5	GeneName
+α-GalCer:CD1d complex	L363		 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+β2-microglobulin	A16041A		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+4-1BB Ligand	TKS-1		 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+33D1			•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+A2B5	105		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+Allergin-1	TX83	Milr1	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Milr1
+ARTC2	S+16a	Art2b	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Art2b
+Asialo-GM1	Poly21460		 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+B7-H4	HMH4-5G1	Vtcn1	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Vtcn1
+Blimp-1	5E7	Prdm1	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Prdm1
+Blimp-1	5E7, RTK2758	Prdm1	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Prdm1
+CCL5 	2E9/CCL5		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD1d	1B1	Cd1d1	•	 	•	 	 	•	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	•	•	 	•	Cd1d1
+CD1d	K253	Cd1d1	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd1d1
+CD2	RM2-5	Cd2	•	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Cd2
+CD3	17A2	Cd3e	•	 	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	•	•	 	•	Cd3e
+CD3ε	145-2C11		•	•	•	•	•	•	•	•	•	 	•	 	•	•	•	 	•	 	•	•	•	•	•	•	•	•	•	•	
+CD3ε	500A2		•	 	 	 	 	•	 	•	 	•	 	•	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	
+CD4	GK1.5	Cd4	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	 	•	•	•	•	•	•	•	•	•	•	Cd4
+CD4	H129.19	Cd4	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	•	 	 	 	 	 	Cd4
+CD4	RM4-4	Cd4	•	 	 	 	 	•	 	•	 	 	 	•	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	Cd4
+CD4	RM4-5	Cd4	•	•	•	 	 	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Cd4
+CD5	53-7.3	Cd5	•	•	 	 	 	•	 	•	•	•	•	•	•	•	•	 	 	 	 	 	•	•	•	•	 	 	•	•	Cd5
+CD6	OX-129	Cd6	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd6
+CD8a	53-6.7	Cd8a	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Cd8a
+CD8a	5H10-1	Cd8a	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Cd8a
+CD8b	YTS156.7.7	Cd8b1	•	 	 	 	 	•	•	 	 	 	•	•	•	 	 	 	 	 	 	 	•	•	 	•	•	 	 	•	Cd8b1
+CD8b.2	53-5.8		•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	 	
+CD9	MZ3	Cd9	•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Cd9
+CD11a	I21/7	Itgal	•	 	 	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Itgal
+CD11a	M17/4	Itgal	•	 	•	•	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Itgal
+CD11a/CD18	H155-78 		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	
+CD11b	M1/70	Itgam	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Itgam
+CD11c	N418	Itgax	•	•	 	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Itgax
+CD14	M14-23	Cd14	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Cd14
+CD14	Sa14-2	Cd14	•	•	 	 	 	•	•	 	 	 	 	 	•	 	•	 	 	 	 	 	•	•	 	•	•	 	 	•	Cd14
+CD16.2	9E9		•	 	 	 	 	•	 	•	 	 	•	•	•	•	•	 	 	•	•	 	•	•	 	•	•	•	 	•	
+CD16/32	93		•	•	•	•	 	•	•	 	 	 	•	 	•	•	•	 	 	 	 	 	•	•	 	•	 	 	 	•	
+CD18	M18/2	Itgb2	•	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Itgb2
+CD19	1D3/CD19	Cd19	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	Cd19
+CD19	6D5	Cd19	•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Cd19
+CD19	MB19-1	Cd19	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Cd19
+CD20	SA271G2	Ms4a1	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Ms4a1
+CD20	SA275A11	Ms4a1	 	 	 	 	 	•	 	 	 	 	•	•	•	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Ms4a1
+CD21,CD35	7E9		 	 	•	 	 	•	•	 	 	•	•	 	•	•	 	 	 	 	 	 	•	•	 	•	 	•	 	•	
+CD22	OX-97	Cd22	 	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Cd22
+CD23	B3B4	Fcer2a	•	•	 	 	 	•	•	 	•	•	•	•	•	•	•	 	 	 	 	 	•	•	 	•	 	•	 	•	Fcer2a
+CD24	30-F1	Cd24a	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd24a
+CD24	M1/69	Cd24a	•	•	•	 	 	•	 	•	•	•	•	•	•	•	•	 	•	 	 	 	•	•	•	•	•	•	 	•	Cd24a
+CD25	3C7	Il2ra	•	•	•	 	 	•	•	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Il2ra
+CD25	7D4/CD25	Il2ra	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Il2ra
+CD25	PC61	Il2ra	•	 	•	•	 	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	Il2ra
+CD26	H194-112	Dpp4	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Dpp4
+CD27	LG.3A10	Cd27	•	 	•	 	 	•	•	 	•	•	•	 	•	•	•	 	 	 	 	 	•	•	 	•	•	•	 	•	Cd27
+CD28	37.51	Cd28	•	•	•	•	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	•	•	•	 	 	•	Cd28
+CD28	E18	Cd28	•	 	•	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Cd28
+CD29	HMβ1-1	Itgb1	•	 	•	 	 	•	•	 	•	•	•	•	•	 	 	 	 	 	 	 	•	•	•	•	•	•	 	•	Itgb1
+CD30	mCD30.1	Tnfrsf8	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf8
+CD31	390	Pecam1	•	•	•	 	 	•	 	•	•	•	•	 	•	•	 	 	•	 	 	 	•	•	 	•	•	•	 	•	Pecam1
+CD31	MEC13.3	Pecam1	•	 	•	 	 	•	 	•	•	•	•	 	•	 	 	 	 	 	 	 	•	•	 	•	•	 	 	•	Pecam1
+CD34	HM34	Cd34	•	 	 	 	 	•	 	•	 	 	•	 	•	 	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Cd34
+CD34	MEC14.7	Cd34	•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	 	•	•	•	 	 	 	 	Cd34
+CD34	SA376A4	Cd34	 	 	 	 	 	 	 	 	 	 	•	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd34
+CD36	HM36	Cd36	•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Cd36
+CD37	Duno85	Cd37	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd37
+CD38	90	Cd38	•	•	 	 	 	•	•	 	•	•	•	 	 	 	 	 	 	 	 	 	•	•	 	•	•	•	 	•	Cd38
+CD39	5F2	Entpd1	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Entpd1
+CD39	Duha59	Entpd1	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Entpd1
+CD40	1C10	Cd40	•	 	•	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Cd40
+CD40	3/23	Cd40	•	 	•	•	 	•	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	•	•	•	•	 	•	Cd40
+CD40	HM40-3	Cd40	•	 	•	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Cd40
+CD41	MWReg30	Itga2b	•	•	•	 	 	•	•	 	•	 	 	•	•	•	•	 	•	 	 	 	•	•	 	•	 	 	 	•	Itga2b
+CD42d	1C2	Gp5	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	•	Gp5
+CD43	1B11	Spn	•	 	 	 	 	•	•	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	•	•	•	 	•	•	Spn
+CD43	S11	Spn	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Spn
+CD44	IM7	Cd44	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Cd44
+CD45	30-F11	Ptprc	•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Ptprc
+CD45	I3/2.3	Ptprc	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Ptprc
+CD45.1	A20		•	•	 	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	
+CD45.2	104		•	•	 	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	
+CD45R/B220	RA3-6B2		•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	
+CD45RB	C363-16A		•	 	 	 	 	•	•	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	
+CD45RB	MB4B4		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	
+CD47	miap301	Cd47	•	 	•	•	 	•	•	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	•	 	 	•	Cd47
+CD48	HM48-1	Cd48	•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	 	•	 	•	 	•	•	•	•	•	•	 	•	Cd48
+CD49a	HMα1	Itga1	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Itga1
+CD49b	DX5	Itga2	•	 	 	 	 	•	•	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	•	•	 	•	Itga2
+CD49b	HMα2	Itga2	•	•	•	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Itga2
+CD49d	9C10 (MFR4.B)	Itga4	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Itga4
+CD49d	R1-2	Itga4	 	 	•	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Itga4
+CD49e	5H10-27(MFR5)	Itga5	•	 	•	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Itga5
+CD49e	HMα5-1	Itga5	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Itga5
+CD51	HMαV-1	Itgav	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Itgav
+CD51	RMV-7	Itgav	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Itgav
+CD53	OX-79	Cd53	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Cd53
+CD54	YN1/1.7.4	Icam1	•	 	•	 	 	•	 	•	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	Icam1
+CD55	RIKO-3	Cd55	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd55
+CD59a	mCD59.3	Cd59a	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd59a
+CD61	2C9.G2 (HMß3-1) 	Itgb3	•	 	•	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Itgb3
+CD62E	RME-1/CD62E	Sele	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Sele
+CD62L	MEL-14	Sell	•	•	•	 	 	•	•	•	•	 	•	•	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	Sell
+CD62P (P-selectin)	RMP-1		•	 	 	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	
+CD63	NVG-2	Cd63	•	 	 	 	 	•	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Cd63
+CD64	X54-5/7.1	Fcgr1	•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	•	 	•	 	•	•	 	•	•	 	 	•	Fcgr1
+CD66a	MAb-CC1	Ceacam1	•	 	•	 	 	•	 	•	 	 	 	 	 	•	 	 	 	•	 	 	•	•	 	•	•	 	 	•	Ceacam1
+CD68	FA-11	Cd68	•	 	 	 	 	•	•	 	•	•	•	 	 	•	 	 	•	 	 	 	•	•	 	•	 	 	 	•	Cd68
+CD69	H1.2F3	Cd69	•	•	 	 	 	•	•	 	•	 	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	Cd69
+CD70	FR70	Cd70	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd70
+CD71	RI7217	Tfrc	•	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Tfrc
+CD73	TY/11.8	Nt5e	•	 	 	 	 	•	 	•	 	 	•	 	•	•	 	 	•	 	 	 	•	•	 	•	 	•	 	•	Nt5e
+CD74 (CLIP) 	In1/CD74		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD79a	F11-172	Cd79a	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd79a
+CD79b	HM79-12	Cd79b	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	Cd79b
+CD80	16-10A1	Cd80	•	•	•	 	 	•	 	•	•	 	•	 	•	•	 	 	•	•	 	 	•	•	•	•	•	•	 	•	Cd80
+CD81	Eat-2	Cd81	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	•	Cd81
+CD83	Michel-19	Cd83	•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	•	 	 	•	•	 	•	 	 	 	 	Cd83
+CD84	mCD84.7	Cd84	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd84
+CD85k	H1.1	Lilrb4a	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Lilrb4a
+CD86	GL-1	Cd86	•	 	•	 	 	•	•	•	•	 	•	•	•	•	•	 	•	•	 	•	•	•	•	•	•	•	•	•	Cd86
+CD86	PO3	Cd86	•	 	 	 	 	•	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Cd86
+CD88	20/70	C5ar1	•	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	C5ar1
+CD90	G7	Thy1	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Thy1
+CD90.2	30-H12		•	•	•	 	 	•	•	 	•	 	•	•	•	•	•	•	•	 	 	•	•	•	•	•	•	•	•	•	
+CD90.2	53-2.1		•	 	 	 	 	•	 	•	 	 	 	•	•	•	•	 	•	 	 	 	•	•	 	•	•	•	•	•	
+CD93	AA4.1	Cd93	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Cd93
+CD94	18d3	Klrd1	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Klrd1
+CD95 (Fas)	SA362F7		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD95 (Fas)	SA367H8		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	
+CD96	3.3	Cd96	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd96
+CD98	RL388	Slc3a2	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Slc3a2
+CD100	BMA-12	Sema4d	•	 	 	 	 	•	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Sema4d
+CD102	3C4 (MIC2/4)	Icam2	•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Icam2
+CD103	2E7	Itgae	•	 	 	 	 	•	•	 	•	•	•	 	•	•	•	 	•	 	•	 	•	•	 	•	•	•	 	•	Itgae
+CD104	346-11A	Itgb4	•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Itgb4
+CD105	MJ7/18	Eng	•	 	 	 	 	•	 	 	•	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	•	 	•	Eng
+CD106	429 (MVCAM.A)	Vcam1	•	 	•	 	 	•	 	 	•	•	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	Vcam1
+CD107a (LAMP-1)	1D4B		•	 	 	 	 	•	•	 	•	•	•	 	•	•	 	 	 	 	 	 	•	•	 	•	•	 	 	•	
+CD115	AFS98	Csf1r	•	•	•	 	 	•	•	 	•	•	•	 	•	•	 	 	•	 	•	 	 	•	 	•	•	 	 	•	Csf1r
+CD117	2B8	Kit	•	•	 	 	 	•	•	•	•	•	•	 	•	•	•	 	 	 	•	•	•	•	•	•	•	•	•	•	Kit
+CD117	ACK2	Kit	•	 	•	•	 	•	•	 	•	 	 	 	•	•	•	 	•	•	 	 	•	•	 	•	•	 	 	•	Kit
+CD119	2E2	Ifngr1	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Ifngr1
+CD120a	55R-170	Tnfrsf1a	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tnfrsf1a
+CD120a	55R-286	Tnfrsf1a	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf1a
+CD120a	55R-593	Tnfrsf1a	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tnfrsf1a
+CD120b	TR75-32.4	Tnfrsf1b	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tnfrsf1b
+CD120b	TR75-54.7	Tnfrsf1b	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tnfrsf1b
+CD120b	TR75-89	Tnfrsf1b	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf1b
+CD121a	JAMA-147	Il1r1	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il1r1
+CD122	5H4	Il2rb	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il2rb
+CD122	TM-β1	Il2rb	 	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	•	•	•	 	 	•	Il2rb
+CD123	5B11	Il3ra	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il3ra
+CD124	I015F8	Il4ra	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il4ra
+CD125	DIH37	Il5ra	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il5ra
+CD126	D7715A7	Il6ra	 	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Il6ra
+CD127	A7R34	Il7r	•	•	•	 	 	•	•	 	•	 	•	 	•	•	•	 	•	•	•	•	•	•	•	•	•	 	 	•	Il7r
+CD127	SB/199	Il7r	•	 	 	 	 	•	 	 	•	 	 	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	Il7r
+CD130	4H1B35	Il6st	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il6st
+CD132	TUGm2	Il2rg	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il2rg
+CD133	315-2C11	Prom1	•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	 	•	 	•	•	 	 	 	Prom1
+CD134	OX-86	Tnfrsf4	 	 	•	 	 	•	 	•	 	 	 	 	•	•	 	 	•	 	 	 	 	•	 	•	•	 	 	•	Tnfrsf4
+CD135	A2F10	Flt3	 	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	Flt3
+CD137	17B5	Tnfrsf9	 	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf9
+CD138	281-2	Sdc1	•	 	 	 	 	•	•	 	 	 	•	 	•	•	•	 	•	•	•	 	 	•	 	•	•	 	 	•	Sdc1
+CD140a	APA5	Pdgfra	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	•	 	 	 	 	•	 	•	 	 	 	•	Pdgfra
+CD140b	APB5	Pdgfrb	•	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Pdgfrb
+CD144	BV13	Cdh5	•	 	•	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Cdh5
+CD144	VECD1	Cdh5	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cdh5
+CD146	ME-9F1	Mcam	•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Mcam
+CD147	OX-114	Bsg	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Bsg
+CD150	TC15-12F12.2	Slamf1	•	•	•	 	 	•	 	•	•	 	•	 	•	•	•	 	•	•	•	•	 	•	•	•	•	•	 	•	Slamf1
+CD152	9H10	Ctla4	•	 	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Ctla4
+CD152	UC10-4B9	Ctla4	•	 	•	 	 	•	 	 	 	 	 	 	•	•	 	 	•	 	 	 	 	•	 	•	•	 	 	•	Ctla4
+CD153	RM153	Tnfsf8	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfsf8
+CD154	MR1	Cd40lg	 	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Cd40lg
+CD155	4.24.1	Pvr	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Pvr
+CD155 (PVR)	TX56		•	 	 	 	 	•	 	 	 	 	•	 	•	•	•	 	•	•	•	•	 	•	 	•	•	 	 	•	
+CD157	BP-3	Bst1	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Bst1
+CD159a	16A11	Klrc1	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Klrc1
+CD160	7H1	Cd160	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Cd160
+CD161f	C8		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD169	3D6.112	Siglec1	•	 	 	 	 	•	 	 	•	•	•	 	 	 	 	 	•	 	 	 	•	•	 	•	 	 	 	•	Siglec1
+CD172a (SIRPα)	P84		•	 	•	 	 	•	•	 	•	•	 	•	 	 	 	 	 	 	 	 	•	•	 	•	•	 	 	•	
+CD178	MFL3	Fasl	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Fasl
+CD178	MFL4	Fasl	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Fasl
+CD178.1	Kay-10		 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD179a	R3	Vpreb1	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Vpreb1
+CD180	RP/14	Cd180	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd180
+CD182	SA044G4	Cxcr2	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	Cxcr2
+CD182	SA045E1	Cxcr2	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	Cxcr2
+CD183	CXCR3-173	Cxcr3	•	 	•	•	 	•	 	•	•	 	 	 	•	•	•	 	•	•	 	 	•	•	 	•	•	 	 	•	Cxcr3
+CD184	L276F12	Cxcr4	•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	•	 	 	 	 	•	 	 	•	 	 	•	Cxcr4
+CD184 (CXCR4)	QA16A08		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD185	L138D7	Cxcr5	•	 	 	 	 	•	•	 	 	•	 	 	•	•	 	 	•	•	 	•	•	•	 	•	•	 	 	•	Cxcr5
+CD186 (CXCR6)	SA051D1		•	 	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	•	•	 	•	•	 	 	 	
+CD191 (CCR1)	S15040E		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+CD192 (CCR2)	SA203G11		 	 	 	 	 	 	 	 	 	 	•	 	 	•	 	 	 	 	 	 	•	•	 	•	 	 	 	 	
+CD193	J073E5	Ccr3	•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Ccr3
+CD194	2G12	Ccr4	•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Ccr4
+CD195	HM-CCR5	Ccr5	 	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Ccr5
+CD196	29-2L17	Ccr6	•	 	 	 	 	•	 	 	 	 	•	 	 	•	 	 	•	 	 	•	 	•	 	•	 	 	 	•	Ccr6
+CD197	4B12	Ccr7	•	 	 	 	 	•	 	 	•	 	•	 	•	•	 	 	•	 	 	•	 	•	•	•	•	 	 	•	Ccr7
+CD198 (CCR8)	SA214G2		•	 	 	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	•	•	 	 	 	 	 	•	
+CD199	9B1		 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+CD199	CW-1.2		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	
+CD200	OX-90	Cd200	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd200
+CD200R	OX-110	Cd200r1	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Cd200r1
+CD200R3	Ba13	Cd200r3	•	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd200r3
+CD200R3	Ba160	Cd200r3	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd200r3
+CD201	RCR-16		•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD202b	TEK4	Tek	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tek
+CD205	NLDC-145	Ly75	•	 	 	 	 	•	 	 	 	 	•	 	•	 	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Ly75
+CD206	C068C2	Mrc1	•	 	 	 	 	•	 	 	•	•	•	•	•	•	 	 	•	•	•	•	•	•	 	•	•	 	 	•	Mrc1
+CD207	4C7	Cd207	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd207
+CD209B	2C7B27	Cd209b	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Cd209b
+CD210	1B1.3a	Il10ra	•	 	•	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Il10ra
+CD215 	6B4C88		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD218a	BG/IL18RA	Il18r1	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Il18r1
+CD223	C9B7W	Lag3	•	 	•	 	•	•	 	 	 	 	 	 	•	•	 	 	 	•	 	•	 	•	 	•	•	 	 	•	Lag3
+CD226	10E5	Cd226	 	 	 	 	 	•	 	•	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	•	 	 	•	Cd226
+CD226	480.1	Cd226	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd226
+CD226 (DNAM-1)	TX42.1		 	 	 	 	 	•	 	 	 	 	•	 	•	•	•	 	•	•	•	•	 	•	 	•	•	 	 	•	
+CD229 (Ly-9)	Ly9ab3		•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD244.2	m2B4 (B6)458.1		•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	
+CD252	RM134L	Tnfsf4	•	 	•	 	 	•	 	 	 	 	•	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Tnfsf4
+CD253	N2B2	Tnfsf10	•	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfsf10
+CD255	MTW-1		 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD256	A3D8	Tnfsf13	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfsf13
+CD258	15B2	Tnfsf14	•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tnfsf14
+CD262	MD5-1	Tnfrsf10b	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf10b
+CD265	R12-31	Tnfrsf11a	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf11a
+CD267	8F10	Tnfrsf13b	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf13b
+CD268	7H22-E16	Tnfrsf13c	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf13c
+CD272	6A6	Btla	 	 	•	 	 	•	 	 	 	•	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Btla
+CD272	8F4	Btla	 	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Btla
+CD273	TY25	Pdcd1lg2	•	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Pdcd1lg2
+CD274	10F.9G2	Cd274	•	 	•	•	•	•	 	 	 	 	 	 	•	•	 	 	•	 	•	•	 	•	 	•	•	 	 	•	Cd274
+CD274 (B7-H1, PD-L1)	MIH6		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD275	HK5.3	Icosl	 	 	•	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Icosl
+CD276	MIH35	Cd276	•	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd276
+CD276	RTAA15	Cd276	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd276
+CD278	15F9	Icos	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	Icos
+CD278	7E.17G9	Icos	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Icos
+CD279	29F.1A12	Pdcd1	•	 	•	 	•	•	•	•	 	 	•	 	•	•	•	 	•	 	•	•	•	•	 	•	•	 	 	•	Pdcd1
+CD279	RMP1-14	Pdcd1	•	 	•	•	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Pdcd1
+CD279	RMP1-30	Pdcd1	•	•	•	 	 	•	 	 	 	 	•	 	•	•	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Pdcd1
+CD282	T2.5	Tlr2	•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Tlr2
+CD282 (TLR2)	CB225		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD282 (TLR2)	QA16A01		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD283	11F8	Tlr3	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tlr3
+CD284	SA15-21	Tlr4	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Tlr4
+CD285	ACT5		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD300a	TX41	Cd300a	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Cd300a
+CD300c/d	TX52		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD300LG	ZAQ5	Cd300lg	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd300lg
+CD301	LOM-14		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	
+CD301a	LOM-8.7	Clec10a	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Clec10a
+CD301b	URA-1	Mgl2	•	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Mgl2
+CD304	3E12	Nrp1	•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Nrp1
+CD309	89B3A5	Kdr	•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	 	•	 	 	 	•	 	•	Kdr
+CD309	Avas12	Kdr	•	 	 	 	 	•	 	 	•	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Kdr
+CD314	A10	Klrk1	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Klrk1
+CD314	C7	Klrk1	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Klrk1
+CD317	129C1	Bst2	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	•	 	 	Bst2
+CD317	927	Bst2	•	 	•	 	 	•	 	 	•	 	•	 	•	•	 	 	•	•	 	 	•	•	 	 	 	•	 	•	Bst2
+CD319	4G2	Slamf7	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Slamf7
+CD326	G8.8	Epcam	•	•	 	 	 	•	•	•	•	•	•	 	•	•	•	 	•	 	•	 	•	•	 	•	•	 	 	•	Epcam
+CD335	29A1.4	Ncr1	•	•	•	 	 	•	 	•	 	 	•	 	•	•	•	 	•	 	•	 	•	•	 	•	•	 	 	•	Ncr1
+CD339	HMJ1-29	Jag1	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Jag1
+CD351	TX61	Fcamr	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Fcamr
+CD355	11-5/CRTAM	Crtam	•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Crtam
+CD357	YGITR 765	Tnfrsf18	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Tnfrsf18
+CD365	RMT1-4	Havcr1	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Havcr1
+CD365 (Tim-1)	3B3		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+CD366	B8.2C12	Havcr2	•	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	•	•	 	 	•	Havcr2
+CD366	RMT3-23	Havcr2	•	 	•	 	•	•	 	 	 	 	 	 	•	•	 	 	•	 	•	•	 	•	 	•	 	 	 	•	Havcr2
+CD369 (Dectin-1, CLEC7A)	RH1		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+CD370	7H11	Clec9a	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Clec9a
+CD371	5D3/CLEC12A	Clec12a	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Clec12a
+CLEC2	17D9/CLEC-2	Clec1b	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Clec1b
+CX3CR1	QA16A03	Cx3cr1	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Cx3cr1
+CX3CR1	SA011F11	Cx3cr1	•	 	 	•	 	•	 	•	•	 	•	•	•	•	•	 	•	•	•	•	•	•	 	•	•	•	 	•	Cx3cr1
+DcTRAIL-R1	mDcR1-3		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+DcTRAIL-R2	mDcR2-1		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Delta-like 4	HMD4-1		•	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+DLL1	HMD1-3	Dll1	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Dll1
+DR3	4C12	Tnfrsf25	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf25
+E-Cadherin	DECMA-1	Cdh1	•	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Cdh1
+ENPP1	YE1/19.1	Enpp1	•	 	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Enpp1
+ESAM	1G8/ESAM	Esam	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Esam
+F4/80	BM8	Adgre1	•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	Adgre1
+FcεRIα	MAR-1		•	•	•	 	 	•	•	 	•	 	•	•	•	 	 	 	 	 	 	 	•	•	 	•	•	•	 	•	
+Folate Receptor β	10/FR2		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+FOXP3	MF-14	Foxp3	•	 	 	 	 	 	 	 	•	 	•	 	 	•	 	 	 	 	 	 	 	•	 	 	 	•	 	 	Foxp3
+FR4	12A5		 	 	 	 	 	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	•	•	 	 	 	
+FR4	TH6		 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Galectin-9	108A2	Lgals9	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Lgals9
+Galectin-9	RG9-35	Lgals9	 	 	•	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	•	Lgals9
+GARP	F011-5	Lrrc32	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Lrrc32
+GITR	DTA-1	Tnfrsf18	 	 	•	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Tnfrsf18
+GITR Ligand	5F1		•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+GITR Ligand	YGL 386		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+GL7			•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	•	 	•	
+Granzyme A	3G8.5		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Granzyme C	SFC1D8		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+H-2	M1/42	H2	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	H2
+H-2Db	KH95		•	 	 	 	 	•	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	
+H-2Dd	34-2-12		•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+H-2Dk	15-5-5		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+H-2K bound to SIINFEKL	25-D1.16		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	
+H-2Kb	AF6-88.5		•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	
+H-2Kb,H-2Db	28-8-6		•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+H-2Kd	SF1-1.1		•	 	 	 	 	•	•	 	•	 	•	•	•	•	•	 	 	 	 	 	•	•	 	•	 	•	 	•	
+H-2Kd,H-2Dd	34-1-2S		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+H-2Kk	36-7-5		•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+H-2Kk	AF3-12.1		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+H-2Kq	KH114		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+H-2Ld,H-2Db	28-14-8		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+H-Y TCR	MR14-1		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+Helios	22F6	Ikzf2	•	 	 	 	 	•	 	 	•	 	•	 	 	 	 	 	 	 	 	 	•	•	 	•	•	•	 	•	Ikzf2
+HVEM	HMHV-1B18	Tnfrsf14	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tnfrsf14
+I-A/I-E	M5/114.15.2		•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	
+I-Ab	25-9-17		•	 	 	 	 	 	 	 	•	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+I-Ab	AF6-120.1		•	 	 	 	 	•	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	
+I-Ab	KH74		•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+I-Ad	39-10-8		•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+I-Ak	10-3.6		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+I-Ak	11-5.2		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+I-Aq	KH116		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+I-Ek	14-4-4S		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	
+IDO	mIDO-48	Ido1	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Ido1
+IFN-γ R b chain	MOB-47		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+IFNAR-1	MAR1-5A3		•	 	•	•	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+IL-17RB	9B10		•	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+IL-21R	4A9		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	
+IL-23R	12B2B64		•	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+IL-33Rα	DIH9		•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	 	•	•	 	 	•	
+IL-33Ra/ST2	DIH4		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+IL-34	C054-35	Il34	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Il34
+Integrin β7	FIB27		 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	•	
+Isthmin-1	B054B6		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Jagged 2	HMJ2-1		•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+JAML	4E10	Jaml	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Jaml
+Ki-67	11F6	Mki67	•	 	 	 	 	 	 	 	•	 	•	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Mki67
+KLRG1	2F1/KLRG1	Klrg1	 	 	 	 	 	•	•	 	 	 	 	 	•	•	•	 	•	 	•	•	•	•	 	•	•	 	 	•	Klrg1
+LAP	TW7-16B4		•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	•	•	 	 	 	 	 	•	
+LAP	TW7-20B9		•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+LAP	TW7-28G11		 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+LPAM-1	DATK32		•	 	 	 	 	•	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+LT beta R	5G11		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Ly-6A/E	D7	Ly6a	•	•	 	 	 	•	•	•	•	 	•	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	Ly6a
+Ly-6A/E	E13-161.7	Ly6a	•	 	 	 	 	•	 	•	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	•	•	 	•	Ly6a
+Ly-6C	HK1.4	Ly6c1	•	•	•	 	 	•	•	•	•	 	•	•	•	•	•	•	•	 	•	•	•	•	 	•	•	•	•	•	Ly6c1
+Ly-6D	49-H4	Ly6d	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Ly6d
+Ly-6G	1A8	Ly6g	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	Ly6g
+Ly-6G/Ly-6C	RB6-8C5		•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	 	•	•	•	•	•	•	•	•	
+Ly-49A	YE1/48.10.6	Tg(Cd4-Klra1)6295Dl	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	•	•	 	 	 	•	 	 	Tg(Cd4-Klra1)6295Dl
+Ly-49A	A1/Ly49A	Tg(Cd4-Klra1)6295Dl	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Tg(Cd4-Klra1)6295Dl
+Ly-49C/F/I/H	14B11		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+Ly-51	6C3	Enpep	•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Enpep
+Ly6K	MK34	Ly6k	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Ly6k
+Ly49D	4E5	Klra4	•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Klra4
+Ly49G	AT8	Klra7	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Klra7
+Ly49H	3D10	Klra8	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Klra8
+Ly108	330-AJ	Slamf6	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	•	 	 	Slamf6
+Lypd8	SA024B4	Lypd8	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Lypd8
+Lypd8	SA025A4	Lypd8	•	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Lypd8
+Mac-2	Gal397	Lgals3	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Lgals3
+Mac-2	M3/38	Lgals3	•	 	 	 	 	•	 	 	•	•	•	 	•	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Lgals3
+Mac-3	M3/84		•	 	 	 	 	 	 	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+MAdCAM-1	MECA-367		•	 	•	 	 	•	 	 	•	 	 	 	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+MAIR-IV	TX69	Cd300ld	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Cd300ld
+MAIR-V	TX70		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+MD-1	MD-113	Ly86	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Ly86
+MERTK (Mer)	2B10C42		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+Neu5Gc	Poly21469		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+NK-1.1	PK136	Klrb1c	•	•	•	 	 	•	•	•	•	 	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	•	Klrb1c
+NKG2D	CX5	Klrk1	•	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Klrk1
+Notch 1	HMN1-12		•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Notch 2	HMN2-35		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Notch 3	HMN3-133		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Notch 4	HMN4-14		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+P2X7R	1F11	P2rx7	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	P2rx7
+Panendothelial Cell Antigen	MECA-32		•	 	 	 	 	 	 	 	•	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+PD-1H	MH5A	Vsir	•	 	•	 	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	•	•	 	•	 	 	 	•	Vsir
+PDC-TREM	4A6		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Perforin	S16009A	Prf1	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Prf1
+Perforin	S16009B	Prf1	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Prf1
+PIR-A/B	6C1		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+Plexin B2	3E7		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+PLZF	9E12	Zbtb16	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	Zbtb16
+PNAd	MECA-79	Ntan1	•	 	 	 	 	 	 	 	 	•	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Ntan1
+Podoplanin	8.1.1	Pdpn	•	 	 	 	 	•	•	 	•	•	 	 	•	 	 	 	 	 	 	 	•	•	 	•	 	 	 	 	Pdpn
+Qa-2	695H1-9-9	Qa2	•	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	Qa2
+RAE-1δ	Charlotte d1.23		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+RAE-1γ	CX1		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+SEMA4A	5E3/SEMA4A	Sema4a	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Sema4a
+Siglec H	551		•	 	 	 	 	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	•	 	•	
+Slc7a1 (Cat-1, ERR)	SA191A10		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+SSEA-1	MC-480	Fut4	•	 	 	 	 	 	 	 	•	 	•	 	•	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	Fut4
+TCR β chain	H57-597		•	•	•	 	 	•	•	•	•	•	•	•	•	•	•	•	•	 	•	 	•	•	•	•	•	•	 	•	
+TCR γ/δ	GL3		•	 	•	 	 	•	 	•	•	 	•	 	•	•	•	 	•	 	 	 	•	•	 	•	 	 	 	•	
+TCR γ/δ	UC7-13D5		•	 	•	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR DO11.10	KJ1-26		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	•	 	 	 	•	
+TCR Vα2	B20.1		•	 	 	 	 	•	•	 	•	 	•	 	•	 	 	 	 	 	 	 	•	•	 	•	 	•	 	•	
+TCR Vα3.2	RR3-16		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vα 8.3	B21.14		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vα 8.3	KT50		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vα11	RR8-1		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ2	B20.6		 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vβ5.1, 5.2	MR9-4		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	•	
+TCR Vβ6	RR4-7		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ8	MR5-2		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ8.1,8.2	KJ16-133.18		•	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vβ9	MR10-2		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ10	8.48		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+TCR Vβ11	RR3-15		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ 11	KT11		 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vβ12	MR11-1		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vβ13	MR12-4		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vδ4	GL2		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vγ1.1	2.11		•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vγ1.1 + Vγ1.2	4B2.9		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR Vγ2	UC3-10A6		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TCR Vγ3	536		 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TCR V beta 7	TR310		 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	•	 	 	 	 	 	 	
+TER-119		Ly76	•	•	•	 	 	•	•	 	•	 	•	•	•	•	•	 	•	•	 	•	•	•	•	•	•	•	•	•	Ly76
+TEX101	TX5.2	Tex101	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Tex101
+TIGIT	1G9	Tigit	•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	•	 	 	•	 	 	 	Tigit
+Tim-2	F37-2C4	Timd2	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Timd2
+Tim-2	RMT2-1	Timd2	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Timd2
+Tim-4	F31-5G3	Timd4	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Timd4
+Tim-4	RMT4-54	Timd4	•	 	•	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	Timd4
+TLR4 (CD284)/MD2 Complex	MTS510		•	 	•	•	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	 	 	•	 	•	 	 	 	 	
+TLT-2	MIH47	Treml2	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Treml2
+TMTSP	TX17.10	Thsd1	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	Thsd1
+Trem-like 4	16E5		•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	
+TSLPR (TSLP-R)	22H9		•	 	 	 	 	•	 	 	 	 	 	 	•	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+VEGFR-3 (FLT-4)	AFL4		•	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	
+VISTA	MIH63	Vsir	•	 	 	 	 	•	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	•	 	 	 	 	 	 	Vsir
+XCR1	ZET	Xcr1	•	 	 	 	 	•	 	 	 	 	•	 	•	•	•	 	 	•	 	 	•	•	 	 	 	 	 	•	Xcr1

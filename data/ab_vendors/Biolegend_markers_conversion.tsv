@@ -1,0 +1,254 @@
+Input	Input Type	MGI Gene/Marker ID	Symbol	Name	Feature Type
+ARTC2	rat synonym	MGI:107545	Art2b	ADP-ribosyltransferase 2b	protein coding gene
+Allergin-1	synonym	MGI:2685731	Milr1	mast cell immunoglobulin like receptor 1	protein coding gene
+B7-H4	synonym	MGI:3039619	Vtcn1	V-set domain containing T cell activation inhibitor 1	protein coding gene
+Blimp-1	synonym	MGI:99655	Prdm1	PR domain containing 1, with ZNF domain	protein coding gene
+CCL5	current symbol	MGI:98262	Ccl5	chemokine (C-C motif) ligand 5	protein coding gene
+CD100	synonym	MGI:109244	Sema4d	sema domain, immunoglobulin domain (Ig), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 4D	protein coding gene
+CD102	synonym	MGI:96394	Icam2	intercellular adhesion molecule 2	protein coding gene
+CD103	synonym	MGI:1298377	Itgae	integrin alpha E, epithelial-associated	protein coding gene
+CD104	synonym	MGI:96613	Itgb4	integrin beta 4	protein coding gene
+CD105	synonym	MGI:95392	Eng	endoglin	protein coding gene
+CD106	synonym	MGI:98926	Vcam1	vascular cell adhesion molecule 1	protein coding gene
+CD107a	synonym	MGI:96745	Lamp1	lysosomal-associated membrane protein 1	protein coding gene
+CD115	synonym	MGI:1339758	Csf1r	colony stimulating factor 1 receptor	protein coding gene
+CD117	synonym	MGI:96677	Kit	KIT proto-oncogene receptor tyrosine kinase	protein coding gene
+CD119	synonym	MGI:107655	Ifngr1	interferon gamma receptor 1	protein coding gene
+CD11a	old symbol	MGI:96606	Itgal	integrin alpha L	protein coding gene
+CD11b	synonym	MGI:96607	Itgam	integrin alpha M	protein coding gene
+CD11c	synonym	MGI:96609	Itgax	integrin alpha X	protein coding gene
+CD120a	synonym	MGI:1314884	Tnfrsf1a	tumor necrosis factor receptor superfamily, member 1a	protein coding gene
+CD120b	synonym	MGI:1314883	Tnfrsf1b	tumor necrosis factor receptor superfamily, member 1b	protein coding gene
+CD121a	synonym	MGI:96545	Il1r1	interleukin 1 receptor, type I	protein coding gene
+CD122	synonym	MGI:96550	Il2rb	interleukin 2 receptor, beta chain	protein coding gene
+CD123	synonym	MGI:96553	Il3ra	interleukin 3 receptor, alpha chain	protein coding gene
+CD124	synonym	MGI:105367	Il4ra	interleukin 4 receptor, alpha	protein coding gene
+CD125	synonym	MGI:96558	Il5ra	interleukin 5 receptor, alpha	protein coding gene
+CD126	synonym	MGI:105304	Il6ra	interleukin 6 receptor, alpha	protein coding gene
+CD127	synonym	MGI:96562	Il7r	interleukin 7 receptor	protein coding gene
+CD130	synonym	MGI:96560	Il6st	interleukin 6 signal transducer	protein coding gene
+CD132	synonym	MGI:96551	Il2rg	interleukin 2 receptor, gamma chain	protein coding gene
+CD133	synonym	MGI:1100886	Prom1	prominin 1	protein coding gene
+CD134	synonym	MGI:104512	Tnfrsf4	tumor necrosis factor receptor superfamily, member 4	protein coding gene
+CD135	synonym	MGI:95559	Flt3	FMS-like tyrosine kinase 3	protein coding gene
+CD137	old symbol	MGI:1101059	Tnfrsf9	tumor necrosis factor receptor superfamily, member 9	protein coding gene
+CD138	synonym	MGI:1349162	Sdc1	syndecan 1	protein coding gene
+CD14	current symbol	MGI:88318	Cd14	CD14 antigen	protein coding gene
+CD140a	synonym	MGI:97530	Pdgfra	platelet derived growth factor receptor, alpha polypeptide	protein coding gene
+CD140b	synonym	MGI:97531	Pdgfrb	platelet derived growth factor receptor, beta polypeptide	protein coding gene
+CD144	synonym	MGI:105057	Cdh5	cadherin 5	protein coding gene
+CD146	synonym	MGI:1933966	Mcam	melanoma cell adhesion molecule	protein coding gene
+CD147	synonym	MGI:88208	Bsg	basigin	protein coding gene
+CD150	synonym	MGI:1351314	Slamf1	signaling lymphocytic activation molecule family member 1	protein coding gene
+CD152	old symbol	MGI:88556	Ctla4	cytotoxic T-lymphocyte-associated protein 4	protein coding gene
+CD153	synonym	MGI:88328	Tnfsf8	tumor necrosis factor (ligand) superfamily, member 8	protein coding gene
+CD154	synonym	MGI:88337	Cd40lg	CD40 ligand	protein coding gene
+CD155	synonym	MGI:107741	Pvr	poliovirus receptor	protein coding gene
+CD157	synonym	MGI:105370	Bst1	bone marrow stromal cell antigen 1	protein coding gene
+CD159a	synonym	MGI:1336161	Klrc1	killer cell lectin-like receptor subfamily C, member 1	protein coding gene
+CD160	current symbol	MGI:1860383	Cd160	CD160 antigen	protein coding gene
+CD169	synonym	MGI:99668	Siglec1	sialic acid binding Ig-like lectin 1, sialoadhesin	protein coding gene
+CD172a	synonym	MGI:108563	Sirpa	signal-regulatory protein alpha	protein coding gene
+CD178	synonym	MGI:99255	Fasl	Fas ligand (TNF superfamily, member 6)	protein coding gene
+CD179a	synonym	MGI:98936	Vpreb1	pre-B lymphocyte gene 1	protein coding gene
+CD18	old symbol	MGI:96611	Itgb2	integrin beta 2	protein coding gene
+CD180	current symbol	MGI:1194924	Cd180	CD180 antigen	protein coding gene
+CD182	human synonym	MGI:105303	Cxcr2	chemokine (C-X-C motif) receptor 2	protein coding gene
+CD183	synonym	MGI:1277207	Cxcr3	chemokine (C-X-C motif) receptor 3	protein coding gene
+CD184	synonym	MGI:109563	Cxcr4	chemokine (C-X-C motif) receptor 4	protein coding gene
+CD185	human synonym	MGI:103567	Cxcr5	chemokine (C-X-C motif) receptor 5	protein coding gene
+CD186	human synonym	MGI:1934582	Cxcr6	chemokine (C-X-C motif) receptor 6	protein coding gene
+CD19	current symbol	MGI:88319	Cd19	CD19 antigen	protein coding gene
+CD191	human synonym	MGI:104618	Ccr1	chemokine (C-C motif) receptor 1	protein coding gene
+CD192	human synonym	MGI:106185	Ccr2	chemokine (C-C motif) receptor 2	protein coding gene
+CD193	human synonym	MGI:104616	Ccr3	chemokine (C-C motif) receptor 3	protein coding gene
+CD194	human synonym	MGI:107824	Ccr4	chemokine (C-C motif) receptor 4	protein coding gene
+CD195	synonym	MGI:107182	Ccr5	chemokine (C-C motif) receptor 5	protein coding gene
+CD196	human synonym	MGI:1333797	Ccr6	chemokine (C-C motif) receptor 6	protein coding gene
+CD197	synonym	MGI:103011	Ccr7	chemokine (C-C motif) receptor 7	protein coding gene
+CD1d	old symbol	MGI:107674	Cd1d1	CD1d1 antigen	protein coding gene
+CD2	current symbol	MGI:88320	Cd2	CD2 antigen	protein coding gene
+CD20	old symbol	MGI:88321	Ms4a1	membrane-spanning 4-domains, subfamily A, member 1	protein coding gene
+CD200	current symbol	MGI:1196990	Cd200	CD200 antigen	protein coding gene
+CD200R	synonym	MGI:1889024	Cd200r1	CD200 receptor 1	protein coding gene
+CD200R3	current symbol	MGI:1921853	Cd200r3	CD200 receptor 3	protein coding gene
+CD202b	synonym	MGI:98664	Tek	TEK receptor tyrosine kinase	protein coding gene
+CD205	synonym	MGI:106662	Ly75	lymphocyte antigen 75	protein coding gene
+CD206	synonym	MGI:97142	Mrc1	mannose receptor, C type 1	protein coding gene
+CD207	current symbol	MGI:2180021	Cd207	CD207 antigen	protein coding gene
+CD209B	current symbol	MGI:1916415	Cd209b	CD209b antigen	protein coding gene
+CD21	synonym	MGI:88489	Cr2	complement receptor 2	protein coding gene
+CD35	synonym	MGI:88489	Cr2	complement receptor 2	protein coding gene
+CD210	human synonym	MGI:96538	Il10ra	interleukin 10 receptor, alpha	protein coding gene
+CD215	human synonym	MGI:104644	Il15ra	interleukin 15 receptor, alpha chain	protein coding gene
+CD218a	human synonym	MGI:105383	Il18r1	interleukin 18 receptor 1	protein coding gene
+CD22	current symbol	MGI:88322	Cd22	CD22 antigen	protein coding gene
+CD223	synonym	MGI:106588	Lag3	lymphocyte-activation gene 3	protein coding gene
+CD226	current symbol	MGI:3039602	Cd226	CD226 antigen	protein coding gene
+CD229	synonym	MGI:96885	Ly9	lymphocyte antigen 9	protein coding gene
+CD23	synonym	MGI:95497	Fcer2a	Fc receptor, IgE, low affinity II, alpha polypeptide	protein coding gene
+CD24	human symbol	MGI:88323	Cd24a	CD24a antigen	protein coding gene
+CD25	synonym	MGI:96549	Il2ra	interleukin 2 receptor, alpha chain	protein coding gene
+CD252	human synonym	MGI:104511	Tnfsf4	tumor necrosis factor (ligand) superfamily, member 4	protein coding gene
+CD253	human synonym	MGI:107414	Tnfsf10	tumor necrosis factor (ligand) superfamily, member 10	protein coding gene
+CD256	human synonym	MGI:1916833	Tnfsf13	tumor necrosis factor (ligand) superfamily, member 13	protein coding gene
+CD258	human synonym	MGI:1355317	Tnfsf14	tumor necrosis factor (ligand) superfamily, member 14	protein coding gene
+CD26	old symbol	MGI:94919	Dpp4	dipeptidylpeptidase 4	protein coding gene
+CD262	human synonym	MGI:1341090	Tnfrsf10b	tumor necrosis factor receptor superfamily, member 10b	protein coding gene
+CD265	human synonym	MGI:1314891	Tnfrsf11a	tumor necrosis factor receptor superfamily, member 11a, NFKB activator	protein coding gene
+CD267	human synonym	MGI:1889411	Tnfrsf13b	tumor necrosis factor receptor superfamily, member 13b	protein coding gene
+CD268	human synonym	MGI:1919299	Tnfrsf13c	tumor necrosis factor receptor superfamily, member 13c	protein coding gene
+CD27	current symbol	MGI:88326	Cd27	CD27 antigen	protein coding gene
+CD272	human synonym	MGI:2658978	Btla	B and T lymphocyte associated	protein coding gene
+CD273	human synonym	MGI:1930125	Pdcd1lg2	programmed cell death 1 ligand 2	protein coding gene
+CD274	current symbol	MGI:1926446	Cd274	CD274 antigen	protein coding gene
+CD275	human synonym	MGI:1354701	Icosl	icos ligand	protein coding gene
+CD276	current symbol	MGI:2183926	Cd276	CD276 antigen	protein coding gene
+CD278	human synonym	MGI:1858745	Icos	inducible T cell co-stimulator	protein coding gene
+CD279	human synonym	MGI:104879	Pdcd1	programmed cell death 1	protein coding gene
+CD28	current symbol	MGI:88327	Cd28	CD28 antigen	protein coding gene
+CD282	human synonym	MGI:1346060	Tlr2	toll-like receptor 2	protein coding gene
+CD283	human synonym	MGI:2156367	Tlr3	toll-like receptor 3	protein coding gene
+CD284	human synonym	MGI:96824	Tlr4	toll-like receptor 4	protein coding gene
+CD29	synonym	MGI:96610	Itgb1	integrin beta 1 (fibronectin receptor beta)	protein coding gene
+CD3	synonym	MGI:88332	Cd3e	CD3 antigen, epsilon polypeptide	protein coding gene
+CD30	old symbol	MGI:99908	Tnfrsf8	tumor necrosis factor receptor superfamily, member 8	protein coding gene
+CD300LG	current symbol	MGI:1289168	Cd300lg	CD300 molecule like family member G	protein coding gene
+CD300a	current symbol	MGI:2443411	Cd300a	CD300A molecule	protein coding gene
+CD301a	synonym	MGI:96975	Clec10a	C-type lectin domain family 10, member A	protein coding gene
+CD301b	synonym	MGI:2385729	Mgl2	macrophage galactose N-acetyl-galactosamine specific lectin 2	protein coding gene
+CD304	human synonym	MGI:106206	Nrp1	neuropilin 1	protein coding gene
+CD309	human synonym	MGI:96683	Kdr	kinase insert domain protein receptor	protein coding gene
+CD31	old symbol	MGI:97537	Pecam1	platelet/endothelial cell adhesion molecule 1	protein coding gene
+CD314	human synonym	MGI:1196250	Klrk1	killer cell lectin-like receptor subfamily K, member 1	protein coding gene
+CD317	human synonym	MGI:1916800	Bst2	bone marrow stromal cell antigen 2	protein coding gene
+CD319	human synonym	MGI:1922595	Slamf7	SLAM family member 7	protein coding gene
+CD326	synonym	MGI:106653	Epcam	epithelial cell adhesion molecule	protein coding gene
+CD335	human synonym	MGI:1336212	Ncr1	natural cytotoxicity triggering receptor 1	protein coding gene
+CD339	human synonym	MGI:1095416	Jag1	jagged 1	protein coding gene
+CD34	current symbol	MGI:88329	Cd34	CD34 antigen	protein coding gene
+CD351	human synonym	MGI:1927803	Fcamr	Fc receptor, IgA, IgM, high affinity	protein coding gene
+CD355	human synonym	MGI:1859822	Crtam	cytotoxic and regulatory T cell molecule	protein coding gene
+CD357	human synonym	MGI:894675	Tnfrsf18	tumor necrosis factor receptor superfamily, member 18	protein coding gene
+CD36	current symbol	MGI:107899	Cd36	CD36 molecule	protein coding gene
+CD365	human synonym	MGI:2159680	Havcr1	hepatitis A virus cellular receptor 1	protein coding gene
+CD366	human synonym	MGI:2159682	Havcr2	hepatitis A virus cellular receptor 2	protein coding gene
+CD369	human synonym	MGI:1861431	Clec7a	C-type lectin domain family 7, member a	polymorphic pseudogene
+CD37	current symbol	MGI:88330	Cd37	CD37 antigen	protein coding gene
+CD370	human synonym	MGI:2444608	Clec9a	C-type lectin domain family 9, member a	protein coding gene
+CD371	human synonym	MGI:3040968	Clec12a	C-type lectin domain family 12, member a	protein coding gene
+CD38	current symbol	MGI:107474	Cd38	CD38 antigen	protein coding gene
+CD39	old symbol	MGI:102805	Entpd1	ectonucleoside triphosphate diphosphohydrolase 1	protein coding gene
+CD4	current symbol	MGI:88335	Cd4	CD4 antigen	protein coding gene
+CD40	current symbol	MGI:88336	Cd40	CD40 antigen	protein coding gene
+CD41	synonym	MGI:96601	Itga2b	integrin alpha 2b	protein coding gene
+CD42d	human synonym	MGI:1096363	Gp5	glycoprotein 5 (platelet)	protein coding gene
+CD43	old symbol	MGI:98384	Spn	sialophorin	protein coding gene
+CD44	current symbol	MGI:88338	Cd44	CD44 antigen	protein coding gene
+CD45	old symbol	MGI:97810	Ptprc	protein tyrosine phosphatase, receptor type, C	protein coding gene
+CD47	current symbol	MGI:96617	Cd47	CD47 antigen (Rh-related antigen, integrin-associated signal transducer)	protein coding gene
+CD48	current symbol	MGI:88339	Cd48	CD48 antigen	protein coding gene
+CD49a	synonym	MGI:96599	Itga1	integrin alpha 1	protein coding gene
+CD49b	synonym	MGI:96600	Itga2	integrin alpha 2	protein coding gene
+CD49d	human synonym	MGI:96603	Itga4	integrin alpha 4	protein coding gene
+CD49e	synonym	MGI:96604	Itga5	integrin alpha 5 (fibronectin receptor alpha)	protein coding gene
+CD5	current symbol	MGI:88340	Cd5	CD5 antigen	protein coding gene
+CD51	synonym	MGI:96608	Itgav	integrin alpha V	protein coding gene
+CD53	current symbol	MGI:88341	Cd53	CD53 antigen	protein coding gene
+CD54	synonym	MGI:96392	Icam1	intercellular adhesion molecule 1	protein coding gene
+CD55	current symbol	MGI:104850	Cd55	CD55 molecule, decay accelerating factor for complement	protein coding gene
+CD59a	current symbol	MGI:109177	Cd59a	CD59a antigen	protein coding gene
+CD6	current symbol	MGI:103566	Cd6	CD6 antigen	protein coding gene
+CD61	synonym	MGI:96612	Itgb3	integrin beta 3	protein coding gene
+CD62E	synonym	MGI:98278	Sele	selectin, endothelial cell	protein coding gene
+CD62L	synonym	MGI:98279	Sell	selectin, lymphocyte	protein coding gene
+CD62P	synonym	MGI:98280	Selp	selectin, platelet	protein coding gene
+CD63	current symbol	MGI:99529	Cd63	CD63 antigen	protein coding gene
+CD64	synonym	MGI:95498	Fcgr1	Fc receptor, IgG, high affinity I	protein coding gene
+CD66a	synonym	MGI:1347245	Ceacam1	carcinoembryonic antigen-related cell adhesion molecule 1	protein coding gene
+CD68	current symbol	MGI:88342	Cd68	CD68 antigen	protein coding gene
+CD69	current symbol	MGI:88343	Cd69	CD69 antigen	protein coding gene
+CD70	current symbol	MGI:1195273	Cd70	CD70 antigen	protein coding gene
+CD71	synonym	MGI:98822	Tfrc	transferrin receptor	protein coding gene
+CD73	synonym	MGI:99782	Nt5e	5' nucleotidase, ecto	protein coding gene
+CD74	current symbol	MGI:96534	Cd74	CD74 antigen (invariant polypeptide of major histocompatibility complex, class II antigen-associated)	protein coding gene
+CD79a	current symbol	MGI:101774	Cd79a	CD79A antigen (immunoglobulin-associated alpha)	protein coding gene
+CD79b	current symbol	MGI:96431	Cd79b	CD79B antigen	protein coding gene
+CD80	current symbol	MGI:101775	Cd80	CD80 antigen	protein coding gene
+CD81	current symbol	MGI:1096398	Cd81	CD81 antigen	protein coding gene
+CD83	current symbol	MGI:1328316	Cd83	CD83 antigen	protein coding gene
+CD84	current symbol	MGI:1336885	Cd84	CD84 antigen	protein coding gene
+CD85k	synonym	MGI:102701	Lilrb4a	leukocyte immunoglobulin-like receptor, subfamily B, member 4A	protein coding gene
+CD86	current symbol	MGI:101773	Cd86	CD86 antigen	protein coding gene
+CD88	synonym	MGI:88232	C5ar1	complement component 5a receptor 1	protein coding gene
+CD8a	current symbol	MGI:88346	Cd8a	CD8 antigen, alpha chain	protein coding gene
+CD8b	human symbol	MGI:88347	Cd8b1	CD8 antigen, beta chain 1	protein coding gene
+CD9	current symbol	MGI:88348	Cd9	CD9 antigen	protein coding gene
+CD90	synonym	MGI:98747	Thy1	thymus cell antigen 1, theta	protein coding gene
+CD93	current symbol	MGI:106664	Cd93	CD93 antigen	protein coding gene
+CD94	synonym	MGI:1196275	Klrd1	killer cell lectin-like receptor, subfamily D, member 1	protein coding gene
+CD95	synonym	MGI:95484	Fas	Fas (TNF receptor superfamily member 6)	protein coding gene
+CD96	current symbol	MGI:1934368	Cd96	CD96 antigen	protein coding gene
+CD98	old symbol	MGI:96955	Slc3a2	solute carrier family 3 (activators of dibasic and neutral amino acid transport), member 2	protein coding gene
+CLEC2	old symbol	MGI:1913287	Clec1b	C-type lectin domain family 1, member b	protein coding gene
+CX3CR1	current symbol	MGI:1333815	Cx3cr1	chemokine (C-X3-C motif) receptor 1	protein coding gene
+DLL1	current symbol	MGI:104659	Dll1	delta like canonical Notch ligand 1	protein coding gene
+DR3	synonym	MGI:1934667	Tnfrsf25	tumor necrosis factor receptor superfamily, member 25	protein coding gene
+E-Cadherin	old name	MGI:88354	Cdh1	cadherin 1	protein coding gene
+ENPP1	current symbol	MGI:97370	Enpp1	ectonucleotide pyrophosphatase/phosphodiesterase 1	protein coding gene
+ESAM	current symbol	MGI:1916774	Esam	endothelial cell-specific adhesion molecule	protein coding gene
+F4/80	synonym	MGI:106912	Adgre1	adhesion G protein-coupled receptor E1	protein coding gene
+FOXP3	current symbol	MGI:1891436	Foxp3	forkhead box P3	protein coding gene
+GARP	old symbol	MGI:93882	Lrrc32	leucine rich repeat containing 32	protein coding gene
+GITR	old symbol	MGI:894675	Tnfrsf18	tumor necrosis factor receptor superfamily, member 18	protein coding gene
+Galectin-9	synonym	MGI:109496	Lgals9	lectin, galactose binding, soluble 9	protein coding gene
+H-2	old symbol	MGI:95894	H2	histocompatibility-2, MHC	complex/cluster/region
+HVEM	synonym	MGI:2675303	Tnfrsf14	tumor necrosis factor receptor superfamily, member 14 (herpesvirus entry mediator)	protein coding gene
+Helios	old symbol	MGI:1342541	Ikzf2	IKAROS family zinc finger 2	protein coding gene
+IDO	old symbol	MGI:96416	Ido1	indoleamine 2,3-dioxygenase 1	protein coding gene
+IL-34	human synonym	MGI:1923777	Il34	interleukin 34	protein coding gene
+JAML	current symbol	MGI:2685484	Jaml	junction adhesion molecule like	protein coding gene
+KLRG1	current symbol	MGI:1355294	Klrg1	killer cell lectin-like receptor subfamily G, member 1	protein coding gene
+Ki-67	synonym	MGI:106035	Mki67	antigen identified by monoclonal antibody Ki 67	protein coding gene
+LT-beta-R	human synonym	MGI:104875	Ltbr	lymphotoxin B receptor	protein coding gene
+Ly-49A	synonym	MGI:3849440	Tg(Cd4-Klra1)6295Dl	transgene insertion 6295, David Lo	transgene
+Ly-51	old symbol	MGI:106645	Enpep	glutamyl aminopeptidase	protein coding gene
+Ly-6A/E	synonym	MGI:107527	Ly6a	lymphocyte antigen 6 complex, locus A	protein coding gene
+Ly-6C	old symbol	MGI:96882	Ly6c1	lymphocyte antigen 6 complex, locus C1	protein coding gene
+Ly-6D	human synonym	MGI:96881	Ly6d	lymphocyte antigen 6 complex, locus D	protein coding gene
+Ly-6G	synonym	MGI:109440	Ly6g	lymphocyte antigen 6 complex, locus G	protein coding gene
+Ly108	old symbol	MGI:1353620	Slamf6	SLAM family member 6	protein coding gene
+Ly49D	old symbol	MGI:101904	Klra4	killer cell lectin-like receptor, subfamily A, member 4	protein coding gene
+Ly49G	old symbol	MGI:101901	Klra7	killer cell lectin-like receptor, subfamily A, member 7	protein coding gene
+Ly49H	old symbol	MGI:102968	Klra8	killer cell lectin-like receptor, subfamily A, member 8	protein coding gene
+Ly6K	current symbol	MGI:1923736	Ly6k	lymphocyte antigen 6 complex, locus K	protein coding gene
+Lypd8	current symbol	MGI:1917413	Lypd8	LY6/PLAUR domain containing 8	protein coding gene
+MAIR-IV	synonym	MGI:2442358	Cd300ld	CD300 molecule like family member d	protein coding gene
+MD-1	synonym	MGI:1321404	Ly86	lymphocyte antigen 86	protein coding gene
+MERTK	current symbol	MGI:96965	Mertk	c-mer proto-oncogene tyrosine kinase	protein coding gene
+Mac-2	synonym	MGI:96778	Lgals3	lectin, galactose binding, soluble 3	protein coding gene
+NK-1.1	synonym	MGI:107538	Klrb1c	killer cell lectin-like receptor subfamily B member 1C	protein coding gene
+NKG2D	synonym	MGI:1196250	Klrk1	killer cell lectin-like receptor subfamily K, member 1	protein coding gene
+P2X7R	synonym	MGI:1339957	P2rx7	purinergic receptor P2X, ligand-gated ion channel, 7	protein coding gene
+PD-1H	synonym	MGI:1921298	Vsir	V-set immunoregulatory receptor	protein coding gene
+PLZF	synonym	MGI:103222	Zbtb16	zinc finger and BTB domain containing 16	protein coding gene
+PNAd	human synonym	MGI:108471	Ntan1	N-terminal Asn amidase	protein coding gene
+Perforin	synonym	MGI:97551	Prf1	perforin 1 (pore forming protein)	protein coding gene
+Podoplanin	current name	MGI:103098	Pdpn	podoplanin	protein coding gene
+Qa-2	old symbol	MGI:97833	Qa2	Qa lymphocyte antigen 2 region	complex/cluster/region
+SEMA4A	current symbol	MGI:107560	Sema4a	sema domain, immunoglobulin domain (Ig), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 4A	protein coding gene
+SSEA-1	synonym	MGI:95594	Fut4	fucosyltransferase 4	protein coding gene
+Siglec-H	synonym	MGI:2443256	Siglech	sialic acid binding Ig-like lectin H	protein coding gene
+Slc7a1	current symbol	MGI:88117	Slc7a1	solute carrier family 7 (cationic amino acid transporter, y+ system), member 1	protein coding gene
+TER-119	synonym	MGI:106910	Ly76	lymphocyte antigen 76	unclassified other genome feature
+TEX101	current symbol	MGI:1930791	Tex101	testis expressed gene 101	protein coding gene
+TIGIT	current symbol	MGI:3642260	Tigit	T cell immunoreceptor with Ig and ITIM domains	protein coding gene
+TLR4	current symbol	MGI:96824	Tlr4	toll-like receptor 4	protein coding gene
+TLT-2	human synonym	MGI:2147038	Treml2	triggering receptor expressed on myeloid cells-like 2	protein coding gene
+TMTSP	synonym	MGI:1929096	Thsd1	thrombospondin, type I, domain 1	protein coding gene
+TSLPR	old symbol	MGI:1889506	Crlf2	cytokine receptor-like factor 2	protein coding gene
+Tim-2	synonym	MGI:2159681	Timd2	T cell immunoglobulin and mucin domain containing 2	protein coding gene
+Tim-4	synonym	MGI:2445125	Timd4	T cell immunoglobulin and mucin domain containing 4	protein coding gene
+VEGFR-3	synonym	MGI:95561	Flt4	FMS-like tyrosine kinase 4	protein coding gene
+VISTA	synonym	MGI:1921298	Vsir	V-set immunoregulatory receptor	protein coding gene
+XCR1	current symbol	MGI:1346338	Xcr1	chemokine (C motif) receptor 1	protein coding gene

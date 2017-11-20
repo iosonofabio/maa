@@ -1,0 +1,1274 @@
+Antigen name;Alternative name;MW,Distribution;Function
+CD1d;CD1.1/1.2, Ly-38;43–49 kDa;Leukocytes, intestinal epithelial cells;Ag presentation, mucosal immunity, associates with β2m, ligand for NKT cells
+CD2;LFA-2, Ly-37, SRBC-R;45–58 kDa;Lymphocytes, pre-B cells, erythrocytes, myeloid cells, DC;Adhesion, T cell activation
+CD3δ;T3d;20 kDa;T cells, thymocyte subset, NKT cells;TCR subunit, TCR expression and signaling
+CD3ε;T3e;20 kDa;T cells, thymocyte subset, NKT cells;TCR subunit, TCR expression and signaling
+CD3γ;T3g;25 kDa;T cells, thymocyte subset, NKT cells;TCR subunit, TCR expression and signaling
+CD4;Ly-4, L3T4;55 kDa;Thymocyte subset, T cell subset, DC;TCR coreceptor, thymic differentiation, T cell activation
+CD5;Ly-1;67 kDa Thymocytes, T cells, B cell subset (B1);T cell activation, T–B cell interaction, CD72 receptor
+CD6;T12 100–130 kDa Thymocytes, T cells, neurons, not on B cells;T cell differentiation and co-stimulation, CD166 receptor
+CD7;;40 kDa Human early T cell marker, CD7KO has normal phenotype;
+CD8α;Ly-2;32–34 kDa;Thymocyte subset, T cell subset, DC subset, not fresh NK cells;TCR coreceptor, MHC class I receptor, T cell differentiation, homodimer or heterodimer with CD8α
+CD8β;Ly-3;30 kDa;Thymocyte subset, T cell subset, not fresh NK cells;TCR coreceptor, T cell differentiation, heterodimer with CD8α
+CD9;p24;24–27 kDa;Myeloid, platelets, T act cells, B cell subset, stromal cells, mesenchymal stem cells;Cell adhesion, migration, T cell co-stimulation
+CD10;CALLA, NEP, Mme;100 kDa;Fibroblasts, BM stromal cells, non-lymphoid tissue;Zinc-binding metalloprotease, neutral endopeptidase ectoenzyme
+CD11a;Integrin aL, Ly-15, Itgal;80 kDa;NK cells, T, and B cells, granulocytes, mono, macrophages, DC, thymocytes;CD11a/CD18 (LFA-1) receptor for ICAM-1 and ICAM-2, adhesion, T cell co-stimulation
+CD11b;Mac-1, integrin αM, Itgam, CR3;170 kDa;Myeloid cells, NK cells, T act cells, B cell subset;CD11b/CD18 receptor for CD54 and CD102, adhesion to ECM, fibrinogen, and complement iC3b
+CD11c;p150, integrin αX, Itgax, CR4;150 kDa;DC, myeloid cells, NK cells, T cell subset;CD11c/CD18 receptor for fibrinogen and iC3b, adhesion
+CD13;Aminopeptidase N, Lap1;150 kDa;Myeloid cells, endothelial cells, DC;Zinc-binding metalloprotease, antigen processing
+CD14;LPS-R, Mo2;53–55 kDa;Macrophages, granulocytes low;Receptor for LPS/LPB, LPS recognition
+CD15;Lewis-X;;Transient in brain;Fucosyl transferase (Fut4)
+CD16;FcγRIII, Ly-17, Fcγr3;50–60 kDa;NK cells, neutrophils, mast cells, macrophages;Fcγ low-affinity receptor, phagocytosis, ADCC, NK cell activation
+CD18;Integrin β2, Itgb2;90–95 kDa;Leukocytes;Associates with CD11a, b, and c, adhesion
+CD19;B4;95 kDa;B cells, FDC, good B cell lineage marker, not plasma cells;Associates with CD21 and CD81, BCR coreceptor, B cell activation/differentiation
+CD20;Ly-44, B1, Ms4a2;33–37 kDa B cells, Transitional T1 B cells;B cell differentiation/activation
+CD21;CR2, CR1;150 kDa;B cells, DC;CD21/CD35 variant of CR2 gene, complement C3dR, associates with CD19 and CD81, BCR coreceptor
+CD22;Lyb-8, Siglec-2;140–160 kDa;B cells;Adhesion, B cell–mono and B–T cell interactions, B cell activation, BM homing receptor for IgD + B cells, CD75 counter-receptor
+CD23;FcεRII, Ly-42, Fcεr1a;45–49 kDa;B cells, mono, macrophages, granulocytes, platelets, FDC, not B1 cells;CD19/CD21/CD81 receptor, low-affinity IgER, signaling
+CD24a;HSA, Ly-52, Nectadrin;35–52 kDa;B cells, granulocytes, mono, macrophages, T act cells, erythrocytes, neurons;Several isoforms, B cell differentiation and adhesion, T cell co-stimulation, CD62P receptor
+CD25;Ly-43, p55, IL2Rα;55 kDa;Pre-B, pre-T, T act , and B act cells, DCs;Low-affinity IL-2 binding, associates with IL-2Rβ and γ, forms IL-2 receptor high affinity, also soluble form
+CD26;DPP4, THAM;110 kDa;Thymocyte subset, T act , B, and NK cells, epithelial cells;Dipeptidyl peptidase ectoenzyme, activation, adhesion
+CD27;T14, Tnfrsf7;45 kDa;Medullary thymocytes, T cells, NK cells, B cell subset;CD70 receptor, T cell co-stimulation
+CD28 Tp44 45 kDa T cells, thymocytes, NK cells CD80 (B7-1) and B7-2 (CD86) receptor, T cell
+co-stimulation
+CD29 Integrin β1, gpIIa,
+Itgb1 130 kDa Leukocytes, fibroblasts, endothelial cells, epithelial cells Associates with CD49a-f (VLA-1-6), receptor for
+VCAM-1, MAdCAM-1, and ECM, VLAb, adhesion,
+embryonic development
+CD30 Ki-1, Tnfrsf8 105–120
+kDa T act cells CD153 receptor, lymphocyte proliferation,
+apoptosis, peripheral tolerance
+CD31 PECAM-1, pgIIa 130–140
+kDa Leukocytes, endothelial cells Multiple isoforms, CD38 receptor, signaling,
+platelet-endothelial cells adhesion
+CD32 FcγRII, Ly-17,
+Fcγr2b 40–60
+kDa Mono, macrophages, granulocytes, B cells, T act cells, not
+NK cells ADCC
+CD33 Siglec-3, gp67 67 kDa Myeloid progenitors; granulocytes, microglia Possible role in hematopoiesis, binds sialic acid
+CD34 Mucosialin 90–120
+kDa Hematopoietic precursors, capillary endothelial cells, BM
+stroma, mast cells CD62L receptor, adhesion
+CD35 Cr1, Cr2 190 kDa B cells, granulocytes act , FDC CD21 and CD35 alternative splice variants of CR2
+gene, binds C3b and C4b, adhesion, phagocytosis
+CD36 FAT, fatty acid
+translocase 88 kDa Platelets, adipocytes, monocytes, macrophages, endothelial
+cells, erythrocytes, B cells Oxidized LDL receptor
+CD37 mRNA: lymphoid, myeloid T–B cell interaction
+CD38 Cd38-rs1, T10 42 kDa B cells, marginal zone B high cells, T act cells, thymocyte subset,
+subsets in yolk sac, in fetal liver, in BM B act cells, CD31 receptor, ectoenzyme, ADP-ribosyl
+cyclase/hydrolase
+CD39 Entpd1 70–100
+kDa Lymphocyte act , microglia, endothelial cells, Treg subset Ecto-nucleoside trisphosphate
+diphosphohydrolase
+CD40 gp39 receptor,
+Tnfrsf5 45–50
+kDa B cells, monocytes, macrophages, T cell subset, DC,
+endothelial cells, thymic epithelial cells, induced on
+cardiac myocytes CD154 receptor, T–B cell interaction, B cell co-
+stimulation, isotype-switching, and survival
+CD41 gpIIb, Itga2b,
+CD41b 110–125
+kDa Platelets, megakaryocytes Associates with CD61, forms GPIIb/IIIa, binds
+fibrinogen, fibronectin, vWF, and thrombospondin
+CD42 Gp9, GPIX 20 kDa Platelets, megakaryocytes Platelet activation, aggregation
+CD43 Leukosialin, Ly-48,
+Spn, sialophorin 115, 135
+kDa T cells, T act cells, early B cells, B cell subset, platelets low , not
+resting B cells, not DC Isoforms, signaling, CD54R, B cell survival,
+adhesion
+CD44 H-CAM, Pgp-1,
+Hermes Ag 80–95
+kDa Hematopoietic and non-hematopoietic cells, except platelets,
+hepatocytes, testis Binds hyaluronic acid, adhesion
+59
+Mouse CD antigensMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD45 LCA, Ly-5, Ptprc 180–240
+kDa Leukocytes, not mature erythrocytes, lymphocyte activated
+killer (LAK) Tyrosine phosphatase, leukocyte differentiation/
+activation, pan-leukocyte marker
+CD45.1 Ly5.1 180–240
+kDa Ly-5.1 strains: SJL, DA, STS/A, RIII Tyrosine phosphatase, signal transduction
+CD45.2 Ly5.2 180–240
+kDa Ly-5.2 strains: BALB/c, C3H, C57BL/6, DBA/1, DBA/2, AKR,
+A, 129 Tyrosine phosphatase, signal transduction
+CD45R/CT1
+CD45R
+Cytotoxic T act cells
+B220
+220 kDa
+B cells, NK cells progenitors, LAK, T act cells, T cells with lpr/lpr
+mutant allele
+CD45RA
+Tyrosine phosphatase
+Exon A isoform, tyrosine phosphatase
+CD45RB 200–240
+kDa T cell subset, B cells, monocytes, macrophages, DC Tyrosine phosphatase, signal transduction
+CD45RC 200–240
+kDa T cell subset, B cells Tyrosine phosphatase, signal transduction
+CD45RO UCHL-1 180 kDa T act cells, B act cells, DC subset Tyrosine phosphatase, signal transduction
+CD46 MCP, membrane
+cofactor protein 41 kDa Broad Complement regulation, role in fertilization
+CD47 IAP, Itgp,
+neurophilin 50 kDa Hematopoietic cells, epithelial cells, endothelial cells,
+fibroblasts, platelets Associates with β3 integrins, adhesion, binds SIRP,
+thrombospondin receptor
+CD48 Blast-1, BCM-1,
+Sgp-60 45 kDa Broad on lymphocytes, not fibroblasts Adhesion, T cell co-stimulation, CD2 and Ly-9
+receptor
+CD49a VLA-1, integrin α1,
+Itga1 180 kDa T act cells, endothelial cells Adhesion, CD49a/CD29 binds collagen and
+laminin
+CD49b VLA-2, integrin α2,
+Itga2 165 kDa Platelets, T cell subset, megakaryocytes, NK cells Adhesion, CD49b/CD29 binds collagen and
+laminin
+CD49c VLA-3, integrin α3,
+Itga3 125 kDa B cell subset, T low cells CD49c/CD29 binds laminin, fibronectin, collagen
+CD49d VLA-4, integrin α4,
+Itga4 150 kDa T cells, B cells, monocytes CD49d/CD29 binds fibronectin, VCAM-1, with
+B7 forms LPAM-1 and binds to MAdCAM-1,
+homing receptor
+CD49e VLA-5, integrin α5,
+Itga5 135 kDa Thymocytes, T act cells, splenic B cells Adhesion, CD49e/CD29 binds fibronectin
+60Antigen name Alternative name MW Distribution Function
+CD49f VLA-6, integrin α6,
+Itga6 120 kDa Memory T cells, thymocytes, platelets Adhesion, CD49f/CD29 binds laminin
+CD50 Icam5, Ticn,
+Telencephalin 130 kDa Brain, dopaminergic neurons Adhesion
+CD51 VitronectinR,
+Integrin αv, Itgav 125, 24
+kDa Platelets, megakaryocytes, endothelial cells, osteoblasts, Adhesion, CD51/CD61 binds vitronectin
+CD52 CAMPATH-1, MB7,
+CLS1 12 kDa Mature lymphocytes, Treg cell subset CD53 OX-44 35–42
+kDa Leukocytes, DC, osteoblasts, osteoclasts Signaling
+CD54 ICAM-1, Ly-47 85–110
+kDa Endothelial cells, mono, resting lymph (high on activation) Adhesion, T cell co-stimulation
+CD55 Decay accelerating
+factor 60–70
+kDa Broad, induced in uterus by estrogen Similar to Crry, protection from autologous
+complement attack
+CD56 NCAM 20–185
+kDa Neural tissue, multiple isoforms Adhesion, neuron development,
+skeletal myogenesis
+38 kDa GlucuronsyltransferaseP Cell adhesion molecule; memory
+CD57 B3gat1, HNK-1
+CD58 (H) LFA-3
+CD59 Protectin, MAC-
+inhibitor
+Not defined in mouse
+19 kDa
+CD60 (H)
+Broad
+Binds complement C8 and C9, blocks membrane
+attack complex assembly
+Not defined in mouse
+CD61 GPIIIa, Integrin β3,
+Itgb3 105 kDa Platelets, megakaryocytes, macrophages, endothelial cells CC41/CD61 or CD51/CD61 complexes adhere
+to ECM
+CD62E E-selectin, ELAM-1,
+Sele 97 107–115
+kDa Endothelial cells Sialyl-Lewis X receptor, leukocyte rolling and
+migration, tumor metastasis
+CD62L L-selectin,
+LECAM-1, sell 74 and
+95 kDa B cells, T cells, monocytes, granulocytes, NK cells, thymocytes CD34, GlyCAM, and MAdCAM-1 receptor,
+lymphocyte homing, leukocyte tethering and rolling
+CD62P P-selectin, Selp 140 kDa Platelets act , endothelial cells CD162 and sialyl-Lewis X receptor, adhesion,
+neutrophil rolling, platelet-neutrophil, binds
+to CD24
+CD63 MLA1 53 kDa Platelets act , mono, macrophages Activated platelets marker, lysosomal membrane
+protein, translocates to surface upon activation,
+melanoma-associated antigen
+CD64 FcγRI 72 kDa Mono, macrophages, DC, granulocytes act High-affinity IgG receptor, phagocytosis, trypsin-
+sensitive, ADCC
+61
+Mouse CD antigensMouse CD antigens (continued)
+Antigen name
+Alternative name MW CD66a Ceacam1, C-Cam 140–180
+kDa Colon, liver, hematopoietic tissues Cell-cell interaction, hepatitis virus receptor
+CD68 Macrosialin, gp110 87–115
+kDa Predominantly intracellular, tissue macrophages, DC low Lysosomal associated protein
+CD69 Activation Inducer
+Molecule, VEA 35–39
+kDa T act , B act , and NK act cells, granulocytes act , thymocytes, platelets Early activation marker, thymocyte development
+CD70 Ki-24, Tnfsf7 50, 70,
+90, 160
+kDa B act cells, T act cells, cardiac myocytes T and B cell co-stimulation
+CD71 T9, Trfr 95 kDa Proliferating cells, reticulocytes, erythroid precursors Transferrin receptor, iron uptake, cell activation
+CD72 Lyb-2 40–45
+kDa B cells, FDC, T cell subset B cell co-stimulation
+CD73 Nt5e 69 kDa Treg, myeloid BM, CD4 + T cells Ecto-5 ́-nucleotidase, T cell co-stimulation,
+adhesion
+CD74 Ii, Ia-invariant chain 33–43
+kDa B cells, macrophages, monocytes MHC class II traffic and function, antigen
+presentation
+CD79a Igα, mb-1, Ly-54 33 and
+45 kDa B cells CD79b Igβ, B29 37 kDa B cells
+CD65 (H)
+Distribution
+Function
+Not defined in mouse
+CD77 (H)
+Not defined in mouse
+BCR subunit, BCR expression and signaling
+BCR subunit, BCR expression and signaling
+CD80 B7, B7-1, Ly-53 60 kDa B cells, T cells, monocytes, macrophages, DC, pancreatic
+β cells Co-stimulation, T–B cell interaction
+CD81 TAPA-1 26 kDa T (double positive) cells, B cells, NK cells, thymocytes, DC,
+endothelial cells, fibroblasts, melanomas, neuroblastomas,
+macrophages Associates with CD19 and CD21, signaling, T cell
+co-stimulation
+CD82 KAI1, C33 50–53
+kDa T act cells, mRNA: spleen, kidney Inhibits tumor cell mobility
+CD83 HB15 43 kDa DC, T act cells, thymic epithelial cells Regulation of T cell response, binds to a ligand
+on B cells
+CD84 SLAMF5, GR6 70–85
+kDa B cells, macrophages, mRNA: hematopoietic tissue Homophilic adhesion
+CD85K gp49 receptor 37 kDa Mast cells Inflammation
+62
+act
+actAntigen name Alternative name MW Distribution Function
+CD86 B70, B7-2, Ly-58 80 kDa Mono, B act cells, T act cells, DC T cell co-stimulation, T–B cell interaction
+CD87 UPA-R, Plaur 32–70
+kDa MuPAR1 luminal epithelial cells of gastric mucosa PAR2-secreted uPA binding protein
+CD88 C5aR, C5r1 40 kDa Granulocytes, neurons, astrocytes, microglia Neurodegeneration
+CD89 FcαR, IgA receptor 55–75
+kDa Mono, macrophages, neutrophils, B cell subset, T cell subset Phagocytosis, degranulation
+CD90 Thy-1 18 kDa Thymocytes, T cells, hematopoietic cell subset, neurons Hematopoietic stem cell and neuron differentiation,
+T cell activation
+CD90.1 Thy-1.1 18 kDa Thy1a (thy1.1) strains: AKR and RF and PL CD90.2 Thy-1.2 18 kDa Thy1b (thy1.2) all other strains CD91 lrp1, A2mr 600 kDa Mono, macrophages, neurons, liver, fibroblasts
+CD92 (H)
+Lipoprotein metabolism
+Not defined in mouse
+CD93 AA4.1 antigen,
+C1qRp, early B
+lineage marker,
+Ly68 130–140
+kDa Progenitor marker for early B cells, endothelial cells,
+megakaryoblasts, platelets CD94 KP43, klrd1 43 kDa NK cells, T cell subset Associates with NKG2, inhibits NK cell function
+CD95 Apo-1, Fas 35 kDa Thymocytes, lymphocytes act , fibroblasts, mono, neutrophils Apoptosis induction, immune system regulation
+CD96 TACTILE, T cell
+activation increased 160 kDa
+late expression mRNA: spleen, mammary gland Adhesion of activated NK cells and T cells
+CD97 TM7LN1 TM7S Lymphoid, myeloid
+Phagocytosis
+CD98 4F2, Ly-10 80, 40
+kDa CD99 Pilr-1, D4 19 kDa Endothelial cells Neutrophil migration
+CD100 Sema4d,
+semaphorin H 150 kDa mRNA: lymphoid and nervous tissues Role in immune and nervous systems
+CD101 IgSF3 131 kDa Myeloid, DC, T cell subset, Treg subset Role in susceptibility to type I diabetes
+CD102 ICAM-2, Ly-60 55–65
+kDa Lymphocytes, mono, platelets, endothelial cells Co-stimulation
+CD103 HML-1, Integrin
+αIEL, Itgae 150 kDa Intraepithelial lymphocytes, BM mast, lymphocytes act ,
+Treg subset Associates with integrin β7, binds E-cadherin,
+lymphocyte homing
+63
+Mouse CD antigens
+Thymocytes, lymphocytes, mono, BM Cell activation, calcium fluxMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD104 β4 integrin, Itgb4 220 kDa Epithelial cells, endothelial cells, immature thymocytes,
+schwann cells, tumor cells, keratinocytes Associates with CD49f, cell adhesion/migration,
+differentiation, tumor metastasis,
+CD105 Endoglin, Eng 95 kDa Endothelial cells, BM cell subset, macrophages act Ligand for TGF-β, adhesion, embryonic
+angiogenesis
+CD106 VCAM-1 110 kDa Endothelial cells act , FDC, BM myeloid Adhesion/migration, co-stimulation, binds LPAM-1
+CD107a LAMP-1 120 kDa Platelets act , T act cells, endothelial cells act , macrophages Adhesion, metastasis
+CD107b LAMP-2 110 kDa Platelets act , T act cells, endothelial cells act , macrophages Adhesion, metastasis
+CD108 Sema7a 80 kDa mRNA: nervous system high , immune system CD109 Gov platelet
+alloantigen 158 kDa CD110 TPO-R, c-mpl 82–84
+kDa Megakaryocytes, platelets Megakaryocyte differentiation
+CD111 PRR1, Nectin-1, Pvrl 64–72
+kDa Fibroblasts, epithelium, neurons Poliovirus receptor-related protein1, entry of herpes
+simplex virus
+CD112 PRR2, Pvs,
+Nectin-2 64–72
+kDa Brain, spinal cord, spleen, kidney, heart, liver,
+macrophages, DCs Adhesion, not a receptor for poliovirus
+CD113 PVRL3, Nectin3 100 kDa Broad, epithelial cells Adhesion molecule, interacts with afadin
+CD114 G-CSFR, Csfgr,
+Csf3r 95, 139
+kDa Progenitor and mature neutrophils, endothelial cells, placenta,
+some myeloid leukemia Myeloid proliferation and differentiation
+CD115 M-CSFR, c-fms,
+Csf1r 150 kDa Monocytic progenitors, osteoclasts, macrophages Monocytic lineage proliferation/ differentiation, role
+in differentiation of osteoclasts
+CD116 GM-Csf2rα 70–85
+kDa Monocytes, granulocytes, DC, endothelial cells Proliferation, differentiation
+CD117 c-kit, Steel factor 145 kDa Hematopoietic stem cells and progenitors, neural crest–
+derived melanocytes, primordial germ cells, mast cells Activation of mast cells
+CD118 LIFR 190 kDa Placenta, liver, kidney, heart, lung, brain epithelial cells Signal transduction, soluble form inhibits
+LIF activity
+CD119 IFNγR, ifγr1, Ifnγr 90–100
+kDa Macrophages, monocytes, B cells, T cells, NK cells,
+neutrophils, endothelial cells Host defense, signal transduction
+CD120a TNFR1, p55 50–60
+kDa Broad Signal transduction, apoptosis
+CD120b TNFR2, p75 75–85
+kDa Broad Signal transduction, apoptosis
+CD121a IL-1R type I 80 kDa Broad low Signal transduction
+64Antigen name Alternative name MW Distribution Function
+CD121b IL-1R, type II 68 kDa B cells, macrophages, monocytes, T cell subset (th2),
+epidermis A decoy receptor
+CD122 IL-2Rβ p70 90–110
+kDa NK cells, T cells, B cells, monocytes, Treg cells Il-2R and IL-15R chain, signaling, with CD25
+and CD132 form high-affinity IL-2R, lymphocyte
+development
+CD123 IL-3Rα 70 kDa Lymphocyte subset, basophils, hematopoietic progenitors,
+macrophages, pDC, megakaryocytes IL-3Rα chain, low-affinity binding to IL-3, with
+CDw131 form high-affinity IL-3 binding
+CD124 IL-4Rα 140 kDa Lymphocytes low , monocytes, hematopoietic precursors,
+fibroblasts, epithelial cells IL-4R chain, associates with CD132 or IL-13Rα
+chain, T cell growth and differentiation,
+soluble form
+CD125 IL-5Rα 60 kDa Eosinophils, basophils IL-15Rα chain, associates with CDw131 for low-
+affinity IL-5 binding, associates with β subunit for
+high-affinity IL-15 binding
+CD126 IL-6Rα 80 kDa B act cells, plasma cells, most leukocytes low , fibroblasts IL-6Rα subunit, low-affinity IL-6 binding, associates
+with CD130 for high-affinity IL-6 binding,
+soluble form
+CD127 IL-7Rα 65–75 kDa Pro-B and T cells IL-7Rα chain, associates with CD132 for high-
+affinity IL-7 binding, T and B cell development
+and activation
+CD128 See CD181 and
+CD182 CD130 IL-6Rβ, gp130 130 kDa Broad in adult and embryonic cells Common β chain of IL-6R, IL-11R, LIFR, OSMR
+CD131 IL-3R, AIC2B/A,
+95–120
+common b, Csf2rb1,
+kDa
+Csf2rb2 Monocytes, granulocytes, early B cells 2 genes in mouse, signaling, associates with α
+subunits of IL-3, IL-5, GM-CSF receptors
+CD132 IL-2R Common b 64 kDa T, B, and NK cells, monocytes, granulocytes, DCs Subunit of IL-2, IL-4, IL-7, IL-13, and IL-15R,
+signaling, mutation: X-linked SCID
+CD133 Prominin-1 115–120
+kDa Primitive cells like hematopoietic progenitors, neural, retina,
+epithelial cells Unknown
+CD134 OX-40, Ly-70, Txgp1 48–50 kDa T act cells OX-40L receptor, apoptosis, T cell activation/
+differentiation
+CD135 Flt3/Flk2, EMS-like
+tyr kinase 3 130–150
+kDa Hematopoietic progenitors: myeloid and primitive B
+progenitors, fetal liver, adult brain Binds FLT3 ligand, myeloid and lymphoid
+development, expands hematopoietic progenitors
+and DC
+CD136 STK, Mst1r, RON 180 kDa Hematopoietic cells Macrophage stimulatory 1 receptor
+65
+Mouse CD antigensMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD137 4-1BB, Tnfrsf9 30 kDa T act cells T cell co-stimulation, binds to 4-1BBL, fibronectin,
+vitronectin, laminin, collagen VI
+CD138 Syndecan-1, Sdc1 80–150
+kDa Epithelial cells, plasma cells, pre-B cells, neurons Receptor for ECM, B cell differentiation
+CD139 (H)
+Not defined in mouse
+CD140a PDGF receptor a 180 kDa Fibroblasts, smooth muscle, glial cells, chondrocytes PDGFRaa binds PDGF AA, AB, BB, PDGFRab binds
+AB, BB, PDGFRbb binds PDGFBB, embryonic
+development, signaling
+CD140b PDGF receptor b 180 kDa Fibroblasts, smooth muscle, glial cells, chondrocytes See CD140a for ligands, signaling
+CD141 Thrombomodulin,
+Thbd 100 kDa Monocytes, neutrophils, endothelial cells, smooth muscle Initiation of protein C anticoagulant pathway
+CD142 Tissue Factor,
+factorIII, F3 45 kDa Embryonic development Binds clotting factor VIIa
+CD143 ACE 170 kDa Endothelial cells Peptidyl-peptidase, angiotensin converting enzyme
+CD144 Cadherin5,
+VECadherin 130 kDa Endothelial cells Adhesion, intercellular interaction
+CD146 MUC18, S-endo,
+mcom 130 kDa Embryonic tissue, mammary tumors Cell adhesion during development
+CD147 Neurothelin, basigin,
+55–65 kDa Leukocytes act , erythrocytes, platelets, endothelial cells
+Bsg CD148 HPTP-eta, M4, M56 240–260
+kDa mRNA: broad, high in brain, kidney Tyrosine phosphatase R Type III
+CD150 SLAM, IPO-3 75 kDa T cells, B cells, Th1 Co-stimulation, proliferation, Ig production
+CD151 PETA-3, SFA-1 32 kDa Endothelial cells, megakaryocytes, platelets Adhesion, signaling
+CD152 CTLA-4, Ly-56 33 kDa T act cells, B cell subset, Tregs CD80, CD86 receptor, negative T cell stimulation
+CD153 CD30L, Tnfsf8 40 kDa T act cells, macrophages act , neutrophil, B cells, induced on
+cardiac myocyte CD30 receptor, T cell co-stimulation
+CD154 CD40L, gp39, Ly-
+62, Tnfsf5 32–39 kDa Transiently on T cells, B cell subset (intracellular), platelets,
+macrophages, DC CD40 receptor, B cell and DC co-stimulation, T
+cell activation
+CD155 PVR 80–90 kDa Monocytes, macrophages Polio virus receptor
+CD156a ADAM8, MS2 69 kDa Neutrophils, monocytes Metalloprotease, leukocyte extravasation
+CD156b TACE/ADAM 17 100 kDa Broad Zinc metalloprotease, TNF converting enzyme
+CD156c ADAM10, kuz,
+kuzbanian, Madm 60 kDa Neural precursors, fibroblasts Proteolytic cleavage of cell-surface molecules
+including Notch, TNF-α, APP and ephrin-A2
+66
+act
+Adhesion, blood-brain barrierAntigen name Alternative name MW Distribution Function
+CD157 BST-1, Ly-65, Bp3 38–48 kDa Granulocytes, monocytes, early B cells, T cell subset,
+BM stroma ADP-ribosyl-cyclic ADP-ribose hydrolase, pre-B
+cell growth
+CD159a NKG2A, Klrc1 43 kDa NK and NKT cells Associates with CD94, Qa-1(b) receptor,
+inhibitory signaling
+CD159c NKG2C NK and NKT cells Associates with CD94, Qa-1(b) receptor,
+stimulatory signaling
+CD160 BY55 27 kDa NK cell subset, T cell subset Co-stimulation
+CD161c NKR-P1c, Ly-55,
+NK1.1 40 kDa NK cells, T cell subset of NK1.1 strains NK cell–mediated cytotoxicity
+CD162 PSGL-1, Slp1 120 kDa Myeloid cells, lymphocyte subset CD62P and CD62L receptor, adhesion,
+leukocyte rolling
+100–130
+kDa Peritoneal macrophages, M2 macrophages Breaks down oxidized hemaglobin
+complexes, adhesion
+CD163
+CD164
+MGC-24, A115, A24 80 kDa mRNA: broad in various adult and embryonic tissues Hematopoietic progenitor-stroma interaction
+CD166 ALCAM 105 kDa Neurons, T cells, monocytes, epithelial cells, fibroblasts,
+B act cells CD6 receptor, adhesion, T cell development, T–B
+cell interaction, role in nervous system, pluripotent
+stem cell marker
+CD167a DDR1 120 kDa Epithelial cells, myoblasts, brain, early marker neuroectoderma Discoidin domain receptor, tyrosine kinase,
+adhesion
+CD168 RHAMM, Hmmr 70–73 kDa Broad, high on B cells Hyaluronan-mediated motility receptor, adhesion, cell
+locomotion, tumor metastasis (intracellular in human
+breast cancer)
+CD169 Sialoadhesin, Sn,
+Siglec-1 185 kDa Tissue, macrophage subsets, monocytes Adhesion, cell-cell and cell-matrix interactions,
+binds α2,3-sialylated ligands CD43, CD227,
+SRBC-R
+CD170 Siglec-5, CD33-
+like2, Siglec-F 140 kDa Macrophage subsets, neutrophils Adhesion
+CD171 L1, cell adhesion
+molecule 200–210
+kDa CNS, PNS, glial cells, monocytes, T cell subset, B cells, DCs,
+lymph node reticular fibroblasts, some epithelial cells Homotypic adhesion, T cell co-stimulation, integrin
+binding, KO has neuropathologies similar to
+CRASH disorder
+CD172a SIRPα, Ptpns1 110 kDa Monocytes, macrophages, DCs, T cell subset, stem cells Adhesion, associates with CD47, SHP substrate-1
+CD172b SIRPβ 60–90 kDa Macrophages and other hematopoietic lineages CD172g (H) SIRPγ
+67
+Mouse CD antigens
+act
+Not defined in mouse
+Engagement of SIRPβ promotes phagocytosis
+in macrophagesMouse CD antigens (continued)
+Antigen name
+Alternative name
+MW
+CD173-
+CD175 (H)
+Distribution
+Function
+Not defined in mouse
+CD177 NB1, Pdp3 56–62 kDa Neutrophil subset (surface and intracellular) CD178 Fas ligand, CD95L,
+TNFSF6 38–42 kDa T act cells, testis Apoptosis of CD95 + cells, immune privilege, soluble
+form in serum, gld mutation nonfunctional FasL
+CD179a V pre B 16 kDa Pro- and early pre-B cells B cell differentiation, signaling, pre-BCR associates
+with IgM/CD79α/β
+CD179b Lambda 5 22 kDa Pro- and early pre-B cells B cell differentiation, signaling, pre-BCR associates
+with IgM/CD79α/β
+CD180 RP105, Ly-78 95–105
+kDa B cells, monocytes, DCs B cell recognition and signaling of LPS, associates
+with MD-1, regulation of B cell growth and death
+CD181 CXCR1, IL8Rα 39 kDa Neutrophils, basophils, NK cells, T cell subset, monocytes Binding of IL-8 induces chemotaxis of neutrophils
+CD182 CXCR2, IL8Rβ 40 kDa Neutrophils, basophils, NK cells, T cell subset, monocytes Binding of IL-8 induces chemotaxis of neutrophils,
+also binds GRO and NAP-2
+CD183 CXCR3, Cmkar3,
+gpr9 40 kDa T act (Th1) cells, NK cells, eosinophils, GM-CSF activated
+hematopoietic progenitors 6Ckine, IP-10, Mig and I-TAC receptor, T cell
+recruitment to inflammatory sites, Th1 response,
+allograft destruction
+CD184 CXCR4, Cmkar4,
+Fusin/LESTR, sdf1r, 45 kDa
+HUMSTR T cell subset, B cells, DCs, monocytes, endothelial cells SDF-1 receptor, embryogenesis, lymphocyte
+migration, B cell development, (human: 4 HIV
+coreceptor)
+CD185 CXCR5, BLR1 45 kDa Spleen, resting B cells, T cells, skin-derived DCs Binds BLC, involved in B cell migration into B cell
+follicles of spleen and Peyer’s patches
+CD186 CXCR6, BONZO 40 kDa Memory T cells Chemokine receptor for CXCL16, also a coreceptor
+by SIVs and by strains of HIV-2 and m-tropic HIV-1
+CD191 CCR1, MIP-1αR,
+RANTES-R 39 kDa Neutrophils, monocytes, lymph, eosinophils, and osteoclasts Receptor for C-C type chemokines MIP-1α,
+RANTES, MIP-1β, MCP-1
+CD192 CCR2, MIP-1αR 40 kDa T cell subset, monocytes Receptor for the MCP-1, MCP-3, and
+MCP-4 chemokines
+CD193 CCR3, MIP-1αRL2 45 kDa Skeletal muscle and low amounts in leukocytes, T cell subset Receptor for C-C type chemokines eotaxin, MCP-
+3, MCP-4, and RANTES
+CD195 CCR5, Cmkbr5 45 kDa T cell subset, NK cells, monocytes low MIP-1α, MIP-1β, and RANTES receptor (human: R5
+HIV-1 coreceptor)
+CD196 CCR6, KY411 45 kDa Mainly B cells, T cells, and DC subset Receptor for C-C type chemokines MIP-3α/LARC
+CD197 CCR7, Cmkbr7 45 kDa T cells, DC subset 6Ckine and MIP-2β receptor, CCL19 and
+CCL21 receptor
+68Antigen name Alternative name MW Distribution Function
+CD198 CCR8, TER1 50 kDa Monocytes, macrophages, neutrophils, T cell subset Receptor for TCA-3/I-309
+CD199 CCR9, CMKBR10 43 kDa High in thymus, immature and mature T cells Receptor for chemokine SCYA25/TECK, role in
+T cell development
+CD200 OX-2 45–50 kDa Thymocytes, B cells, T act cells, DC, endothelial cells, neurons CD200R OX2 CD201 Procr, EPCR CD202b Tie2, Tek
+T cell co-stimulation, regulation of oxidoreductase
+pathway
+Myeloid cells, subset of lymphocytes, langerhans, dendritic
+epidermal T cells Inhibitory receptor
+25 kDa Endothelial cells and stem cell subset Activated protein C receptor
+140 kDa Stem cells, endothelial cells from early development Angiogenesis, angiopoietin-1 receptor
+Plasma cell alloantigen, ectoenzyme, binding/
+clearance of extracellular nucleotides
+CD203c ENpp1, PC-1, TWY 115 kDa Antibody-secreting B cells, basophils, mast cells,
+megakaryocytes, glioma CD204 Macrophage
+scavenger-R, Scvr 220 kDa Macrophages, macrophage subset (M2) Endocytosis of macromolecules
+CD205 DEC-205, Ly75 205 kDa DC, thymic epithelial cells, B low cells, BM stromal, pulmonary
+epithelial cells, brain capillaries Antigen uptake/presentation, immune inhibition
+CD206 Macrophage
+mannose-R, Mrc1 180 kDa Macrophages, monocytes, DC subsets Phagocytosis/pinocytosis of mannose-
+containing molecules
+CD207 Langerin 40 kDa Langerhans cells Ag capture and endocytic receptor, associates
+with Birbeck granules
+CD208 DC-LAMP, Lamp3 70–90 kDa DC act , interdigitating DCs CD209a DC-SIGN, CIRE 44 kDa CD209b SIGN-R1
+DC subsets
+ICAM-3 receptor, HIV-1 binding protein,
+T cell–DC interaction
+Macrophages (splenic, LN)
+CD210 IL-10R 90–110
+kDa CD212 IL-12Rβ1 100 kDa NK act cells and T act cells High-affinity binding to IL-12, associates with IL-12
+receptor β2, signaling, T and NK cell response
+to IL-12
+CD213a1 IL-13Ra1, NR4 65 kDa Monocytes, NK cells, fibroblasts, endothelial cells Binds IL-13 with low affinity, associates with CD124
+CD213a2 IL-13Ra2 65 kDa B cells, monocytes Binds IL-13 with high affinity
+CD217 IL-17R 120 kDa CD218a IL-18Rα, IL1Rrp 70 kDa T cells, NK cell subsets, neutrophils IL-18 binding leads to the activation of NF-kB
+CD218b IL-18Rb, IL18Rap 70 kDa T cells, NK cells, DCs Forms heterodimeric receptor with IL-18Rα to
+enhance IL-18 binding
+69
+Mouse CD antigens
+Th1, B cells, NK cells, monocytes, mast cells, macrophages IL-10 receptor, signaling, related to IFN receptors
+IL-17 receptorMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD220 InsulinR, Insr 140 and
+70 kDa Broad Insulin receptor, regulation of metabolism
+CD221 IGF-1R 140 and
+70 kDa Broad Binds IGF with high affinity,
+proliferation/differentiation
+CD222 IGF-II R, M6P/IGF2R 220–250
+kDa Broad, 90–95% intracellular Cation-independent mannose 6-phosphate
+receptor, TGFβ-LAP, plasminogen and
+proliferin receptor
+CD223 LAG-3 70 kDa T act cells, NK act cells MHC class II ligand, role in natural killing
+CD224 GGT, Ggtp Yolk sac, protoplasmic astrocytes, endothelial cells, embryonic
+27, 68 kDa
+stem cell lines CD225 Ifitm1, fragilis2, Mil2 12 kDa Primordial germ cells Adhesion, differentiation, interferon-induced
+transmembrane protein 1
+CD226 DNAM-1, PTA-1,
+TLiSA1 Th1 cells, CD8 + T cells, platelets Platelet activation, T cell differentiation, co-
+stimulation, Th1 function
+CD227 Muc1, EMA 300 kDa Lymphocytes, tumors, epithelial cells, increased in pregnancy Epithelial membrane antigen, organogensis
+CD228 Melanotransferrin,
+Mfi2 80–95 kDa mRNA: cartilage , testis CD229 Ly-9, Lgp100 95,
+110 kDa Thymocytes, T cells, B cells, BM subset, not erythrocytes CD230 Prion protein, PrnP 35 kDa Scrapie-associated fibril protein CD231 TALLA-1, A15 30–45 kDa mRNA: brain, colon, muscle, heart, kidney, spleen T cell acute lymphoblastic leukemia marker,
+neuronal function
+CD232 VESP-R, PlexinC1 200 kDa Broad Viral-encoded semaphorin protein receptor
+CD233 Band3, SLC4A1 90 kDa Erythrocytes, mRNA: epithelial cells, other tissues Anion pump, CO 2 transport, linking membrane
+to cytoskeleton
+CD234 Duffy, Dfy, DARC 36–37 kDa mRNA: spleen, BM, liver, brain, not erythrocytes Duffy blood group antigen chemokine receptor
+CD235a Glycophorin A,
+Gypa 36 kDa Erythrocytes One gene only in mouse for Glycophorin A
+CD238 Kell blood group,
+Kel 110 kDa Erythrocytes, mRNA: spleen CD239 B-CAM, Lu 78–85 kDa mRNA: broad, erythrocytes Lutheran blood group, B cell adhesion to laminin
+CD240CE Rhesus 30CE 30–32 kDa Erythrocytes Rh30CE and RH30D is one gene in mouse: RH30
+CD241 Rh50, RhAg 50 kDa Erythrocytes Rh antigens associate with CD47 and LW
+CD242 ICAM-4, LW
+blood group 42 kDa Erythrocytes Adhesion, Landsteiner-Wiener blood group
+70
+high
+γ-glutamyl transpeptidase
+moderate
+AdhesionAntigen name Alternative name
+CD243 Distribution Function
+MDR-1, Abcb1, Pgp 170 kDa T cell subset, stem cells, small intestine, kidney Ion pump, cytokine export, CTL function
+CD244 2B4, Ly-90, Nmrk 78 kDa NK cells, NKT cells, LAK NK cell activation, CD48 receptor, MHC-
+unrestricted killing
+CD246 ALK 200 kDa mRNA: brain, not normal lymphocytes Anaplastic lymphoma kinase, brain development
+CD247 TCRζ, cd3ζ 16 kDa T cells, NK cell subset TCR subunit, signaling, low-level impaired
+immune function
+CD248 TEM1, endosialin 175 kDa Endothelial cells, tissue May function in tumor progression
+and angiogenesis
+CD249 (H) Aminopeptidase A Not defined in mouse CD252 OX-40 ligand, gp34 35 kDa B act cells, cardiac myocytes T–B cell interaction, T cell co-stimulation,
+CD253 TRAIL, APO-2L NK act cells, liver NK cells Apoptosis
+CD254 TRANCE, RANKL,
+OPGL 35 kDa T act cells, osteoblasts T cell–DC communication, osteoclast
+differentiation, T–B cell interaction
+CD256 APRIL, TALL-2 16 kDa T act cells, monocytes, macrophages Binds TACI and BCMA, stimulates T and B cell
+proliferation
+CD257 BLyS, BAFF, TALL-1 45 kDa Monocytes, broader expression under stimulation Binds TACI, BCMA, and BAFFR to induce
+B proliferation
+CD258 LIGHT, HVEM-L T act cells, immature DC Binds LTBR to induce T cell proliferation, also
+binds HVEM
+CD262 TRAIL-R2, DR5,
+Apo2, TRICK2,
+KILLER Broad expression Ligand for TRAIL, activates NF-kB and mediates
+apoptosis, p53-dependent expression
+CD265 RANK, TRANCE-R,
+97 kDa
+ODFR Broad expression Binding mediates osteoclastogenesis and
+T cell–DC interactions
+CD266 TWEAK receptor,
+Fn14 14 kDa mRNA in liver regeneration Cell migration, proliferation, angiogenesis, activates
+NF-kB pathway
+CD267 TACI, TNFRSF13b 32 kDa T act cells Binding of APRIL or BLyS stimulates B and
+T cell function
+CD268 BAFFR, Bcmd 25 kDa B cells, T act cell subset BLyS binding promotes survival of mature B cells
+CD269 BCMA, TNFRSF7 20 kDa Mature B (membrane and perinuclear) cells Binds APRIL, BAFF; survival and proliferation
+CD270 NFRSF14, HVEM 30 kDa T cells, monocytes, DCs, B cells, neutrophils Stimulatory and inhibitory signaling
+CD271 NGFR, TNFRSF16,
+p75 (NTR), Bex3,
+Ngfrap1 45 kDa Neurons, mesenchymal stem cells Binds NGF, BDNF, NT-3 and NT-4, tumor
+suppressor mediate cell survival and death
+71
+Mouse CD antigens
+MW
+28 kDaMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD272 BTLA, B and T
+cell lymphocyte
+associated 33 kDa T cells, B cells, BM, splenic macrophages, BM-derived DC Binds HVEM, negative regulation
+CD273 B7DC, PD-L2,
+PDCD1L2 25 kDa DC cell subset, monocytes, macrophages Binds PD-1, co-stimulation or supression of
+T cell proliferation
+CD274 B7-H1, PD-L1,
+PDCD1LG1 33 kDa Leukocytes, decrease in mature thymic T cells, B cells, NK
+cells, DC Binds PD-1, proliferation and cytokine production
+CD275 B7-H2, GL50,
+ICOS-L, B7h,
+B7RP-1 40 kDa APC, B cells, DC, macrophages Lymphocyte co-stimulation, receptor for ICOS
+CD276 B7-H3, B7RP-2 40–45 kDa In vitro–cultured DC and monocytes, APC, developing bone CD277 (H) BT3.1 CD278 ICOS, inducible T
+cell costimulator,
+Ly115 55–60 kDa T act cells, Th2 cells CD279 PD-1, programmed
+death-1 55 kDa CD280
+Negative regulator of T cell activation
+Not defined in mouse
+T cell co-stimulation, B7-H2 receptor,
+cytokine production
+T act and B act cells Negatively regulates lymphocytes, T cell
+development
+ENDO180, UPARAP,
+180 kDa
+MRC2 Chondrocytes Binds uPAR, mannose receptor, collagen matrix
+remodeling and endocytic recycling
+CD281 TLR1 90 kDa Low levels in leukocytes, macrophages Innate immunity, associates with TLR2
+CD282 TLR2 90 kDa Myeloid lineage: macrophages and DCs in spleen Response to bacterial lipoproteins
+CD283 TLR3 120 kDa DC subset, macrophages, fibroblasts, induced by LPS Binds dsRNA, activation of NK-kB
+CD284 TLR4, Ly87, Rasl2-8 100 kDa Thioglycolate-elicited peritoneal macrophages Binds LPS, innate immunity
+CD285 TLR5 90 kD DCs, monocytes, epithelial subsets CD289 TLR9 120 kDa DC subset (intracellular) Binds CpG-DNA
+CD292 BMPR1A, ALK3 57 kDa Bone progenitor, broad Binds BMP 2 and 4, bone development, germ layer
+specification
+CD293 BMPR1B, ALK6 57 kDa Bone progenitor, developing retina Binds BMP, bone development, neurogenesis
+CD294 CRTH2, GPR44 55–70 kDa Th2, eosinophils, basophils Binds prostaglandin D2, chemotaxis
+CD295 LeptinR, LEPR 132 kDa Broad Adipose metabolism, may be involved in immune
+dysfunction in obesity
+CD296 ART1, RT6, ART2 37 kDa Heart and skeletal muscle, peripheral T cells, NK cell subset GPI-linked protein modifies integrin during
+differentiation
+CD297 ART4, dombrock
+blood group 38 kDa Heart, lung, liver, and spleen, erythroid, monocytes act
+72Antigen name Alternative name MW Distribution Function
+CD298 Na /K -ATPase b3
+subunit, ATP1B3 52 kDa Broad Transporter
+CD300 Clm8, LMIR1,
+MMAC8, Pigr4,
+MAIR-I, mcpir1, Myeloid cells Receptors of the IgSF involved in
+immune regulation
++
++
+CD301 (H)
+Not defined in mouse
+CD302 DCL-1 CD303 BDCA-2,
+CLECSF11, DLEC,
+HECL CD304 BDCA4, neuropilin
+1, Nrp, NP-1 130 kDa CD305 LAIR1 32–40 kDa Broad, NK cells, B cells, T cells, monocytes CD309 VEGFR2, Flk-1, KDR 230 kDa Endothelial cells, angiogenic precursor cells; hemangioblast Binds VEGF, regulates adhesion and cell signaling
+CD314 NKG2D, KLRK1 42 kDa NK cells, CD8 + activated, not CD4 + in the periphery,
+macrophages act Binds MHC class I, Rae1 and ULBP4, cytolysis and
+cytokine production; co-stimulatory
+CD315 CD9P1, SMAP6,
+FPRP, PTGFRN 135 kDa B cell subset, monocytes act Associates with CD81 and CD9
+CD316 EWI2, PGRL, KASP 63–75 kDa B cells, T cells, low on NK cells Associates with CD81 and CD9; involved in
+cell migration
+CD317 BST2, PDCA-1 30–36 kDa Plasmacytoid DC Trafficking of cytokines
+CD318 CDCP1, CUB
+domain containing
+protein 1 92 kDa CD319 CRACC, SLAMF7 66 kDa CD320 VLDL, Ng29 CD321 JAM1, F11 receptor,
+32–41 kDa Epithelial cells and endothelial cells, platelets
+KAR Tight junction, binds reovirus and LFA1,
+platelet receptor
+CD322 JAM2, VE-JAM 45 kDa HEV and other endothelial cells Mediates transendothelial migration
+of lymphocytes
+CD324 E-cadherin,
+Uvomorulin 120 kDa Non-neural epithelial cells Binding to integrin αE/ß7 and homotypic
+interactions mediate cell adhesion
+73
+Mouse CD antigens
+30 kDa
+Macrophages
+Cell adhesion and migration
+Not defined in mouse
+DCs, neurons, endothelial and tumor cells, CD4 + /CD25 + Treg
+cells
+Predicted: T cells, B cells, and DC subset, NK cells,
+upregulated in DC
+Binds VEGF165, semaphorins, coreceptor with
+plexin, axonal guidance, angiogenesis, cell
+survival, migration
+Inhibitory receptor on NK and T cells
+Regulate T and NK cellsMouse CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+CD325 N-cadherin,
+cadherin-2 140 kDa Brain, skeletal and cardiac muscle Adhesion, may be involved in neuronal
+recognition mechanism
+CD326 Ep-CAM, EGP,
+Ly-74 40 kDa May function as growth factor receptor or adhesion molecule CD327 (H) Siglec6 Not defined in mouse CD328 (H) Siglec7 Not defined in mouse CD329 (H) Siglec9, siglecl1 Not defined in mouse CD331 FGFR1, FLT2,
+N-SAM 30 kDa Fibroblasts, epithelial cells Binds FGF, wound healing, bone development
+CD332 FGFR2, KGFR,
+KSAM 115–135
+kDa Fibroblasts, epithelial cells, ectoderm of embryo Binds FGF, embryonic limb development, AER
+CD333 FGFR3, ACH, CEK2 115 kDa Fibroblasts, epithelial cells, astrocytes Binds FGF, bone and CNS development
+CD334 FGFR4, TKF 110 kDa Fibroblasts, epithelial cells, hepatocytes Binds FGF, bone development
+CD335 NKp46, Ly-94,
+MAR1 46 kDa NK cells Binds non-MHC, NK cells activation
+CD336 (H) NKp44 Not defined in mouse CD337 Ncr3, IC7, Ly117 Mouse IC7 mRNA in liver CD338 ABCG2, Mxr,
+ABC15, BCRP1 73 kDa Stem cell subset (side population) Multidrug resistance transporter
+CD339 Jagged-1, Serrate1 135 kDa BM stromal and macrophages, stromal cell lines Receptor for Notch-1, 2, and 3, hematopoiesis,
+Th2 fate
+CD340 ErbB-2, c-neu,
+HER2 185 kDa Fetal heart, gonads; adult-uterine epithelial cells and in
+synaptic sites of muscle fibers Member of the ERBB family of receptor
+tyrosine kinases; involved in a wide range of
+cellular responses.
+CD344 Frizzled-4, F24 59 kDa Embryonic and adult tissue Acts in the Wnt/β-catenin pathway; regulation of
+tissue and cell polarity
+CD349 Frizzled-9, Fzd9 65 kDa Selectively expressed in the developing and adult Acts in the Wnt/β-catenin pathway; regulation of
+tissue and cell polarity
+CD350 Frizzled-10, Fzd10 64 kDa Embryonic and adult tissue Activation of the Wnt/β-catenin pathway; regulation
+of tissue and cell polarity
+CD351 FCAMR 70 kDa Oligodendrocytes, B cells, macrophages, T cells, T act cells –
+CD352 SLAMF6, Ly108,
+NTB-A 60 kDa T, B, and NK cells Enhances NK cell activity
+CD353 SLAMF8, Blame Evidence at the transcript level Possible role in B-lineage commitment or
+modulation of BCR signaling
+74Antigen name Alternative name MW Distribution Function
+CD354 TREM1 30 kDa Monocytes, DCs, macrophage subsets, platelets,
+megakaryocytes, microglia, hepatocytes, osteoclasts Innate immune response to infection
+CD355 Class-I MHC-
+restricted T-cell
+70 kDa
+associated molecule
+(CRTAM) NK act cells, CD8 Tact cells Adhesion
+CD357 TNFRSF18, Gitr CD358 TNFRSF21, Dr6 CD360 IL-21R, Nilr CD361 EVI2B Widely expressed in hematopoietic cells CD362 Syndecan-2, SDC2,
+25 kDa
+HSPG1, SYND2 Epithelial cells, neuronal cells, mesenchymal cells Adhesion, migration
+CD363 Sphingosine-1-
+phosphate receptor
+40 kDa
+1 (S1PR1), EDG1,
+Lpb1 Lymphocytes, endothelial cells, monocytes/macrophages,
+neural cells Adhesion, migration, cytoskeletal organization
+CD364 PI16, peptidase
+inhibitor 16,
+MSMBBP 49 kDa T cell subsets (Treg and memory) Putative serine protease inhibitor
+CD365 TIM-1, HAVCR1,
+HAVCR-1, TIMD1 38 kDa Activated CD4+ T cells, B cell subset Role in T-helper cell development, involved in
+hepatitis A virus entry into cells
+CD366 TIM-3, HAVCR2,
+TIMD3 33 kDa Th1 cells Inhibitory receptor on Th1 cells
+CD367 CLEC4A, DCIR,
+DDB27, CLECSF6 27 kDa B cells, monocytes, granulocytes, plasmacytoid DCs,
+monocyte DCs Inhibitory receptor on DCs and B cells
+CD368 CLEC4D, MCL,
+CLECSF8, CLEC-6, 24 kDa
+MPCL Monocytes, macrophages Endocytic receptor
+CD369 CLEC7A, DECTIN-1,
+27 kDa
+CLECSF12, Monocytes, macrophages, DCs,
+neutrophils, lymphocytes low Lectin, necessary for TLR2-mediated
+inflammatory response
+CD370 CLEC9A,
+HEEE9341,
+UNQ9341, DNGR1 27 kDa DCs (conventional DCs, plasmacytoid DCs) Endocytic receptor
+CD371 CLEC12A, CLL-1,
+MICL, DCAL-2 30 kDa Neutrophils, eosinophils, monocytes,
+DC subset Signal transduction
+75
+Mouse CD antigens
+66–70 kDa T act and Treg cells
+60 kDa
+Participation in dominant immunological
+self-tolerance
+Hematopoietic and nonhematopoietic cells; tumor cells Apoptosis
+T cells, B cells, NK cells, DCs Complex with CD132, activation, proliferation,
+development, apoptosisMouse non-CD antigens
+Antigen name Alternative name Distribution Function
+4-1BBL
+33D1 antigen
+3G11
+sialoganglioside
+AA4.1 antigen
+ABCG2 Tnfsf9
+DC-specific marker B act cells, DC act cells, peritoneal macrophages act
+DC subpopulations DC activation, cytokine production, binds CDw137
+Upregulated by GM-CSF, downregulated by IL-4
+SM3G11 Thymocyte, peripheral T cells AID Aicda BAFFR See CD268
+β-catenin
+B7-DC
+B7-H1
+B7-H2
+B7-H3
+B7-H4
+See CDw93
+See CDw338
+83 kDa
+See CD273
+see CD274
+See CD275
+See CD276
+B7S1, B7x, GPI-
+linkedF3
+BLIMP-1
+BP-1 Ly-51, 6C3, Enpep
+BTK/ITK Bruton’s tyrosine
+kinase, IL-2
+inducible T cell
+kinase
+BTLA
+CCR5
+CCR7
+CCR9
+CIRE See CD272
+See CD195
+See CD197
+See CD199
+See CD209
+c-Met Met, HGFR/SFR,
+Par4
+CMKLR1
+CXCR4
+76
+MW
+Chemokine-like
+receptor 1
+See CD184
+Germinal center B (low to undetectable levels) Activation-induced deaminase, Ig class switch
+recombination
+Broad, B cells, T cell development Positively regulates Wnt signaling
+T cells, B cells, monocytes, DC subsets
+90 kDa
+120–160
+kDa
+B cells, T cells
+Lymphocyte co-stimulation, regulation of
+T cell tolerance
+B cell and Th1 differentiation
+Early B cell progenitors, BM stromal cells, thymic epithelial cells Zinc metalloprotease, glutamyl aminopeptidase
+55-80
+kDa B or T lymphocytes, respectively Phosphorylation by IL-2; proliferation and
+differentiation through the BCR/TCR (receptors)
+170 kDa Epithelial cells, hematopoietic progenitors, early thymocytes,
+not detected in adult tissues Tumor growth/metastasis, hepatocyte growth
+factor/scatter factor receptor, T cell development,
+hematopoiesis
+42 kDa Resident macrophages Binds chemerinAntigen name
+Alternative name
+Cytokeratin
+DC maturation
+marker
+Delta-like 1
+DR5
+DX5
+Epcam
+ESAM
+Endomucin Dll1
+See CD262
+See CD49b
+See CD326
+Eomes TBR2
+MW Distribution Function
+52–67
+kDa Epithelial cells Intermediate filament protein, cytoskeletal
+formation
+Mature DC, B cells, intracellular granules
+Thymic stroma, macrophages, DC Lymphocyte development
+55 kDa
+75 kDa Endothelial cells, activated platelets
+Endothelial cells, HSC 70 kDa Broad Cell adhesion, vascular permeability
+Anti-adhesive molecule
+Trophoblast development, CD8 + T cells and
+NK cell development
+Resident tissue macrophages, liver Kupffer cells, not blood
+monocytes, DC Macrophage maturation
+Macrophages, neutrophil act , BM-derived DC Myeloid–B cell interaction
+Flk-1
+Flk2/Flk3 Emr1, pan-
+125 kDa
+macrophage marker
+90–100
+Emr4
+kDa
+See CD309
+See CD135 Flt-4 VEGFR3 195 kDa Lymphatic endothelial cells FR4
+Foxp3
+GARP FR4, FBP, FRd
+SCURFIN
+Lrrc32, garpin 35 kDa
+49 kDa
+80 kDa Treg cells
+Treg cells (CD4 + /CD25 + subset and CD8 + subset)
+Placenta, lung, kidney, heart, activated Treg GATA-3 GATA binding
+protein 3 48 kDa Various tissues, including CNS, inner ear, and mesodermal-
+and endodermal-derived tissues 14 kDa Mast cells, monocytes, macrophages, DC, T cells 30 kDa T cell subset, T act cells
+F4/80 antigen
+FIRE
+GILZ
+GITR AITR, Tnfrsf18
+GITRL AITRL, Tnfsf18
+TNFSF
+Granzyme B CCP1, Ctla1, Gzmb
+77
+Mouse non-CD antigens
+30 kDa
+Endothelial growth factor receptor, binds VEGF-C,
+tumor angiogenesis
+Folate receptor
+TF, upregulated in Treg cells
+Necessary for suppresive function of Treg cells
+TF that acts as a regulator in the following: Th2
+differentiation, sympathetic neuron development,
+and the maintenance of the differentiated state in
+epithelial cells
+Transcriptional modulator, inhibits IL-2 production
+Costimulator for CD4 + CD25 + Treg subset,
+induction of apoptosis, regulation of Treg and
+mucosal immunity
+DC, macrophages, B cells Co-stimulation for T cell subset
+Cytotoxic granules of NK cells and CTL (CD8 + ) Proteolysis, induction of perforin-mediated
+apoptosisMouse non-CD antigens (continued)
+Antigen name Alternative name MW Distribution Function
+HVEM TNFRSF14, TR2 60 kDa Broad expression Receptor for LIGHT, LTα, BTLA, herpes simplex
+virus, involved in lymphocyte activation, binds
+glycoprotein D
+ICOS
+IgD
+IgE Receptor
+high affinity
+IgM
+IL-17RA See CD278 180 kDa Peripheral mature B cells
+Basophils, eosinophils, monocytes, mast, and
+Langerhans cells
+Surface expression by mature B cells
+Broad
+FcR1α
+900 kDa
+CD217
+IL-21R
+Broad on T cells, B cells, NK cells, DC
+Integrin β7 130 kDa Broad
+IRF-1 45 kDa Ubiquitous
+IRF-8 49 kDa Activated macrophages, DC, B cells
+IκBα 39 kDa Broad
+135 kDa BM stromal and macrophages, stromal cell lines
+Jagged-1
+CD339
+Jagged-2
+JAML JAM family
+KLRG1 MAFA
+Langerin See CD207
+Lck
+Neutrophils, monocytes
+Phosphorylation by TNFα engagement of T cell and
+B cell receptors, apoptosis; inflammatory stimuli
+Receptor for Notch-1, 2, and 3; hematopoiesis,
+Th2 fate
+Receptor for Notch-1, 2, and 3; hematopoiesis,
+Th2 fate
+Neutrophil migration, binds to CAR (coxsackie and
+adenovirus receptor)
+Inhibition of cytokine production and cytotoxicity
+61 kDa T lymphocytes Phosphorylation by activated TCR complex;
+found overexpressed in tumors; proliferation and
+differentiation of T lymphocytes
+Mast, stromal cells, epithelial cells
+Hematopoietic progenitors, myeloid subset, peripheral
+lymphoid, mast cells 47 kDa
+Ly-6A/E Sca-1 18 kDa
+ThB, Ly-61 14–17
+kDa
+15 kDa
+Ly-6B
+78
+Activates transcription of IFNγ
+Regulates expression of proinflammatory cytokines
+NK cells, T cell subset Tnfrsf3
+Ly-6D
+IL-17 signaling, complex with IL-17RC or IL-17RB
+Induction of apoptosis in B cells, expansion of CD3
+activated T cells, NK cell activation, inhibition of DC
+Associates with CD49d or CD103, adhesion of
+leukocytes to endothelial cells
+30–38
+kDa LTbR
+Ly-6C
+High-affinity binding to IgE
+Endothelial cells, T cells, NK cells, monocytes, macrophages
+B cells, T cells, thymic epithelial cells
+Lymphoid organ development
+T cell activation, stem cell markerAntigen name
+Alternative name
+MW
+Distribution
+Function
+Ly-6F
+21–25
+kDa
+85 kDa
+Ly-6G Gr-1 Ly-49A/D
+Ly-49B
+Ly-49C
+Ly-49D
+Ly-49E
+Ly-49F
+Ly-49G
+Ly-49G2 A1, Klra1
+Klra2
+Klra3, 5E6
+Klra4
+Klra5
+Klra6
+Klra7
+LGL1 Ly-49H Klra8 NK cell subset
+Ly-49I
+Ly-49C/I/F/H
+Ly108 Klra9 NK cell subset, NKT, T cells from C57/Bl6
+NK cell subset
+NK cell, T cells, B cells
+LyVE-1
+110 kDa
+85 kDa
+Lymphatic Vessel
+Endothelial
+Receptor 1
+Myeloid cells, granulocyte
+T cell subset, NK cell subset Regulation of cytotoxicity, binds MHC class I
+T cell subset, NK cell subset
+NK cell subset Regulation of cytotoxicity, binds MHC class I
+NK cell activation
+NK cell subset
+T cell subset, NK cell subset Regulation of cytotoxicity
+Lymphatic, liver endothelial cells, macrophages
+Mac-3 93–110
+kDa
+MAdCAM-1 50 kDa
+Enhances lysis of FcR + target cells by IL2-activated
+NK cells
+Binds hyaluronan
+Macrophages (surface and intracellular) related to CD107b, DC,
+Upregulated during macrophage differentiation
+epithelial cells
+Mucosal vascular addressin cell adhesion
+Endothelial cells subset, mucosal lymphoid, lamina propia
+molecule, adhesion, lymph homing, binds CD49d
+and CD62L
+Mcl-1 BCL2L3, EAT; 21-37
+kDa 28-37
+kDa Broad Mitochondrial protein with role in survival/apoptosis
+MCP-1 Monocyte
+chemoattractant
+protein; CCL2 16 kDa Splenocytes Chemoattractant for macrophages and basophils
+MD-1 Ly86 28 kDa Mature B, monocytes/macrophages, DC Associates with RP105 (CD180), regulates CD180
+surface expression and B cell response to LPS,
+also secreted
+MHC Class I H-2K, H-2D, H-2L α (44–47
+kDa), β2
+(12 kDa)
+79
+Presents peptides to CD8 + CTLMouse non-CD antigens (continued)
+Antigen name
+MHC Class II
+Alternative name MW
+I-A, I-E α (32–34
+kDa), β
+(29–32
+kDa)
+mTOR
+289 kDa
+Nanog
+NKG2A See CD159a
+NKG2AB6 CD159a, Klrc1
+NKG2B
+NKG2C
+NKG2D See CD159c
+See CD314
+Neural stem cells
+38 kDa C57BL/6 mouse strain
+Developing embryo, variety of adult tissues
+Developing embryo, variety of adult tissues
+Developing embryo, variety of adult tissues 38 kDa ESC and embryonic carcinoma cell lines TF that helps maintain ESC in pluripotent state
+50 kDa B cells B cell differentiation
+130 kDa Adipose tissue, lymphocytes Catalyze hydrolysis of cAMP and cGMP
+70 kDa Intracellular, NK cells and CTL (CD8 + )
+mRNA in nervous system, B cells Cytolysis, apoptosis
+RA inducible, NK cells Ligand for NKG2D
+Lin-12, Tan1
+RAE-1γ
+RANK See CD265
+80
+Associates with CD94, Qa-1(b) receptor,
+inhibitory signaling
+Associates with CD94, Qa-1(b) receptor,
+stimulatory signaling
+Cell-cell interaction, cell fate determination
+Cell-cell interaction, cell fate determination
+Cell-cell interaction, cell fate determination
+NK and NKT cells
+Perforin
+Plexin B2
+Prominin-1
+PDE3B
+Involved in cell metabolism, survival,
+protein synthesis
+TF, ES self renewal
+Splice variant of NKG2A
+Pou5f1,
+transcription factor
+1
+See CD252
+BSAP
+See CD279
+See CD317
+Cyclic nucleotide
+phosphodiesterase
+3B
+Perforin1, Pfp, Prf1
+Plxnb2, Debt
+See CD133
+OX-40 ligand
+Pax5
+PD-1
+PDCA
+Broad
+220–240
+kDa
+NKG2E
+Oct3/4
+Function
+Presents peptides to CD4 + Th cells
+ESC
+Nestin
+Notch-1
+Notch-3
+Notch-4
+DistributionAntigen name Alternative name MW Distribution Function
+RORγ(t) TOR, Thor, Nr1f3 55 kDa Liver, lung, muscle, heart, thymus, and kidney TF that plays roles in mulltiple physiological
+processes
+14 kDa T cells, NK cells Negatively regulates SLAM-family receptors
+DC, B cells, T act cells
+pDC, IPC T cell constimulation, may not be ligand for Tim-2
+Associates with DAP12, signal transduction
+60 kDa T cell Phosphorylation by activated TCR; T cell
+development and activation as well as mast cell and
+platelet function
+76 kDa T cells, low in B cells T cell receptor–mediated signaling, substrate of
+ZAP-70, promote T cell development, mast cell
+and platelet function
+Mouse ES cells, embryonic carcinomas, germ cells Downregulated by differentiation
+ESC, embryonic carcinomas, germ cells Downregulated by differentiation
+SAP
+Sca-1
+Sema4A
+Siglec-H
+SLAM-associated
+protein
+See Ly6-A/E
+Sema b, SemB
+SLP76
+SLP-76
+SSEA-1
+SSEA-3
+LCP2
+Stage-specific
+embryonic antigen-1
+Stage-specific
+embryonic
+antigen-3
+STAT1 91 kDa Broad Phosphorylation by IFNγ; inflammation, innate and
+adaptive tolerance apoptosis
+STAT2 113 kDa Broad Phosphorylation by IFNα or β; anti-viral anti-
+proliferative activity
+STAT3 88 kDa Broad Phosphorylation by IL-6; cell survival, immune
+tolerance
+STAT4 85 kDa Broad Phosphorylation by IL-12 or type 1 IFNs (IFNα or β)
+cytokine production; TH1 cell differentiation
+STAT5 97 kDa Broad Phosphorylation by IL-2 family (IL-2, 4, 7, 15),
+IL-3, IL-5, EPO, TPO and GM-CSF; proliferation,
+constitutive activation in many tumors
+STAT6 94 kDa Broad Phosphorylation by IL-4 and IL-13; differentiation of
+Th2 cells, allergic inflammation, B cell Ig class switch
+72 kDa B lymphocytes, immature (CD4, CD8 double-negative and
+double-positive) thymocytes, myeloid cells, epithelial cell lines,
+and normal breast tissue Role in B cell development
+Stro1
+Syk
+81
+Mouse non-CD antigensMouse non-CD antigens (continued)
+Antigen name Alternative name
+TACI
+T-bet See CD267
+MW
+Distribution Function
+Th1 cells TF, T cell development/differentiation
+TCR αβ T cell subset Antigen recognition
+TCR γδ T cell subset Antigen recognition
+Immature B cells, T cells Template-independent addition of nucleotides at
+VDJ breakpoints
+Associates with glycophorinA, but not a typical
+glycophorin, yolk sac, fetal liver
+Tdt Terminal
+deoxynucleotidyl
+transferase TER-119 Ly-76 Early proerythroblast to mature erythrocyte
+Tie2
+TIM-1
+TIM-2 See CD202b
+Timd1, Havcr1
+Timd2 mRNA-activated T cells
+mRNA-activated T cells
+TIM-3 Th1-specific marker,
+Havcr2 TIM-4 Timd4 TLR1-TLR4
+TLR5
+TLR6
+TLR7
+TLR8
+TLR9
+TLR11
+TLR13
+TRAIL
+TRANCE See CD281–CD284
+PRO285
+PRO286
+See CD289
+Late stage of T cell differentiation, CD4 + Th1, CD8 + Tc1
+42 kDa Macrophages, spleen, lymph nodes, DC, fetal liver
+125 kDa
+126 kDa mRNA: liver, lung, lower level in MOLF/Ei mice
+mRNA: spleen, thymus, ovary, lung
+Many tissues, DC subset
+Many tissues, DC subset
+Receptor for Sema4A
+Effector function of Th1, macrophage activation,
+regulation of autoimmunity, hepatitis A virus cellular
+receptor 2
+Phosphatidylserine receptor for the engulfment of
+apoptotic cells
+Gram-negative bacterial infection
+Activation of NF-kB and JunK
+Innate immune response to microbial agents
+Innate immune response to microbial agents
+Binds uropathogenic bacteria
+See CD253
+see CD254
+TWEAK TNF-related weak
+inducer of apoptosis
+TWEAK
+Receptor See CD266
+ZAP-70 TCRζ-associated
+kinase
+82
+60 kDa
+70 kDa
+mRNA in many adult and fetal tissues Membrane-bound and secreted forms, apoptosis,
+binds Fn14, promotes IL8 secretion, activation of
+NF-kB, proliferation of endothelial cells
+T (intracellular) cells, NK cells TCR signaling and development, prognostic marker
+for B cells
