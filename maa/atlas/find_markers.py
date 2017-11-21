@@ -380,17 +380,37 @@ def parse_counts(tissue, regenerate=False):
 def parse_go_plasma_membrane():
     # GeneNames are unique, I checked
     fn = '../../data/go/plasma_membrane.tsv'
-    out = pd.read_csv(fn, sep='\t', usecols=[0, 1], index_col=1).index
+    out = pd.read_csv(fn, sep='\t', usecols=[0, 1, 3], index_col=1).iloc[:, :2]
+    out.columns = ['GeneId', 'GONames']
     return out
 
 
-def get_dataset(tissue, membrane_only=True, regenerate=False):
+def get_dataset(
+        tissue,
+        membrane_only=True,
+        regenerate=False,
+        go_contains=None,
+        go_exclude=None):
+
     cell_types, plates = parse_annotations(tissue)
     counts = parse_counts(tissue, regenerate=regenerate)
     if membrane_only:
-        go = parse_go_plasma_membrane()
+        go = parse_go_plasma_membrane().index
         genes_membrane = go[go.isin(counts.index)]
         counts = counts.loc[genes_membrane]
+
+    if (go_contains is not None) and (go_exclude is not None):
+        raise ValueError('Use either go_contains or go_exclude')
+    if go_contains is not None:
+        go = parse_go_plasma_membrane()
+        genes = go.index[go['GONames'].str.contains(go_contains)]
+        genes = np.intersect1d(genes, counts.index)
+        counts = counts.loc[genes]
+    elif go_exclude is not None:
+        go = parse_go_plasma_membrane()
+        genes = go.index[~go['GONames'].str.contains(go_exclude)]
+        genes = np.intersect1d(genes, counts.index)
+        counts = counts.loc[genes]
 
     ds = Dataset(
             samplesheet=SampleSheet(cell_types),
@@ -411,7 +431,6 @@ def plot_svm(X, y, clf, ax=None):
     c[y == 0] = colors[0]
     c[y == 1] = colors[1]
 
-    # FIXME: plot a vertical thing
     if X.shape[1] == 1:
         from scipy.optimize import minimize_scalar
         def fun(x, offset):
@@ -453,6 +472,48 @@ def plot_svm(X, y, clf, ax=None):
     return ax
 
 
+def make_subplots(nplots):
+    if nplots == 1:
+        fig, axs = plt.subplots(1, 1, figsize=(4, 4))
+        axs = [axs]
+    elif nplots == 2:
+        fig, axs = plt.subplots(1, 2, figsize=(7, 4))
+    elif nplots == 3:
+        fig, axs = plt.subplots(1, 3, figsize=(9, 4))
+    elif nplots == 4:
+        fig, axs = plt.subplots(1, 4, figsize=(12, 4))
+    elif nplots <= 6:
+        fig, axs = plt.subplots(2, 3, figsize=(9, 7))
+        axs = axs.ravel()
+    elif nplots <= 8:
+        fig, axs = plt.subplots(2, 4, figsize=(12, 7))
+        axs = axs.ravel()
+    elif nplots == 9:
+        fig, axs = plt.subplots(3, 3, figsize=(9, 9))
+        axs = axs.ravel()
+    elif nplots <= 12:
+        fig, axs = plt.subplots(3, 4, figsize=(12, 9))
+        axs = axs.ravel()
+    elif nplots <= 16:
+        fig, axs = plt.subplots(4, 4, figsize=(12, 11))
+        axs = axs.ravel()
+    elif nplots <= 20:
+        fig, axs = plt.subplots(4, 5, figsize=(12, 11))
+        axs = axs.ravel()
+    elif nplots <= 25:
+        fig, axs = plt.subplots(5, 5, figsize=(12, 12))
+        axs = axs.ravel()
+    elif nplots <= 30:
+        fig, axs = plt.subplots(5, 6, figsize=(14, 12))
+        axs = axs.ravel()
+    elif nplots <= 35:
+        fig, axs = plt.subplots(5, 7, figsize=(15, 12))
+        axs = axs.ravel()
+    else:
+        raise ValueError('Too many plots!')
+    return fig, axs
+
+
 
 # Script
 if __name__ == '__main__':
@@ -466,10 +527,30 @@ if __name__ == '__main__':
                         help='Store to file instead of showing')
     parser.add_argument('--only-commercial', action='store_true',
                         help='Select only commercially available markers')
+    parser.add_argument('--cell-types', nargs='+', default=None,
+                        help='Limit to some cell types')
+    parser.add_argument('--plot-suboptimal', type=int, default=0,
+                        help='Plot N suboptimal clusters as well')
+    parser.add_argument('--max-candidates', type=int, default=20,
+                        help='Max number of candidates to try and classify as pairs')
+    parser.add_argument('--go-contains', default=None,
+                        help='Select genes with a substring in their GO annotation')
+    parser.add_argument('--go-exclude', default=None,
+                        help='Select genes missing a substring in their GO annotation')
+    parser.add_argument('--go-annotate', default=None,
+                        help='Annotate genes that contain this GO substring with a circle (○)')
+    parser.add_argument('--exclude-genes', nargs='+', default=(),
+                        help='Exclude these genes from the candidate lists')
     args = parser.parse_args()
 
     if (len(args.tissues) == 1) and (args.tissues[0] == 'all'):
         args.tissues = tuple(config.keys())
+
+    if (args.go_contains is not None) and (args.go_exclude is not None):
+        raise ValueError('You can use either go-contains xor go-exclude, not both')
+
+    if args.go_annotate is not None:
+        go = parse_go_plasma_membrane()
 
     # Get the list of commercially available antibodies
     ab_comm = []
@@ -492,26 +573,31 @@ if __name__ == '__main__':
         ds = get_dataset(
                 tissue,
                 membrane_only=True,
-                regenerate=args.regenerate)
+                regenerate=args.regenerate,
+                go_contains=args.go_contains,
+                go_exclude=args.go_exclude)
 
         # Usually we want only a subtissue
         subtissues = np.unique(ds.samplesheet['subtissue'])
         subtissue = subtissues[0]
-
         ds.query_samples_by_metadata(
                 'subtissue == @subtissue',
                 local_dict=locals(),
                 inplace=True)
 
+        annotation_level = 'annotation'
         classifiers = []
-        subtypes = np.unique(ds.samplesheet['cell_type_call'])
-        for subtype in subtypes:
+        if args.cell_types is None:
+            cell_types = np.unique(ds.samplesheet[annotation_level])
+        else:
+            cell_types = args.cell_types
+        for cell_type in cell_types:
             # Set identity one VS all
-            col = 'cell_type: {:}'.format(subtype)
+            col = 'cell_type: {:}'.format(cell_type)
             ds.samplesheet[col] = False
             ds.samplesheet.loc[
-                    ds.samplesheet['cell_type_call'] == subtype,
-                    'cell_type: {:}'.format(subtype)] = True
+                    ds.samplesheet[annotation_level] == cell_type,
+                    'cell_type: {:}'.format(cell_type)] = True
 
             # Get top membrane genes that separate the two
             dst = ds.split(col)
@@ -527,21 +613,24 @@ if __name__ == '__main__':
                 ind = np.intersect1d(candidates.index, ab_comm)
                 candidates = candidates.loc[ind]
 
+            if args.exclude_genes:
+                candidates = candidates.loc[~candidates.index.isin(args.exclude_genes)]
+
             # Try out SVMs
             from sklearn import svm
 
             if len(candidates) == 0:
-                print('No discriminatory genes in {:}'.format(subtype))
+                print('No discriminatory genes in {:}'.format(cell_type))
                 classifiers.append({
                     'classifier': None,
-                    'cell type': subtype,
+                    'cell type': cell_type,
                     'tissue': tissue,
                     })
                 continue
-            
+
             if len(candidates) == 1:
                 g1 = candidates.index[0]
-                print('Only one discriminatory gene in {:}: {:}'.format(subtype, g1))
+                print('Only one discriminatory gene in {:}: {:}'.format(cell_type, g1))
                 # X is [n samples, n features]
                 X = ds.counts.loc[[g1]].values.T
                 y = ds.samplesheet[col].values.astype(int)
@@ -574,14 +663,16 @@ if __name__ == '__main__':
                     'enrichment': enrichment,
                     'recall': recall,
                     'specificity': specificity,
-                    'cell type': subtype,
+                    'cell type': cell_type,
                     'tissue': tissue,
+                    'precision_coarse': int(10 / 2 * precision),
+                    'recall_coarse': int(10 / 2 * recall),
                     }
 
             else:
-                print('Classifying {:}'.format(subtype))
+                print('Classifying {:}'.format(cell_type))
                 classifiers_sub = []
-                for i in range(min(len(candidates), 6)):
+                for i in range(min(len(candidates), args.max_candidates)):
                     for j in range(i):
                         g1 = candidates.index[i]
                         g2 = candidates.index[j]
@@ -617,65 +708,72 @@ if __name__ == '__main__':
                             'enrichment': enrichment,
                             'recall': recall,
                             'specificity': specificity,
-                            'cell type': subtype,
+                            'cell type': cell_type,
                             'tissue': tissue,
+                            'precision_coarse': int(10 / 2 * precision),
+                            'recall_coarse': int(10 / 2 * recall),
+                            'precision+recall': precision + recall,
                             })
 
                 from operator import itemgetter
                 clas_best = max(
                         classifiers_sub,
-                        key=itemgetter('enrichment'))
+                        key=itemgetter('precision+recall'))
+
+                if args.plot_suboptimal > 0:
+                    print('Plotting suboptimal classifiers')
+                    nplots = min(args.plot_suboptimal + 1, len(classifiers_sub))
+                    fig, axs = make_subplots(nplots)
+                    axs = axs.ravel()
+                    classifiers_sub_sorted = sorted(classifiers_sub, key=itemgetter('precision+recall'), reverse=True)
+                    for (d, ax) in zip(classifiers_sub_sorted, axs):
+                        g1, g2 = d['genes']
+                        clf = d['classifier']
+                        X = d['X']
+                        y = d['y']
+                        plot_svm(X, y, clf, ax=ax)
+                        xlabel = 'log10 expression of {:}'.format(g1)
+                        if g1 in ab_comm:
+                            xlabel += '*'
+                        if args.go_annotate is not None and args.go_annotate in go.loc[g1, 'GONames']:
+                            xlabel += '○'
+                        ax.set_xlabel(xlabel)
+                        ylabel = 'log10 expression of {:}'.format(g2)
+                        if g2 in ab_comm:
+                            ylabel += '*'
+                        if args.go_annotate is not None and args.go_annotate in go.loc[g2, 'GONames']:
+                            ylabel += '○'
+                        ax.set_xlabel(xlabel)
+                        ax.set_ylabel(ylabel)
+                        ax.grid(False)
+                        ax.set_title(
+                            'p={:.0%}, {:.1f}x, r={:.0%}'.format(d['precision'], d['enrichment'], d['recall']),
+                            fontsize=9)
+
+                    fig.suptitle('{:s}: prevalence={:.0%}'.format(cell_type, d['prevalence']))
+                    plt.tight_layout(rect=(0, 0, 1, 0.96))
+
+                    genes_print = set()
+                    for d in classifiers_sub_sorted[:nplots]:
+                        g1, g2 = d['genes']
+                        genes_print.add(g1)
+                        genes_print.add(g2)
+                    genes_print = list(genes_print)
+
+                    # Annotate some candidates with a star
+                    if args.go_annotate is not None:
+                        for i, g in enumerate(genes_print):
+                            if args.go_annotate in go.loc[g, 'GONames']:
+                                genes_print[i] = g+' ○'
+
+                    print('Antibodies to test:')
+                    print('\n'.join(genes_print))
 
             classifiers.append(clas_best)
 
-            #print('Plotting')
-            #fig, axs = plt.subplots(3, 5, figsize=(14, 9))
-            #axs = axs.ravel()
-            #for (d, ax) in zip(classifiers, axs):
-            #    g1, g2 = d['genes']
-            #    clf = d['classifier']
-            #    X = d['X']
-            #    y = d['y']
-            #    plot_svm(X, y, clf, ax=ax)
-            #    ax.set_xlabel('log10 expression of {:}'.format(g1))
-            #    ax.set_ylabel('log10 expression of {:}'.format(g2))
-            #    ax.grid(False)
-            #    ax.set_title(
-            #            '{:s}: {:.0%}→{:.0%}, {:.1f}x'.format(subtype, d['ratio_orig'], d['ratio'], d['enrichment']),
-            #        fontsize=9)
-            #plt.tight_layout()
-
         print('Plotting')
         nplots = len(classifiers)
-        if nplots == 2:
-            fig, axs = plt.subplots(1, 2, figsize=(7, 4))
-        elif nplots == 3:
-            fig, axs = plt.subplots(1, 3, figsize=(9, 4))
-        elif nplots == 4:
-            fig, axs = plt.subplots(1, 4, figsize=(12, 4))
-        elif nplots <= 6:
-            fig, axs = plt.subplots(2, 3, figsize=(9, 7))
-            axs = axs.ravel()
-        elif nplots <= 8:
-            fig, axs = plt.subplots(2, 4, figsize=(12, 7))
-            axs = axs.ravel()
-        elif nplots == 9:
-            fig, axs = plt.subplots(3, 3, figsize=(9, 9))
-            axs = axs.ravel()
-        elif nplots <= 12:
-            fig, axs = plt.subplots(3, 4, figsize=(12, 9))
-            axs = axs.ravel()
-        elif nplots <= 16:
-            fig, axs = plt.subplots(4, 4, figsize=(12, 11))
-            axs = axs.ravel()
-        elif nplots <= 20:
-            fig, axs = plt.subplots(4, 5, figsize=(12, 11))
-            axs = axs.ravel()
-        elif nplots <= 25:
-            fig, axs = plt.subplots(5, 5, figsize=(12, 12))
-            axs = axs.ravel()
-        else:
-            raise ValueError('Too many plots!')
+        fig, axs = make_subplots(nplots)
         if len(axs) > len(classifiers):
             for ax in axs[len(classifiers):]:
                 ax.axis('off')
@@ -696,12 +794,16 @@ if __name__ == '__main__':
             plot_svm(X, y, clf, ax=ax)
             xlabel = 'log10 expression of {:}'.format(g1)
             if g1 in ab_comm:
-                xlabel += ' **'
+                xlabel += '*'
+            if args.go_annotate is not None and args.go_annotate in go.loc[g1, 'GONames']:
+                xlabel += '○'
             ax.set_xlabel(xlabel)
             if g2 is not None:
                 ylabel = 'log10 expression of {:}'.format(g2)
                 if g2 in ab_comm:
-                    ylabel += ' **'
+                    ylabel += '*'
+                if args.go_annotate is not None and args.go_annotate in go.loc[g2, 'GONames']:
+                    xlabel += '○'
             else:
                 ylabel = ''
             ax.set_ylabel(ylabel)
