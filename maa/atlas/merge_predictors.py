@@ -21,16 +21,21 @@ import seaborn as sns
 
 # Functions
 class CombinedClassifier:
-    def __init__(self, classifiers, logic='and'):
+    def __init__(self, classifiers, logic='AND'):
         self.classifiers = classifiers
         self.logic = logic
 
-    def predict(self, X):
-        y = (self.classifiers[0].predict(X) > 0)
+    def predict(self, Xs):
+        y = (self.classifiers[0].predict(Xs[0]) > 0)
         if len(self.classifiers) > 1:
-            if self.logic == 'and':
-                for clf in self.classifiers[1:]:
+            if self.logic == 'AND':
+                for clf, X in zip(self.classifiers[1:], Xs[1:]):
                     y &= (clf.predict(X) > 0)
+            elif self.logic == 'OR':
+                for clf, X in zip(self.classifiers[1:], Xs[1:]):
+                    y |= (clf.predict(X) > 0)
+            else:
+                raise ValueError('Combination logic not understood: {}'.format(self.logic))
 
         return (y * 2) - 1
 
@@ -185,6 +190,8 @@ if __name__ == '__main__':
                         help='Limit to some cell types')
     parser.add_argument('--subtissue', default=None,
                         help='Limit to a subtissue. To split by subtissue use "all"')
+    parser.add_argument('--save', action='store_true',
+                        help='Store to file instead of showing')
     parser.add_argument('--save-website', action='store_true',
                         help='Save result for the website JSON)')
     parser.add_argument('--combination-logic', default='AND',
@@ -268,15 +275,10 @@ if __name__ == '__main__':
             if (ys != ya).any():
                 raise ValueError('The true cell identity should be the same!')
 
-            # Predictor logic
-            if args.combination_logic == 'AND':
-                lab_pos = (clas.decision_function(Xs) > 0) & (claa.decision_function(Xa) > 0)
-            elif args.combination_logic == 'OR':
-                lab_pos = (clas.decision_function(Xs) > 0) | (claa.decision_function(Xa) > 0)
-            else:
-                raise ValueError('Combination logic not understood: {}'.format(args.combination_logic))
-
-
+            cus = CombinedClassifier(
+                    classifiers=[clas, claa],
+                    logic=args.combination_logic)
+            lab_pos = (cus.predict([Xs, Xa]) > 0)
             lab_neg = ~lab_pos
             act_pos = ya > 0
             act_neg = ~act_pos
@@ -313,6 +315,7 @@ if __name__ == '__main__':
                 'tissue': tissue,
                 'precision+recall': precision + recall,
                 'combination_logic': args.combination_logic,
+                'classifier': cus,
                 }
 
         for clfs in classifiers:
@@ -370,7 +373,51 @@ if __name__ == '__main__':
 
             plt.tight_layout(rect=(0, 0, 1, 0.96))
 
+        if args.save:
+            import tarfile
+            import json
+            fields = (
+                    'tissue',
+                    'precision',
+                    'recall',
+                    'enrichment',
+                    'prevalence',
+                    'specificity',
+                    'cell type',
+                    'xlabel',
+                    'ylabel',
+                    'genes',
+                    'combination_logic',
+                    )
+            for clfs in classifiers:
+                if args.subtissue is not None:
+                    fn_glb = '../../data/classifiers/{:}_{:}_{:}_combined'.format(
+                            tissue.lower(),
+                            args.subtissue.lower(),
+                            classifier['cell type'].replace(' ', '_'),
+                            )
+                else:
+                    fn_glb = '../../data/classifiers/{:}_{:}_combined'.format(
+                            tissue.lower(),
+                            classifier['cell type'].replace(' ', '_'),
+                            )
+                fn_model = fn_glb+'.model.pickle'
+                fn_meta = fn_glb+'.metadata.json'
+                fn_bundle = fn_glb+'.tar.gz'
+
+                # Save metadata
+                meta = {k: classifier[k] for k in fields}
+                with open(fn_meta, 'wt') as f:
+                    json.dump(meta, f)
+
+                # Bundle up
+                with tarfile.open(fn_bundle, 'w:gz') as f:
+                    f.add(fn_model, arcname=os.path.basename(fn_model))
+                    f.add(fn_meta, arcname=os.path.basename(fn_meta))
+
+
         if args.save_website:
+            from sklearn.externals import joblib
             import json
             for clfs in classifiers:
                 clf = clfs['combined']

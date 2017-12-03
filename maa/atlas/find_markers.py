@@ -920,6 +920,7 @@ if __name__ == '__main__':
                 with tarfile.open(fn_bundle, 'w:gz') as f:
                     f.add(fn_model, arcname=os.path.basename(fn_model))
                     f.add(fn_meta, arcname=os.path.basename(fn_meta))
+                    f.add(fn_train, arcname=os.path.basename(fn_train))
 
         plt.ion()
         plt.show()
