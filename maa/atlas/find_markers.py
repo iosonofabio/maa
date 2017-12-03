@@ -28,6 +28,7 @@ from singlet.samplesheet import SampleSheet
 with open('facs_config.yml', 'r') as f:
     config = yaml.load(f)
     channels_to_genes = config['channels_to_genes']
+    tissues_prediction = config['tissues_prediction']
     config = config['tissues']
 
 
@@ -392,31 +393,71 @@ def get_dataset(
         go_contains=None,
         go_exclude=None):
 
-    cell_types, plates = parse_annotations(tissue)
-    counts = parse_counts(tissue, regenerate=regenerate)
-    if membrane_only:
-        go = parse_go_plasma_membrane().index
-        genes_membrane = go[go.isin(counts.index)]
-        counts = counts.loc[genes_membrane]
+    # Some tissues like brain were split for sorting, we merge them here
+    dss = []
+    for tissue_facs in tissues_prediction[tissue]:
+        cell_types, plates = parse_annotations(tissue_facs)
+        counts = parse_counts(tissue_facs, regenerate=regenerate)
+        if membrane_only:
+            go = parse_go_plasma_membrane().index
+            genes_membrane = go[go.isin(counts.index)]
+            counts = counts.loc[genes_membrane]
 
-    if (go_contains is not None) and (go_exclude is not None):
-        raise ValueError('Use either go_contains or go_exclude')
-    if go_contains is not None:
-        go = parse_go_plasma_membrane()
-        genes = go.index[go['GONames'].str.contains(go_contains)]
-        genes = np.intersect1d(genes, counts.index)
-        counts = counts.loc[genes]
-    elif go_exclude is not None:
-        go = parse_go_plasma_membrane()
-        genes = go.index[~go['GONames'].str.contains(go_exclude)]
-        genes = np.intersect1d(genes, counts.index)
-        counts = counts.loc[genes]
+        if (go_contains is not None) and (go_exclude is not None):
+            raise ValueError('Use either go_contains or go_exclude')
+        if go_contains is not None:
+            go = parse_go_plasma_membrane()
+            genes = go.index[go['GONames'].str.contains(go_contains)]
+            genes = np.intersect1d(genes, counts.index)
+            counts = counts.loc[genes]
+        elif go_exclude is not None:
+            go = parse_go_plasma_membrane()
+            genes = go.index[~go['GONames'].str.contains(go_exclude)]
+            genes = np.intersect1d(genes, counts.index)
+            counts = counts.loc[genes]
 
-    ds = Dataset(
-            samplesheet=SampleSheet(cell_types),
-            counts_table=counts,
-            )
-    return ds
+        dss.append({
+            'samplesheet': cell_types,
+            'counts': counts})
+
+    if len(dss) == 1:
+        ds = Dataset(
+                samplesheet=SampleSheet(cell_types),
+                counts_table=counts,
+                )
+        return ds
+    else:
+        # Merging is kind of messy because some genes are absent from either
+        # subtissue (grrr); I put zeroes for now, Michelle is working on the
+        # better solution (we have those numbers somewhere)
+        genes = set()
+        for ds in dss:
+            genes |= set(ds['counts'].index.values)
+        genes = pd.Index(sorted(genes), name=ds['counts'].index.name)
+        for ds in dss:
+            genes_missing = genes[~genes.isin(ds['counts'].index)]
+            for gene in genes_missing:
+                # The stuff is normalized, pseudocounted, and logged
+                ds['counts'].loc[gene] = -1.0
+            ds['counts'] = ds['counts'].loc[genes]
+        ngenes = len(genes)
+        ncells = sum(ds['samplesheet'].shape[0] for ds in dss)
+        samplesheet_all = pd.concat([ds['samplesheet'] for ds in dss], axis=0)
+        counts_all = pd.DataFrame(
+                np.zeros((ngenes, ncells), float),
+                index=genes,
+                columns=samplesheet_all.index)
+        for ds in dss:
+            counts_all.loc[:, ds['counts'].columns.values] = ds['counts'].values
+        counts_all = CountsTable(counts_all)
+        if ds['counts']._normalized:
+            counts_all._normalized = ds['counts']._normalized
+
+        ds = Dataset(
+                samplesheet=SampleSheet(samplesheet_all),
+                counts_table=counts_all,
+                )
+        return ds
 
 
 def plot_svm(X, y, clf, ax=None):
@@ -522,7 +563,7 @@ if __name__ == '__main__':
     parser.add_argument('tissues', nargs='+',
                         help='tissues to study')
     parser.add_argument('--regenerate', action='store_true',
-                        help='Store to file instead of showing')
+                        help='Regenerate counts cache')
     parser.add_argument('--save', action='store_true',
                         help='Store to file instead of showing')
     parser.add_argument('--only-commercial', action='store_true',
@@ -541,10 +582,13 @@ if __name__ == '__main__':
                         help='Annotate genes that contain this GO substring with a circle (○)')
     parser.add_argument('--exclude-genes', nargs='+', default=(),
                         help='Exclude these genes from the candidate lists')
+    parser.add_argument('--kernel', default='linear',
+                        choices=('linear', 'rbf', 'poly2', 'poly3', 'sigmoid'),
+                        help='Kernel for the SVM classifier')
     args = parser.parse_args()
 
     if (len(args.tissues) == 1) and (args.tissues[0] == 'all'):
-        args.tissues = tuple(config.keys())
+        args.tissues = tuple(tissues_prediction.keys())
 
     if (args.go_contains is not None) and (args.go_exclude is not None):
         raise ValueError('You can use either go-contains xor go-exclude, not both')
@@ -578,6 +622,7 @@ if __name__ == '__main__':
                 go_exclude=args.go_exclude)
 
         # Usually we want only a subtissue
+        #FIXME: generalize this
         subtissues = np.unique(ds.samplesheet['subtissue'])
         subtissue = subtissues[0]
         ds.query_samples_by_metadata(
@@ -618,6 +663,12 @@ if __name__ == '__main__':
 
             # Try out SVMs
             from sklearn import svm
+            kernel = args.kernel
+            if 'poly' in kernel:
+                degree = int(kernel[-1])
+                kernel = 'poly'
+            else:
+                degree = 3
 
             if len(candidates) == 0:
                 print('No discriminatory genes in {:}'.format(cell_type))
@@ -634,7 +685,7 @@ if __name__ == '__main__':
                 # X is [n samples, n features]
                 X = ds.counts.loc[[g1]].values.T
                 y = ds.samplesheet[col].values.astype(int)
-                clf = svm.SVC(C=1, kernel='linear', class_weight={1: 10})
+                clf = svm.SVC(C=1, kernel=kernel, degree=degree, class_weight={1: 10})
                 clf.fit(X, y)
 
                 # Check enrichment
@@ -665,8 +716,6 @@ if __name__ == '__main__':
                     'specificity': specificity,
                     'cell type': cell_type,
                     'tissue': tissue,
-                    'precision_coarse': int(10 / 2 * precision),
-                    'recall_coarse': int(10 / 2 * recall),
                     }
 
             else:
@@ -679,7 +728,7 @@ if __name__ == '__main__':
                         # X is [n samples, n features]
                         X = ds.counts.loc[[g1, g2]].values.T
                         y = ds.samplesheet[col].values.astype(int)
-                        clf = svm.SVC(C=1, kernel='linear', class_weight={1: 10})
+                        clf = svm.SVC(C=1, kernel=kernel, degree=degree, class_weight={1: 10})
                         clf.fit(X, y)
 
                         # Check enrichment
@@ -697,6 +746,7 @@ if __name__ == '__main__':
                         classifiers_sub.append({
                             'X': X,
                             'y': y,
+                            'cellnames': ds.counts.columns.tolist(),
                             'genes': (g1, g2),
                             'classifier': clf,
                             'true_pos': true_pos,
@@ -710,8 +760,6 @@ if __name__ == '__main__':
                             'specificity': specificity,
                             'cell type': cell_type,
                             'tissue': tissue,
-                            'precision_coarse': int(10 / 2 * precision),
-                            'recall_coarse': int(10 / 2 * recall),
                             'precision+recall': precision + recall,
                             })
 
@@ -769,6 +817,11 @@ if __name__ == '__main__':
                     print('Antibodies to test:')
                     print('\n'.join(genes_print))
 
+                    print('Antibody pairs:')
+                    for d in classifiers_sub_sorted[:nplots]:
+                        g1, g2 = d['genes']
+                        print('{:}\t{:}'.format(g1, g2))
+
             classifiers.append(clas_best)
 
         print('Plotting')
@@ -809,48 +862,64 @@ if __name__ == '__main__':
             ax.set_ylabel(ylabel)
             ax.grid(False)
             ax.set_title(
-                    '{:s}: {:.0%}→{:.0%}, {:.1f}x'.format(
-                        d['cell type'], d['prevalence'], d['precision'], d['enrichment']),
+                    '{:s}: p={:.0%}→{:.0%} ({:.1f}x), r={:.0%}'.format(
+                        d['cell type'], d['prevalence'], d['precision'], d['enrichment'], d['recall']),
                     fontsize=9)
         fig.suptitle(tissue)
         plt.tight_layout(rect=(0, 0, 1, 0.95))
 
-        #for (nu, ax) in zip([0.01, 0.1, 0.3, 0.4], axs):
-        #    clf = svm.NuSVC(nu=nu, kernel='linear')
-        #    plot_svm(X, y, clf, ax=ax)
-        #    ax.set_title('nu={:.3f}'.format(nu))
+        if args.save:
+            from sklearn.externals import joblib
+            import tarfile
+            import json
+            fields = (
+                    'tissue',
+                    'precision',
+                    'recall',
+                    'enrichment',
+                    'prevalence',
+                    'specificity',
+                    'cell type',
+                    'genes',
+                    )
 
-        #fig, ax = plt.subplots()
-        #ax.scatter(X[y == 1, 0], X[y == 1, 1], alpha=0.4, color='blue', label='True')
-        #ax.scatter(X[y == 0, 0], X[y == 0, 1], alpha=0.1, color='red', label='False')
-        #ax.legend(loc='best', fontsize=8)
-        #ax.set_xlabel(g1)
-        #ax.set_ylabel(g2)
-        #ax.grid(True)
+            for classifier in classifiers:
+                if subtissue is not None:
+                    fn_glb = '../../data/classifiers/{:}_{:}_{:}_antibodies'.format(
+                            tissue.lower(),
+                            subtissue.lower(),
+                            classifier['cell type'].replace(' ', '_'),
+                            )
+                else:
+                    fn_glb = '../../data/classifiers/{:}_{:}_antibodies'.format(
+                            tissue.lower(),
+                            classifier['cell type'].replace(' ', '_'),
+                            )
+                fn_model = fn_glb+'.model.pickle'
+                fn_train = fn_glb+'.train.npz'
+                fn_meta = fn_glb+'.metadata.json'
+                fn_bundle = fn_glb+'.tar.gz'
 
-        #plt.tight_layout()
+                # Save classifier
+                clf = classifier['classifier']
+                joblib.dump(clf, fn_model)
 
-        #for i in range(5):
-        #    for j in range(i):
-        #        g1 = candidates.index[i]
-        #        g2 = candidates.index[j]
-        #        # X is [n samples, n features]
-        #        X = ds.counts.loc[[g1, g2]].values.T
-        #        y = ds.samplesheet[col].values.astype(float) + 1
-        #        fig, ax = plt.subplots()
-        #        clf = svm.SVC(C=1, kernel='linear')
-        #        plot_svm(X, y, clf, ax=ax)
-        #        ax.set_title('{:} and {:}'.format(g1, g2))
-        #        plt.tight_layout()
+                # Save metadata
+                meta = {k: classifier[k] for k in fields}
+                with open(fn_meta, 'wt') as f:
+                    json.dump(meta, f)
 
-        ## Try many combinations
-        #from itertools import product
-        #ms = np.array([-100, -10, -1, 0, 1, 10, 100, 1e9])
-        #qs = np.linspace(-5, 5, 20)
-        #pars = list()
+                # Save training
+                np.savez_compressed(
+                        fn_train,
+                        X=classifier['X'],
+                        y=classifier['y'],
+                        cellnames=classifier['cellnames'])
+
+                # Bundle up
+                with tarfile.open(fn_bundle, 'w:gz') as f:
+                    f.add(fn_model, arcname=os.path.basename(fn_model))
+                    f.add(fn_meta, arcname=os.path.basename(fn_meta))
 
         plt.ion()
         plt.show()
-
-
-        break

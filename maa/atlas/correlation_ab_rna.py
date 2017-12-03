@@ -455,8 +455,10 @@ if __name__ == '__main__':
                     rho = spearmanr(x, y)[0]
                     xl = np.log10(0.1 + x.values)
                     yl = np.log10(0.1 + y.values)
+                    n_cells = len(xl)
                     correlations.append({
                         'rho': rho,
+                        'n_cells': n_cells,
                         'tissue': tissue,
                         'subtissue': subtissue,
                         'plate': plate,

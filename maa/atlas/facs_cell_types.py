@@ -358,6 +358,8 @@ if __name__ == '__main__':
                         help='Just explore the FACS data, do not analyze')
     parser.add_argument('--maxplates', type=int, default=0,
                         help='Max number of plates to plot')
+    parser.add_argument('--maxfcs', type=int, default=50000,
+                        help='Max number of background cells to plot')
     parser.add_argument('--groupby', nargs='+', default=('cell type call',),
                         choices=('cell type call', 'Good quality'),
                         help='Group cells by these criteria')
@@ -444,6 +446,10 @@ if __name__ == '__main__':
                 continue
             ip += 1
             facs_datum = facs_data[plate]
+
+            if args.maxfcs != 0:
+                facs_datum['fcs_data'] = facs_datum['fcs_data'].loc[:args.maxfcs]
+
             for ig, groupby in enumerate(args.groupby):
                 n_groups = len(np.unique(facs_datum['index_data'][groupby]))
 

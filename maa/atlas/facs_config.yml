@@ -33,8 +33,8 @@ tissues:
       'CD45: PE-Cy7-A': [1, 1000000.0]
   bladder:
     annotation glob: Bladder
-    antibodies: {APC-A: '???: APC-A', Brilliant Violet 421-A: 'dead: Brilliant Violet
-        421-A', FITC-A: '???: FITC-A'}
+    antibodies: {APC-A: 'Epcam APC-A', Brilliant Violet 421-A: 'dead/CD45/Ter119: Brilliant Violet
+    421-A', FITC-A: 'Sca-1: FITC-A'}
     dead stain: Brilliant Violet 421-A
     legend: {ncol: 2}
     plots:
@@ -231,8 +231,8 @@ tissues:
       'Cd2/Cd3: APC-A': [100.0, 30000.0]
       SSC-A: [3000.0, 200000.0]
   tongue:
-    antibodies: {APC-A: '???: APC-A', Brilliant Violet 421-A: 'dead: Brilliant Violet
-        421-A', FITC-A: '???: FITC-A'}
+    antibodies: {APC-A: 'Epcam: APC-A', Brilliant Violet 421-A: 'dead/CD45/Ter119: Brilliant Violet
+    421-A', FITC-A: 'Sca-1: FITC-A'}
     dead stain: Brilliant Violet 421-A
     legend: {fontsize: 8, ncol: 2}
     plots:
@@ -242,3 +242,12 @@ tissues:
     ylim:
       APC-A: [100.0, 100000.0]
   trachea: {dead stain: 'dead: Sytox blue-A'}
+
+tissues_prediction:
+  brain:
+    - brain_microglia
+    - brain_neuron
+  pancreas:
+    - pancreas
+  colon:
+    - colon
