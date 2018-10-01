@@ -209,7 +209,7 @@ def parse_facs_plate_sony(plate, glb='*', maxfcs=50000):
                     data=com,
                     index=fluors,
                     columns=fluors)
-            meta.loc[:, fluors] = meta.loc[:, fluors].values @ com.values
+            data.loc[:, fluors] = data.loc[:, fluors].values @ com.values
         out['fcs_meta'] = meta
         out['fcs_data'] = data
 
@@ -246,7 +246,7 @@ def parse_facs_plate_sony(plate, glb='*', maxfcs=50000):
     return out
 
 
-def parse_annotations(tissue):
+def parse_annotations(tissue, subtissue=None):
     import glob
     if 'annotation glob' in config[tissue]:
         glb = config[tissue]['annotation glob']
@@ -298,6 +298,18 @@ def parse_annotations(tissue):
     out['name'] = ['{1}_{0}'.format(*i.split('.')) for i in out.index]
 
     out.set_index('name', drop=True, inplace=True)
+
+    sts = []
+    for _, x in out.iterrows():
+        st = x['subtissue']
+        if (not st) or (str(st).lower() == 'nan') or (st.strip(' ?') == ''):
+            sts.append('')
+        else:
+            sts.append(st.strip(' ').lower())
+    out['subtissue'] = sts
+
+    if subtissue is not None:
+        out.query('subtissue == @subtissue', inplace=True)
 
     plates = np.unique(out['plate'])
 
@@ -351,8 +363,6 @@ def get_dataset(tissue, membrane_only=True):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('tissues', nargs='+',
-                        help='tissues to study')
     parser.add_argument('--save', action='store_true',
                         help='Store to file instead of showing')
     parser.add_argument('--explore', action='store_true',
@@ -361,28 +371,70 @@ if __name__ == '__main__':
                         help='Merge plates into one single plot')
     parser.add_argument('--maxplates', type=int, default=0,
                         help='Max number of plates to plot')
-    parser.add_argument('--maxfcs', type=int, default=50000,
+    parser.add_argument('--maxfcs', type=int, default=0,
                         help='Max number of background cells to plot')
-    parser.add_argument('--groupby', nargs='+', default=('cell type call',),
+    parser.add_argument('--groupby', nargs='+', default=('all_true',),
                         choices=('cell type call', 'Good quality'),
                         help='Group cells by these criteria')
-    parser.add_argument('--with-comparison', action='store_true',
-                        help='Compare surface protein with transcript levels')
     args = parser.parse_args()
 
-    if (len(args.tissues) == 1) and (args.tissues[0] == 'all'):
-        args.tissues = tuple(config.keys())
+    tissues = (
+            ('aorta', None),
+            ('bladder', None),
+            ('brain_microglia', 'cortex'),
+            ('brain_microglia', 'cerebellum'),
+            ('brain_microglia', 'striatum'),
+            ('brain_microglia', 'hippocampus'),
+            ('brain_neuron', 'cortex'),
+            ('brain_neuron', 'cerebellum'),
+            ('brain_neuron', 'striatum'),
+            ('brain_neuron', 'hippocampus'),
+            ('colon', 'proximal'),
+            ('colon', 'distal'),
+            ('diaphragm', None),
+            ('fat', 'scat'),
+            ('fat', 'gat'),
+            ('fat', 'bat'),
+            ('fat', 'mat'),
+            ('heart', 'la'),
+            ('heart', 'ra'),
+            ('heart', 'lv'),
+            ('heart', 'rv'),
+            ('kidney', None),
+            ('liver', 'hepatocytes'),
+            ('liver', 'non-hepatocytes'),
+            ('lung_endomucin', None),
+            ('lung_epcam', None),
+            ('mammary', None),
+            ('marrow_KLS', None),
+            ('marrow_T', None),
+            ('marrow_B', None),
+            ('marrow_G', None),
+            ('muscle', None),
+            ('pancreas', 'endocrine'),
+            ('pancreas', 'exocrine'),
+            ('skin', None),
+            #TODO: anagen?
+            ('spleen', None),
+            ('thymus', None),
+            ('tongue', None),
+            ('trachea', None),
+            )
 
     plate_meta = parse_plate_metadata()
 
     markers = {}
-    for tissue in args.tissues:
-        print(tissue)
-        cell_types, plates = parse_annotations(tissue)
+    for tissue, subtissue in tissues:
+        cell_types, plates = parse_annotations(tissue, subtissue=subtissue)
 
-        if not args.explore:
-            print('{:} has plates:'.format(tissue))
-            print('\n'.join(plates))
+        if len(plates) == 0:
+            raise ValueError('No plates found for {:}, {:}'.format(tissue, subtissue))
+
+        print('{:}, {:} has plates:'.format(tissue, subtissue))
+        print('\n'.join(plates))
+
+        if args.explore:
+            continue
 
         facs_data = {}
         for ip, plate in enumerate(plates):
@@ -395,10 +447,6 @@ if __name__ == '__main__':
                 print('Missing')
                 continue
 
-            if args.explore:
-                print('Found')
-                continue
-
             ind_bool = facs_datum['index_data'].index.isin(cell_types.index)
             ind = facs_datum['index_data'].index[ind_bool]
             facs_datum['index_data']['Good quality'] = ind_bool
@@ -406,6 +454,8 @@ if __name__ == '__main__':
             facs_datum['index_data']["cell type call"] = "missing"
             facs_datum['index_data'].loc[ind, "cell type call"] = \
                 cell_types.loc[ind, "cell_type_call"]
+
+            facs_datum['index_data']['all_true'] = True
 
             if 'Reads' in cell_types.columns:
                 facs_datum['index_data']["n reads"] = 0
@@ -433,9 +483,6 @@ if __name__ == '__main__':
             if args.maxfcs != 0:
                 facs_data['fcs_data'] = tmp_fcs
 
-        if args.explore:
-            continue
-
         cell_types_total = np.unique(cell_types['cell_type_call'])
         cell_types_total = np.append(cell_types_total, ['missing'])
         n_colors = len(cell_types_total)
@@ -446,12 +493,11 @@ if __name__ == '__main__':
                 'cell type call': dict(zip(
                     cell_types_total,
                     sns.color_palette('husl', n_colors=n_colors))),
+                'all_true': {
+                    True: 'steelblue',
+                    }
                 }
         dead_stain = config[tissue]['dead stain']
-
-        if args.with_comparison:
-            ds = get_dataset(tissue, membrane_only=True)
-            ds.counts.normalize(inplace=True)
 
         ip = 0
         for plate in facs_data:
@@ -461,7 +507,7 @@ if __name__ == '__main__':
             for ig, groupby in enumerate(args.groupby):
                 n_groups = len(np.unique(facs_datum['index_data'][groupby]))
 
-                nplots = 2
+                nplots = 1
                 if ('dead stain' in config[tissue]) and (config[tissue]['dead stain'] is not None):
                     has_dead = True
                     nplots += 1
@@ -471,41 +517,10 @@ if __name__ == '__main__':
                 if 'plots' in config[tissue]:
                     nplots += len(config[tissue]['plots'])
 
-                    if args.with_comparison:
-                        print('Checking stains for comparison')
-                        ch_comp = []
-                        ab_comp = []
-                        gene_comp = []
-                        for pl in config[tissue]['plots']:
-                            for chname in (pl['x'], pl['y']):
-                                if ('antibodies' in config[tissue]) and (chname in config[tissue]['antibodies']):
-                                    chfull = config[tissue]['antibodies'][chname]
-                                else:
-                                    chfull = chname
-
-                                print('Checking {:}'.format(chfull))
-
-                                # Annotated axes
-                                if ':' in chfull:
-                                    # Multiple antibodies in the same channel are useless
-                                    if '/' in chfull:
-                                        continue
-                                    # Keep consistent case for antibodies
-                                    abname = chfull.split(':')[0]
-                                    if abname.startswith('Cd'):
-                                        abname = 'CD'+abname[2:]
-                                    gname = channels_to_genes.get(abname, abname)
-                                    if gname not in ds.counts.index:
-                                        continue
-                                    if gname in gene_comp:
-                                        continue
-                                    ch_comp.append(chname)
-                                    ab_comp.append(abname)
-                                    gene_comp.append(gname)
-                        print(ab_comp)
-                        nplots += len(ab_comp)
-
-                if nplots == 2:
+                if nplots == 1:
+                    fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(5, 4))
+                    axs = [ax]
+                elif nplots == 2:
                     fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(11, 4))
                 elif nplots == 3:
                     fig, axs = plt.subplots(nrows=1, ncols=3, figsize=(17, 4))
@@ -523,36 +538,6 @@ if __name__ == '__main__':
                     axs = axs.ravel()
 
                 ax = axs[0]
-                cells_plotted = []
-                for i, (qual, datum) in enumerate(facs_datum['index_data'].groupby(groupby)):
-                    if qual == 'missing':
-                        continue
-                    cells_plotted.extend(list(datum.index))
-                    datum.plot(
-                            kind='scatter',
-                            x='tSNEx',
-                            y='tSNEy',
-                            ax=ax,
-                            color=colors[groupby][qual],
-                            zorder=5,
-                            alpha=0.7,
-                            )
-                other_cells = cell_types.loc[~cell_types.index.isin(cells_plotted)]
-                other_cells.plot(
-                        kind='scatter',
-                        x='tSNEx',
-                        y='tSNEy',
-                        ax=ax,
-                        marker='s',
-                        color=[0.4] * 3,
-                        grid=True,
-                        zorder=4,
-                        alpha=0.07,
-                        s=10,
-                        )
-                ax.grid(True)
-
-                ax = axs[1]
                 posx = 'FSC-A'
                 posy = 'SSC-A'
                 if 'xlim' in config[tissue] and posx in config[tissue]['xlim']:
@@ -594,16 +579,19 @@ if __name__ == '__main__':
                 ax.set_yscale('log')
                 ax.grid(True)
 
-                legend_kwargs = {
-                        'loc': 'lower right',
-                        'title': groupby,
-                }
-                if 'legend' in config[tissue]:
-                    legend_kwargs.update(config[tissue]['legend'])
-                ax.legend(**legend_kwargs)
+                if args.groupby != ('all_true', ):
+                    legend_kwargs = {
+                            'loc': 'lower right',
+                            'title': groupby,
+                    }
+                    if 'legend' in config[tissue]:
+                        legend_kwargs.update(config[tissue]['legend'])
+                    ax.legend(**legend_kwargs)
+                else:
+                    ax.legend_.remove()
 
                 if has_dead:
-                    ax = axs[2]
+                    ax = axs[1]
                     posy = dead_stain
                     if 'ylim' in config[tissue] and posy in config[tissue]['ylim']:
                         ylim = config[tissue]['ylim'][posy]
@@ -651,7 +639,7 @@ if __name__ == '__main__':
                         else:
                             ylim = (1e1, 1e6)
 
-                        ax = axs[ipl + int(has_dead) + 2]
+                        ax = axs[ipl + int(has_dead) + 1]
                         for i, (qual, datum) in enumerate(facs_datum['index_data'].groupby(groupby)):
                             if qual == 'missing':
                                 continue
@@ -691,55 +679,7 @@ if __name__ == '__main__':
                             if posy in config[tissue]['antibodies']:
                                 ax.set_ylabel(config[tissue]['antibodies'][posy])
 
-                if args.with_comparison:
-                    for ipl, (chname, abname, gname) in enumerate(zip(ch_comp, ab_comp, gene_comp)):
-                        ind = np.intersect1d(
-                                facs_datum['index_data'].index,
-                                ds.counts.columns,
-                                )
-                        x = facs_datum['index_data'].loc[ind, chname]
-                        y = ds.counts.loc[gname, ind] + ds.counts.pseudocount
-                        ctype = facs_datum['index_data'].loc[ind, 'cell type call']
-                        df = pd.concat([x, y, ctype], axis=1)
-                        rho = spearmanr(x, y)[0]
-                        if ('xlim' in config[tissue]) and (chname in config[tissue]['xlim']):
-                            xlim = config[tissue]['xlim'][chname]
-                        elif ('ylim' in config[tissue]) and (chname in config[tissue]['ylim']):
-                            xlim = config[tissue]['ylim'][chname]
-                        else:
-                            xlim = (1e1, 1e6)
-                        ax = axs[ipl + int(has_dead) + 2 + len(config[tissue]['plots'])]
-                        for qual, datum in df.groupby('cell type call'):
-                            datum.plot(
-                                    kind='scatter',
-                                    x=chname,
-                                    y=gname,
-                                    s=20,
-                                    color=colors[groupby][qual],
-                                    ax=ax,
-                                    )
-                        ax.text(0.02, 0.92,
-                                '$\\rho = {:.2f}$'.format(rho),
-                                ha='left',
-                                va='top',
-                                transform=ax.transAxes)
-                        #ax.legend(loc='best', fontsize='8')
-                        ax.set_xlabel(abname+', FACS stain')
-                        ax.set_ylabel(gname+', transcript level')
-                        ax.grid(True)
-                        ax.set_xlim(*xlim)
-                        ax.set_ylim(ds.counts.pseudocount * 0.9, 2e5)
-                        ax.set_xscale('log')
-                        ax.set_yscale('log')
-
-                if args.mergeplates:
-                    plates_all = np.unique(facs_datum['index_data']['plate'])
-                    subtissue = ', '.join(np.unique(
-                        plate_meta.loc[plates_all, 'subtissue'].dropna().astype(str),
-                        ))
-                else:
-                    subtissue = plate_meta.loc[plate, 'subtissue']
-                if subtissue:
+                if subtissue is not None:
                     title = '{:}, {:}, {:}'.format(plate, tissue, subtissue)
                 else:
                     title = '{:}, {:}'.format(plate, tissue)
@@ -748,7 +688,7 @@ if __name__ == '__main__':
 
                 if args.save:
                     fig.savefig(
-                        '../../figures/facs_plots/{:}_{:}_{:}.png'.format(tissue, plate, str(groupby)))
+                        '../../figures/facs_plots_maca/{:}_{:}_{:}.png'.format(tissue, plate, str(groupby)))
                     plt.close(fig)
 
             if ip == args.maxplates:

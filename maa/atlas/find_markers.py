@@ -640,6 +640,14 @@ if __name__ == '__main__':
             # Set identity one VS all
             col = 'cell_type: {:}'.format(cell_type)
             ds.samplesheet[col] = False
+
+            # NOTE: colon has two types of stem cells, but they are really the same
+            if cell_type == 'Undiff. Cell':
+                ind = ds.samplesheet[annotation_level].isin(
+                        ['Cycling Undiff. Cell',
+                         'Non-Cycling Undiff. Cell'])
+                ds.samplesheet.loc[ind, annotation_level] = 'Undiff. Cell'
+
             ds.samplesheet.loc[
                     ds.samplesheet[annotation_level] == cell_type,
                     'cell_type: {:}'.format(cell_type)] = True
@@ -725,6 +733,11 @@ if __name__ == '__main__':
                     for j in range(i):
                         g1 = candidates.index[i]
                         g2 = candidates.index[j]
+
+                        ij = len(classifiers_sub)
+                        if ((ij == 0) or not (ij % 100)):
+                            print('Pair n {:}'.format(ij + 1))
+
                         # X is [n samples, n features]
                         X = ds.counts.loc[[g1, g2]].values.T
                         y = ds.samplesheet[col].values.astype(int)
