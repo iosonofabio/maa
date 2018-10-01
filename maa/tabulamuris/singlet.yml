@@ -1,0 +1,96 @@
+io:
+ samplesheets:
+  alltissues:
+   path: ../../data/tabula_muris/FACS/annotations_facs.csv
+   description: 'All tissues, final version'
+   format: csv
+   index: cell
+
+ featuresheets:
+  alltissues:
+   path: ../../data/tabula_muris/FACS/annotations_facs_features.tsv
+   description: 'All tissues, final version'
+   format: tsv
+   index: 'Gene name'
+
+ count_tables:
+  gut:
+   path: ../../data/tabula_muris/FACS/Large_Intestine-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  skin:
+   path: ../../data/tabula_muris/FACS/Skin-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  fat:
+   path: ../../data/tabula_muris/FACS/Fat-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  pancreas:
+   path: ../../data/tabula_muris/FACS/Pancreas-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  muscle:
+   path: ../../data/tabula_muris/FACS/Limb_Muscle-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  spleen:
+   path: ../../data/tabula_muris/FACS/Spleen-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  thymus:
+   path: ../../data/tabula_muris/FACS/Thymus-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  tongue:
+   path: ../../data/tabula_muris/FACS/Tongue-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  trachea:
+   path: ../../data/tabula_muris/FACS/Trachea-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  kidney:
+   path: ../../data/tabula_muris/FACS/Kidney-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  heart:
+   path: ../../data/tabula_muris/FACS/Heart-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  mammary:
+   path: ../../data/tabula_muris/FACS/Mammary_Gland-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  marrow:
+   path: ../../data/tabula_muris/FACS/Marrow-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  lung:
+   path: ../../data/tabula_muris/FACS/Lung-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  diaphragm:
+   path: ../../data/tabula_muris/FACS/Diaphragm-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  bladder:
+   path: ../../data/tabula_muris/FACS/Bladder-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  aorta:
+   path: ../../data/tabula_muris/FACS/Aorta-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  liver:
+   path: ../../data/tabula_muris/FACS/Liver-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  brain_myeloid:
+   path: ../../data/tabula_muris/FACS/Brain_Myeloid-counts.csv.gz
+   format: csv.gz
+   normalized: no
+  brain_nonmyeloid:
+   path: ../../data/tabula_muris/FACS/Brain_Non-Myeloid-counts.csv.gz
+   format: csv.gz
+   normalized: no
