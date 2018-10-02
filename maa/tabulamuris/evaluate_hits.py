@@ -26,19 +26,25 @@ def select_model(models):
 
     # Take first pick with decent immunofluorescence antibodies
     ab = ('Supported', 'Enhanced', 'Approved')
+    models_sorted['select'] = False
     for _, model in models_sorted.iterrows():
         if (model['HPA_Rel_IF1'] in ab) and (model['HPA_Rel_IF2'] in ab):
-            break
-    else:
+            models_sorted.loc[_, 'select'] = True
+    models_select = models_sorted.loc[models_sorted['select']]
+    del models_select['select']
+    if len(models_select) == 0:
         raise ValueError('No model has decent antibodies')
-    return model
+    return models_select
 
 
 def find_protein_refseqs(gene, mho):
+    # Here the manually curated exceptions, mouse gene name to human HomoloGeneID
+    exceptions = {'Bst2': 48277}
+
     tmp_mouse = mho.loc[(gene, 'mouse')]
-    hgi = tmp_mouse['HomoloGeneID']
+    hgi = exceptions.get(gene, tmp_mouse['HomoloGeneID'])
     tmp_human = mho.query('(HomoloGeneID == @hgi) & (Organism == "human")')
-    if tmp_human.shape[0] != 1:
+    if tmp_human.shape[0] < 1:
         raise ValueError('Homolog not found for mouse gene {:}'.format(gene))
     tmp_human = tmp_human.iloc[0]
     refseqs_mouse = tmp_mouse['ProteinRefSeqIDs'].split(',')
@@ -235,13 +241,23 @@ if __name__ == '__main__':
         models = build_doublepositive(ds, ct, hits, args.tissue)
 
         print('Select best model')
-        model = select_model(models)
+        models_select = select_model(models)
 
-        print('Align the proteins and check how close they are')
-        refseqs1 = find_protein_refseqs(model['gene1'], mho)
-        refseqs2 = find_protein_refseqs(model['gene2'], mho)
-        ali1 = align_multiple_sequences(download_protein_sequences(refseqs1))
-        ali2 = align_multiple_sequences(download_protein_sequences(refseqs2))
+        for _, model in models_select.iterrows():
+            try:
+                print('Align the proteins and check how close they are')
+                refseqs1 = find_protein_refseqs(model['gene1'], mho)
+                refseqs2 = find_protein_refseqs(model['gene2'], mho)
+                ali1 = align_multiple_sequences(download_protein_sequences(refseqs1))
+                ali2 = align_multiple_sequences(download_protein_sequences(refseqs2))
+                break
+            except ValueError:
+                continue
+        else:
+            raise ValueError('No suitable model found for {:}, {:}'.format(
+                args.tissue,
+                ct,
+                ))
 
         print('Write output folder')
         fdn = '../../data/tabula_muris/FACS/models/double_positive_{:}_{:}/'.format(
@@ -284,7 +300,7 @@ if __name__ == '__main__':
             # Format enrichment and prevalence
             model['enrichment'] = '{:.1f}'.format(float(model['enrichment']))
             model['prevalence'] = '{:.2%}'.format(float(model['prevalence']))
-            
+
             # Format thresholds
             model['threshold1'] = '{:.1f}'.format(float(model['threshold1']))
             model['threshold2'] = '{:.1f}'.format(float(model['threshold2']))
