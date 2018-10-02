@@ -22,7 +22,11 @@ from maa.tabulamuris.base import DatasetTM, tissues, load_mouse_human_homology, 
 def select_model(models):
     # Sort models according to some decent criteria
     # TODO: refine these
-    models_sorted = models.sort_values(['PPV', 'TPR'], ascending=False)
+    models = models.copy()
+    models['PPV+TPR'] = models['PPV'] + models['TPR']
+    models_sorted = models.sort_values(['PPV+TPR', 'PPV', 'TPR'], ascending=False)
+    del models_sorted['PPV+TPR']
+    del models['PPV+TPR']
 
     # Take first pick with decent immunofluorescence antibodies
     ab = ('Supported', 'Enhanced', 'Approved')
@@ -276,7 +280,10 @@ if __name__ == '__main__':
     fn = '../../data/tabula_muris/FACS/models/{:}_summary.txt'.format(
         args.tissue)
     with open(fn, 'wt') as f:
-        f.write('Summary for antibody search for tissue: {:}\n\n'.format(args.tissue))
+        f.write('Summary for antibody search for tissue: {:}\n'.format(args.tissue))
+        f.write('This type of models is a double positive AND gate, so it classifies a cell if it stains for both genes.\n')
+        f.write('Legend: PPV = positive predictive value, TPR = true positive rate, FPR = false positive rate, HPA_Rel_IF1 = reliability of Human Protein Atlas antibodies for immunocytochemistry of gene 1, HPA_Rel_IF2 = same for gene 2, HPA_Rel_IH1 = same but for immunohistochemistry (tissues), HPA_Rel_IH2 = same but for immunohistochemistry (tissues) and gene 2.\n\n')
+
         f.write('Models:\n')
         is_first = True
         for ct in cell_types:
